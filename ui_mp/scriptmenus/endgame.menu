@@ -1,0 +1,107 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+//#include "ui_mp/choices_setup_common.menu"
+{
+
+	#undef buttonAlign
+	#define buttonAlign 0 0
+
+	#undef SETS_X
+	#undef SETS_Y
+
+	menuDef
+	{
+		name			"endgame"
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		fullScreen		0
+		blurWorld		8.0
+		soundloop 		"maploading_mp"
+		rect			0 0 640 480		
+		onOpen
+		{
+			setLocalVarBool ui_hidemainmenu 1;
+			exec "setdvartotime ui_time_marker";
+			play "menu_slidein";
+			setDvar cl_bypassMouseInput "1"
+		}
+		onClose
+		{
+			setLocalVarBool ui_hidemainmenu 0;
+			setDvar cl_bypassMouseInput "0"
+		}
+		onEsc
+		{
+			//play "menu_close";
+			//close self;
+			
+		}
+		//PREPROC_SHADER_DRAW( -800 -800 2000 2000, 0 0, "white", 0 0 0 0.6, 0, 0, 0 0 0 0 )
+		#define blacktitle "END GAME [" + gametypename() +"]"
+		#include "ui_mp/blackwindowmodel.inc"
+
+	
+		//atraso nos botoes
+		#undef MOVE_SPEEDFX
+		#define MOVE_SPEEDFX 330 
+	
+		#define TPOSX 80
+		#define TPOSY 30
+	
+		#define HEADTEXTS(itemIndex, textArg) \
+			itemDef \
+			{ \
+				style			WINDOW_STYLE_FILLED \
+				rect			(TPOSX - 30 ) (TPOSY + 22 + itemIndex * 25) 150 1 0 0 \
+				exp				rect x ((TPOSX - 30 ) + FRAME_ANIMATEFX(300))\
+				exp				text(textArg) \			
+				textfont		UI_FONT_NORMAL \
+				textscale		0.35 \
+				textstyle		0 \
+				textAlignY		-2 \
+				textAlign		ITEM_ALIGN_CENTER \
+				forecolor		0.8 0.8 1 1 \
+				background		"line_horizontal" \
+				backcolor		0.8 0.8 1 1 \
+				visible			when(FADEFX == 0) \
+				decoration \
+			}
+	
+		#define AVISOSTEXTS(itemIndex, textArg) \
+				itemDef \
+				{ \
+					style			WINDOW_STYLE_FILLED \
+					rect			(TPOSX - 30 ) (TPOSY + 22 + itemIndex * 25) 150 1 0 0 \
+					exp				rect x ((TPOSX - 30 ) + FRAME_ANIMATEFX(300))\
+					exp				text(textArg) \			
+					textfont		UI_FONT_NORMAL \
+					textscale		0.3 \
+					textstyle		0 \
+					textAlignY		-2 \
+					textAlign		ITEM_ALIGN_CENTER \
+					forecolor		0.8 0.8 1 1 \
+					background		"line_horizontal" \
+					backcolor		0.8 0.8 1 1 \
+					visible			when(FADEFX == 0) \
+					decoration \
+				}
+		#define ENDTEXTBOX(id,title,vis) \
+				BUTTONTEXTENDGAME(TPOSX - 50, (TPOSY + id * 25), 180, title,vis,id) \
+	
+		//HEAD(1,gametypename())
+	
+		#undef TPOSX
+		#define TPOSX 270
+		HEADTEXTS(1,"[FINAL]")
+		HEADTEXTS(2,dvarstring(ui_endReasonText))
+		AVISOSTEXTS(3,"^1 1: " + dvarstring(ui_winner0))
+		AVISOSTEXTS(4,"^2 2: " + dvarstring(ui_winner1))
+		AVISOSTEXTS(5,"^3 3: " + dvarstring(ui_winner2))
+		AVISOSTEXTS(6,"^5 4: " + dvarstring(ui_winner3))
+		
+		//at bottom middle
+		ENDTEXTBOX(15,"" + dvarstring(ui_aviso1),1)
+		ENDTEXTBOX(16,"" + dvarstring(ui_aviso3),1)
+	}
+}

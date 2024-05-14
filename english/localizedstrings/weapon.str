@@ -1,0 +1,182 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           "Strings used in the weapon settings go in this file."
+
+REFERENCE           MP44
+LANG_ENGLISH        "Sig 556"
+
+REFERENCE           MAG44
+LANG_ENGLISH        "Raging Bull"
+
+REFERENCE MASADA
+LANG_ENGLISH "Bushmaster ACR"
+
+REFERENCE           MW2_M16
+LANG_ENGLISH        "M16A4"
+
+REFERENCE           BO_L96
+LANG_ENGLISH        "L96A1"
+
+REFERENCE           NO_AMMO
+LANG_ENGLISH        ""
+
+REFERENCE           NO_FRAG_GRENADE
+LANG_ENGLISH        ""
+
+REFERENCE           NO_SPECIAL_GRENADE
+LANG_ENGLISH        ""
+
+
+REFERENCE           SMOKE_GRENADE
+LANG_ENGLISH        "Smoke Grenade"
+
+REFERENCE           FLASH_GRENADE
+LANG_ENGLISH        "Flash Grenade"
+
+REFERENCE           CONCUSSION_GRENADE
+LANG_ENGLISH        "Frag Grenade"
+
+REFERENCE           STUN_GRENADE
+LANG_ENGLISH        "Tatical Grenade"
+
+REFERENCE           RPG
+LANG_ENGLISH        "RPG-7"
+
+REFERENCE           AT4
+LANG_ENGLISH        "AT4"
+
+REFERENCE           MP5_SILENCER
+LANG_ENGLISH        "MP5"
+
+REFERENCE           MP5
+LANG_ENGLISH        "MP5"
+
+REFERENCE           MAC10
+LANG_ENGLISH        "Mac-10"
+
+REFERENCE           P90_SILENCER
+LANG_ENGLISH        ""
+
+REFERENCE           P90
+LANG_ENGLISH        "UMP45"
+
+REFERENCE           M16
+LANG_ENGLISH        "M16A4"
+
+REFERENCE           M203
+LANG_ENGLISH        "M203"
+
+REFERENCE           G36C
+LANG_ENGLISH        "Steyr AUG"
+
+REFERENCE           M14
+LANG_ENGLISH        "SMR"
+
+REFERENCE           M40A3
+LANG_ENGLISH        "M40A3"
+
+REFERENCE           BARRETT
+LANG_ENGLISH        "Cheytac m200"
+
+REFERENCE           WINCHESTER1200
+LANG_ENGLISH        "M870"
+
+REFERENCE           BENELLI
+LANG_ENGLISH        "KSG Slug"
+
+REFERENCE           M4M203
+LANG_ENGLISH        "M4A1 Grenadier"
+
+REFERENCE           M4
+LANG_ENGLISH        "M4A1"
+
+REFERENCE           M4_SILENCER
+LANG_ENGLISH        "M4A1 Suppressed"
+
+REFERENCE           M4M203_SILENCER
+LANG_ENGLISH        "M4A1 SOPMOD"
+
+REFERENCE           SAW
+LANG_ENGLISH        "CM901"
+
+REFERENCE           M60E4
+LANG_ENGLISH        "DG-2"
+
+REFERENCE           SKORPION
+LANG_ENGLISH        "PP90m1"
+
+REFERENCE           UZI
+LANG_ENGLISH        "Scorpion EVO"
+
+REFERENCE           AK47
+LANG_ENGLISH        "AK-47"
+
+REFERENCE           AK47_GP25
+LANG_ENGLISH        "AK-47"
+
+REFERENCE           GP25
+LANG_ENGLISH        ""
+
+REFERENCE           G3
+LANG_ENGLISH        "AN-94"
+
+REFERENCE           DRAGUNOV
+LANG_ENGLISH        "DSR-50"
+
+REFERENCE           REMINGTON700
+LANG_ENGLISH        "Remington 700"
+
+REFERENCE           AW50
+LANG_ENGLISH        "AW-50"
+
+REFERENCE           AK74U
+LANG_ENGLISH        "AKS-74u"
+
+REFERENCE           RPD
+LANG_ENGLISH        "CROSSBOW"
+
+REFERENCE           BERETTA
+LANG_ENGLISH        "Tatical Beretta"
+
+REFERENCE           USP
+LANG_ENGLISH        "RE45"
+
+REFERENCE           DESERTEAGLE
+LANG_ENGLISH        "Desert Eagle"
+
+REFERENCE           COLT1911
+LANG_ENGLISH        "Five Seven"
+
+REFERENCE           COLT45
+LANG_ENGLISH        "Five Seven"
+
+REFERENCE           M21
+LANG_ENGLISH        "AW L96A1"
+
+REFERENCE           TARGET_NOT_ENOUGH_CLEARANCE
+LANG_ENGLISH        "Not Enough Room To Fire"
+
+REFERENCE           M4_CARBINE
+LANG_ENGLISH        "ACR"
+
+REFERENCE           DESERTEAGLEGOLD
+LANG_ENGLISH        "Taurus Raging Bull"
+
+REFERENCE           NO_ATTACHMENT
+LANG_ENGLISH        "No Optional Model"
+
+REFERENCE           SILENCER
+LANG_ENGLISH        "Sec. Model"
+
+REFERENCE           REDDOT
+LANG_ENGLISH        "Red Dot"
+
+REFERENCE           ACOG
+LANG_ENGLISH        "Acog"
+
+REFERENCE           GRENADE_LAUNCHER
+LANG_ENGLISH        ""
+
+ENDMARKER
+
+

@@ -1,0 +1,26 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+#Predator Hardpoint,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+US_1mc_predator_ready,,predhp/US_predator_ready.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+US_1mc_predator_friendly,,predhp/US_predator_friendly.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+US_1mc_predator_enemy,,predhp/US_predator_enemy.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+UK_1mc_predator_ready,,predhp/UK_predator_ready.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+UK_1mc_predator_friendly,,predhp/UK_predator_friendly.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+UK_1mc_predator_enemy,,predhp/UK_predator_enemy.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+RU_1mc_predator_ready,,predhp/RU_predator_ready.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+RU_1mc_predator_friendly,,predhp/RU_predator_friendly.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+RU_1mc_predator_enemy,,predhp/RU_predator_enemy.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+AB_1mc_predator_ready,,predhp/AB_predator_ready.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+AB_1mc_predator_friendly,,predhp/AB_predator_friendly.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+AB_1mc_predator_enemy,,predhp/AB_predator_enemy.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+mp_killstreak_predator,,predhp/predator_killstreak.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+predator_explode,,predhp/predator_boom.wav,1,1,,,,500,6000,auto,,,,0.7,all_mp,,,,
+predator_burst,,predhp/burst.wav,1,1,,,,500,6000,auto,,,,0.7,all_mp,,,,
+
+
+
+

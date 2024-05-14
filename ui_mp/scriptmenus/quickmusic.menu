@@ -1,0 +1,112 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+{
+
+#undef buttonAlign
+#define buttonAlign 0 0
+
+#undef SETS_X
+#undef SETS_Y
+
+menuDef
+{
+	name			quickmusic
+	focusColor		COLOR_FOCUSED
+	fullScreen		0
+	blurWorld		4.8
+	rect			0 0 640 480
+	onOpen
+	{
+	}
+	onClose
+	{
+	}
+	onEsc
+	{
+		close self;
+	}
+#define blacktitle "MUSIC"
+#include "ui_mp/blackwindowmodel.inc"
+
+#define TPOSX 80
+#define TPOSY 30
+#define TAUNT_NAME(id,title,taunt) \
+		BUTTONBLACK(TPOSX, (TPOSY + id * 30), 80,title,scriptMenuResponse taunt,1,title)\
+	
+	TAUNT_NAME(1,"mCrazyFrog",taunt200)
+	TAUNT_NAME(2,"mCrystalDolphin",taunt201)
+	TAUNT_NAME(3,"mDamagedCoda",taunt202)
+	TAUNT_NAME(4,"mDragostea",taunt203)
+	TAUNT_NAME(5,"mEpicSaxguy",taunt204)
+	TAUNT_NAME(6,"meyeoftiger",taunt205)
+	TAUNT_NAME(7,"mgangnam",taunt206)
+	TAUNT_NAME(8,"mharlemshake",taunt207)
+	TAUNT_NAME(9,"mRickAstley",taunt208)
+	TAUNT_NAME(10,"mShootingStars",taunt209)
+	TAUNT_NAME(11,"mtitanicflauta",taunt210)
+	TAUNT_NAME(12,"mtrompecasamento",taunt211)
+	TAUNT_NAME(13,"mturndown4wat",taunt212)
+	#undef TPOSX
+	#define TPOSX 180
+	TAUNT_NAME(1,"mAlanWalker",taunt213)
+	TAUNT_NAME(2,"mAaronSmith",taunt214)
+	TAUNT_NAME(3,"mCoffindance",taunt216)
+	TAUNT_NAME(4,"mCrabRave",taunt217)
+	TAUNT_NAME(5,"mEmprestaa12",taunt218)
+	TAUNT_NAME(6,"mEntaomama",taunt219)
+	TAUNT_NAME(7,"mDbz",taunt220)
+	TAUNT_NAME(8,"mJaspion",taunt221)
+	TAUNT_NAME(9,"mJiraya",taunt222)
+	TAUNT_NAME(10,"mLimaprosamu",taunt223)
+	TAUNT_NAME(11,"mDbSuper",taunt224)
+	TAUNT_NAME(12,"mPowerRangers",taunt225)
+	TAUNT_NAME(13,"mSujoumeupau",taunt226)
+	#undef TPOSX
+	#define TPOSX 280
+	TAUNT_NAME(1,"mTakeonme",taunt227)
+	TAUNT_NAME(2,"mHeyheyhey",taunt228)
+	TAUNT_NAME(3,"mVitasElement",taunt229)
+	TAUNT_NAME(4,"mVontadedefuder",taunt230)	
+	TAUNT_NAME(5,"mHyperSpoiler",taunt231)
+	TAUNT_NAME(6,"mMonkeyDance",taunt232)
+	TAUNT_NAME(7,"Mputin",taunt233)
+	TAUNT_NAME(8,"mSnoopDogg",taunt234)
+	TAUNT_NAME(9,"mThreeStripesS",taunt235)
+	TAUNT_NAME(10,"mUgotthat",taunt236)
+	TAUNT_NAME(11,"BrasilRave",taunt237)
+	TAUNT_NAME(12,"musicachinesa",taunt238)
+	TAUNT_NAME(13,"natalpegameupau",taunt239)
+	#undef TPOSX
+	#define TPOSX 380
+	TAUNT_NAME(1,"ondeestaoamarildo",taunt240)
+	TAUNT_NAME(2,"marabe1",taunt241)
+	TAUNT_NAME(3,"marabe2",taunt242)
+	TAUNT_NAME(4,"chipi_cat",taunt243)
+	/*TAUNT_NAME(4,"TAUNT108")
+	TAUNT_NAME(5,"TAUNT109")
+	TAUNT_NAME(6,"TAUNT110")	
+	TAUNT_NAME(7,"TAUNT111")
+	TAUNT_NAME(8,"TAUNT112")
+	TAUNT_NAME(9,"TAUNT113")
+	TAUNT_NAME(10,"TAUNT114")
+	TAUNT_NAME(11,"TAUNT115")
+	TAUNT_NAME(12,"TAUNT116")
+	TAUNT_NAME(13,"TAUNT117")
+	#undef TPOSX
+	#define TPOSX 480
+	TAUNT_NAME(1,"TAUNT118")
+	TAUNT_NAME(2,"TAUNT119")
+	TAUNT_NAME(3,"TAUNT120")
+	TAUNT_NAME(4,"TAUNT121")
+	TAUNT_NAME(5,"TAUNT122")
+	TAUNT_NAME(6,"TAUNT123")	
+	TAUNT_NAME(7,"TAUNT124")
+	TAUNT_NAME(8,"TAUNT125")
+	TAUNT_NAME(9,"TAUNT126")
+	TAUNT_NAME(10,"TAUNT127")
+	TAUNT_NAME(11,"TAUNT128")
+	TAUNT_NAME(12,"TAUNT129")
+	TAUNT_NAME(13,"TAUNT130")*/
+}
+}

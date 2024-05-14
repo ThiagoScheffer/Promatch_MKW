@@ -1,0 +1,113 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+//#define ORIGIN_QUICKMESSAGEWINDOW		0 16
+//quickmessage, Botoes dentro da janela, pos X, comprimento
+{
+
+#undef buttonAlign
+#define buttonAlign 0 0
+
+#undef SETS_X
+#undef SETS_Y
+
+menuDef
+{
+	name			quicktaunts1
+	focusColor		COLOR_FOCUSED
+	fullScreen		0
+	blurWorld		4.8
+	rect			0 0 640 480
+	onEsc
+	{
+		close self;
+	}
+#define blacktitle "TAUNTS"
+#include "ui_mp/blackwindowmodel.inc"
+
+#define TPOSX 80
+#define TPOSY 30
+#define TAUNT_NAME(id,title,taunt) \
+		BUTTONBLACK(TPOSX, (TPOSY + id * 30), 80,title,scriptMenuResponse taunt,1,title)\
+
+//#define BUTTONBLACK(x, y, w, title, act, vis, id) \
+	
+	
+	//HEAD(0, "@MENU_GRAPHICS")
+	TAUNT_NAME(1,"tribo_entupinucu",taunt1)
+	TAUNT_NAME(2,"acordoumorto",taunt2)
+	TAUNT_NAME(3,"agostousa",taunt3)
+	TAUNT_NAME(4,"aiiipaiipara",taunt4)
+	TAUNT_NAME(5,"roncao",taunt5)
+	TAUNT_NAME(6,"aliembaiojamatei3",taunt6)	
+	TAUNT_NAME(7,"awayfechaocu",taunt7)
+	TAUNT_NAME(8,"awayntirapoera",taunt8)
+	TAUNT_NAME(9,"bigodudokreca",taunt9)
+	TAUNT_NAME(10,"bomdiaboatarde",taunt10)
+	TAUNT_NAME(11,"calaboca",taunt11)
+	TAUNT_NAME(12,"calabocameualuno",taunt12)	
+	TAUNT_NAME(13,"blk_cantando_imagine",taunt13)
+	#undef TPOSX
+	#define TPOSX 180
+	TAUNT_NAME(1,"cascata",taunt14)
+	TAUNT_NAME(2,"umblindadao",taunt15)
+	TAUNT_NAME(3,"choragora",taunt16)
+	TAUNT_NAME(4,"cirofdp",taunt17)
+	TAUNT_NAME(5,"pererecadelas",taunt18)
+	TAUNT_NAME(6,"cotocooo",taunt19)	
+	TAUNT_NAME(7,"culadrao",taunt20)
+	TAUNT_NAME(8,"cumerece",taunt21)
+	TAUNT_NAME(9,"cuzinhboti",taunt22)
+	TAUNT_NAME(10,"deliciosamaq",taunt23)
+	TAUNT_NAME(11,"dentadura",taunt24)
+	TAUNT_NAME(12,"dilmaganhar",taunt25)	
+	TAUNT_NAME(13,"cachorrinha",taunt26)
+	#undef TPOSX
+	#define TPOSX 280
+	TAUNT_NAME(1,"dvanir",taunt27)
+	TAUNT_NAME(2,"eitabucetamonstra",taunt28)
+	TAUNT_NAME(3,"elaehbemgostousa",taunt29)
+	TAUNT_NAME(4,"Encre_Bocejando",taunt30)
+	TAUNT_NAME(5,"encreanimal",taunt31)
+	TAUNT_NAME(6,"encreWTF",taunt32)	
+	TAUNT_NAME(7,"encryrisada",taunt33)
+	TAUNT_NAME(8,"errou",taunt34)
+	TAUNT_NAME(9,"eudoocu",taunt35)
+	TAUNT_NAME(10,"euntolouco",taunt36)
+	TAUNT_NAME(11,"fdpprof",taunt37)
+	TAUNT_NAME(12,"fdpsacanear",taunt38)
+	TAUNT_NAME(13,"ficandonervoso",taunt39)
+	#undef TPOSX
+	#define TPOSX 380
+	TAUNT_NAME(1,"flwpunheteiro",taunt40)
+	TAUNT_NAME(2,"fodase",taunt41)
+	TAUNT_NAME(3,"Gabrielpicapau",taunt42)
+	TAUNT_NAME(4,"Gabrielrisadabugada",taunt43)
+	TAUNT_NAME(5,"Gangudoscka",taunt44)
+	TAUNT_NAME(6,"hjtocomsangue",taunt45)	
+	TAUNT_NAME(7,"homemehfoda",taunt46)
+	TAUNT_NAME(8,"infecteuQUE",taunt47)
+	TAUNT_NAME(9,"infecTudobot",taunt48)
+	TAUNT_NAME(10,"jacquincalaboca",taunt49)
+	TAUNT_NAME(11,"jacquinvergonha",taunt50)
+	TAUNT_NAME(12,"saireudvaocu",taunt51)
+	TAUNT_NAME(13,"kradecu",taunt52)
+	#undef TPOSX
+	#define TPOSX 480
+	TAUNT_NAME(1,"chupoumeukcte",taunt53)
+	TAUNT_NAME(2,"legalbemlouco",taunt54)
+	TAUNT_NAME(3,"leroleroleramanhaQ",taunt55)
+	TAUNT_NAME(4,"lipelenaum",taunt56)
+	TAUNT_NAME(5,"lixofracasssado",taunt57)
+	TAUNT_NAME(6,"lutaarmada",taunt58)	
+	TAUNT_NAME(7,"lutoqnemumleao",taunt59)
+	TAUNT_NAME(8,"Matamaisqueaids",taunt60)
+	TAUNT_NAME(9,"mederrubaramaqui",taunt61)
+	TAUNT_NAME(10,"meucu",taunt62)
+	TAUNT_NAME(11,"meupiru",taunt63)
+	TAUNT_NAME(12,"MitoLicor",taunt64)
+	TAUNT_NAME(13,"mqnadefuder",taunt65)
+	
+}
+
+}

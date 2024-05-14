@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="1">
+            <File firstVisibleLine="99" xOffset="0" scrollWidth="1683" startPos="4096" endPos="4096" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\mods\promatch207\qconsole.log" backupFilePath="" originalFileLastModifTimestamp="944951743" originalFileLastModifTimestampHigh="31103843" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="1520" xOffset="0" scrollWidth="3388" startPos="35981" endPos="35991" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_bot_script.gsc" backupFilePath="" originalFileLastModifTimestamp="1157435743" originalFileLastModifTimestampHigh="31103841" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="7">
+            <File firstVisibleLine="28" xOffset="0" scrollWidth="1848" startPos="1177" endPos="1192" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_bot.gsc" backupFilePath="" originalFileLastModifTimestamp="1467568556" originalFileLastModifTimestampHigh="31103837" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="51" />
+            </File>
+            <File firstVisibleLine="274" xOffset="0" scrollWidth="3388" startPos="4986" endPos="4986" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_bot_script.gsc" backupFilePath="" originalFileLastModifTimestamp="1157435743" originalFileLastModifTimestampHigh="31103841" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="116" xOffset="0" scrollWidth="3996" startPos="5013" endPos="5019" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_bot_internal.gsc" backupFilePath="" originalFileLastModifTimestamp="650999735" originalFileLastModifTimestampHigh="31099879" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="240" />
+                <Mark line="1633" />
+                <Mark line="1942" />
+                <Mark line="2054" />
+                <Mark line="2064" />
+                <Mark line="2269" />
+                <Mark line="2302" />
+                <Mark line="2455" />
+                <Mark line="2549" />
+                <Mark line="2675" />
+                <Mark line="2717" />
+                <Mark line="2730" />
+                <Mark line="2784" />
+                <Mark line="2791" />
+            </File>
+            <File firstVisibleLine="2046" xOffset="0" scrollWidth="12660" startPos="35989" endPos="35989" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_bot_utility.gsc" backupFilePath="" originalFileLastModifTimestamp="-404154657" originalFileLastModifTimestampHigh="31103842" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="3168" startPos="109" endPos="109" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_menu.gsc" backupFilePath="" originalFileLastModifTimestamp="1889822962" originalFileLastModifTimestampHigh="31098440" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="47" />
+            </File>
+            <File firstVisibleLine="153" xOffset="0" scrollWidth="18624" startPos="3235" endPos="3235" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_bot_chat.gsc" backupFilePath="" originalFileLastModifTimestamp="1905140863" originalFileLastModifTimestampHigh="31103878" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="156" xOffset="0" scrollWidth="2040" startPos="6368" endPos="6368" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="D:\COD4server\mods\Mods Outros\Openwarfare V4\openwarfare\_visualmover.gsc" backupFilePath="" originalFileLastModifTimestamp="800244695" originalFileLastModifTimestampHigh="30623033" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="322" xOffset="0" scrollWidth="3190" startPos="7989" endPos="8002" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\main_shared\maps\mp\bots\_wp_editor.gsc" backupFilePath="" originalFileLastModifTimestamp="738595376" originalFileLastModifTimestampHigh="31103843" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </subView>
+    </Session>
+</NotepadPlus>

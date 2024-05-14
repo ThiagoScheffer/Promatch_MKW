@@ -1,0 +1,773 @@
+VERSION          "1"
+CONFIG           "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES        ""
+
+//******************************************************************************
+// _reservedslots.gsc
+//******************************************************************************
+REFERENCE RESERVEDSLOTS_DISCONNECTED
+LANG_ENGLISH "Player ^3&&1^7 was disconnected to make room for players."
+
+REFERENCE RESERVEDSLOTS_MAKEROOM_DISCONNECT
+LANG_ENGLISH "^3You are being disconnected to make room for players."
+
+REFERENCE RESERVEDSLOTS_MAKEROOM_REDIRECT
+LANG_ENGLISH "^3You are being redirected to make room for players."
+
+REFERENCE RESERVEDSLOTS_REDIRECTED
+LANG_ENGLISH "Player ^3&&1^7 redirected to ^2&&2^7 to make room for players.)."
+
+REFERENCE RESERVEDSLOTS_MANUAL_REDIRECT
+LANG_ENGLISH "Player ^3&&1^7 manually redirected to ^2&&2^7."
+
+REFERENCE RESERVEDSLOTS_TRYAGAIN
+LANG_ENGLISH "^3Please try connecting again in a few minutes..."
+
+//******************************************************************************
+// maps/mp/gametypes/crnk.gsc
+//******************************************************************************
+REFERENCE CRANKED
+LANG_ENGLISH "TDM Crank^23^7d"
+
+REFERENCE OBJECTIVES_CRNK
+LANG_ENGLISH "Elimine os outros Jogadores."
+
+REFERENCE OBJECTIVES_CRNK_SCORE
+LANG_ENGLISH "Elimine os inimigos. Primeiro time com &&1 pontos vence."
+
+REFERENCE OBJECTIVES_CRNK_HINT
+LANG_ENGLISH "Hora da Adrenalina !"
+
+//******************************************************************************
+// maps/mp/gametypes/tjn.gsc
+//******************************************************************************
+REFERENCE TEAM_JUGGERNAUT
+LANG_ENGLISH "Team Juggernaut"
+
+REFERENCE OBJECTIVES_TJN
+LANG_ENGLISH "Defenda o seu Juggernaut"
+
+REFERENCE OBJECTIVES_TJN_SCORE
+LANG_ENGLISH "Defenda o seu Juggernaut. Primeiro time com &&1 pontos vence."
+
+REFERENCE OBJECTIVES_TJN_HINT
+LANG_ENGLISH "Defenda o seu Juggernaut"
+
+REFERENCE TJN_NEW_TIMER
+LANG_ENGLISH "Prox Juggernaut em &&1"
+
+REFERENCE TJN_NOT_ENOUGH_PLAYERS
+LANG_ENGLISH "^1Nao ha jogadores suficientes!"
+
+REFERENCE FIRSTBLOOD_TJN
+LANG_ENGLISH "^1FIRST BLOOD ^7VAI PARA: "
+
+REFERENCE FIRSTBLOOD_VICTIM_TJN
+LANG_ENGLISH "^2VOCE FOI A VITIMA: ^1FIRST BLOOD!"
+
+//******************************************************************************
+// maps/mp/gametypes/toitc.gsc
+//******************************************************************************
+REFERENCE TEAMONEINTHECHAMBER
+LANG_ENGLISH "(Team) ^2One ^7in the Chamber"
+
+REFERENCE OBJECTIVES_TEAMONEINTHECHAMBER
+LANG_ENGLISH "Eliminate all enemy players."
+
+REFERENCE OBJECTIVES_TEAMONEINTHECHAMBER_SCORE
+LANG_ENGLISH "Eliminate all enemy players. First team with ^1&&1 ^7points wins."
+
+REFERENCE OBJECTIVES_TEAMONEINTHECHAMBER_HINT
+LANG_ENGLISH "Make your shot count!"
+
+REFERENCE OVERTIME
+LANG_ENGLISH "Overtime"
+
+REFERENCE SUDDEN_DEATH
+LANG_ENGLISH "Sudden Death"
+
+//******************************************************************************
+// medic.gsc
+//******************************************************************************
+
+REFERENCE MEDIC_SELF_HEAL
+LANG_ENGLISH "Medicando.. ^1&&1^7."
+
+REFERENCE MEDIC_TEAMMATE_HEAL
+LANG_ENGLISH "^1&&1^7 esta medicando voce."
+
+REFERENCE MEDIC_HEALING_FULL
+LANG_ENGLISH "Regenerado."
+
+REFERENCE MEDIC_HEALING_PARTIAL
+LANG_ENGLISH "Terminou."
+
+REFERENCE TEAMMATE_BANDAGE
+LANG_ENGLISH "Seu Teammate esta lhe medicando, aguarde!"
+
+REFERENCE TEAMMATE_HEAL
+LANG_ENGLISH "Seu Teammate esta lhe medicando, aguarde!"
+
+//******************************************************************************
+// maps/mp/gametypes/_globallogic.gsc
+//******************************************************************************
+REFERENCE JOINED_TEAM
+LANG_ENGLISH "&&1^7 has joined the ^3&&2^7 team."
+
+REFERENCE LAST_ROUND
+LANG_ENGLISH "Tiebreaker"
+
+REFERENCE MATCH_RESUMING_IN
+LANG_ENGLISH "Match resuming in:"
+
+
+//******************************************************************************
+// maps/mp/gametypes/_hardpoints.gsc
+//******************************************************************************
+REFERENCE AIRSTRIKE_AVAILABLEIN
+LANG_ENGLISH "Airstrike available in &&1 seconds."
+
+REFERENCE HELICOPTER_AVAILABLEIN
+LANG_ENGLISH "Helicopter available in &&1 seconds."
+
+REFERENCE KILLS_N
+LANG_ENGLISH "&&1 Kills!"
+
+REFERENCE REMINDER
+LANG_ENGLISH ""
+
+
+//******************************************************************************
+// _advancedacp.gsc
+//******************************************************************************
+REFERENCE	AACP_TITLE
+LANG_ENGLISH "QUICK RCON"
+
+REFERENCE	AACP_MAP_CONTROL
+LANG_ENGLISH "^1Map Control Panel"
+
+REFERENCE	AACP_MAP_LOAD
+LANG_ENGLISH "Load Map/Gametype"
+
+REFERENCE	AACP_SET_NEXT
+LANG_ENGLISH "Set as Next Map/Gametype"
+
+REFERENCE	AACP_MAP_END
+LANG_ENGLISH "End Current Map"
+
+REFERENCE	AACP_MAP_FASTRESTART
+LANG_ENGLISH "Fast Restart Map"
+
+REFERENCE	AACP_MAP_RESTART
+LANG_ENGLISH "Restart Current Map"
+
+REFERENCE	AACP_MAP_NEXT
+LANG_ENGLISH "Rotate to Next Map"
+
+REFERENCE	AACP_RULESET_CONTROL
+LANG_ENGLISH "^1Ruleset Control Panel"
+
+REFERENCE	AACP_RULESET_LOAD
+LANG_ENGLISH "Load Ruleset"
+
+REFERENCE	AACP_NORULESET
+LANG_ENGLISH "^1<No Rulesets Active>"
+
+REFERENCE	AACP_PLAYER_CONTROL
+LANG_ENGLISH "^1Server Control Panel"
+
+REFERENCE AACP_PLAYER_RETURNSPAWN
+LANG_ENGLISH "Enforce the Press !F!"
+
+REFERENCE AACP_PLAYER_RETURNED
+LANG_ENGLISH "^3Admin "Reseted" you!"
+
+REFERENCE AACP_PLAYER_POINTOUT
+LANG_ENGLISH "Point Out Player"
+
+REFERENCE	AACP_PLAYER_SHOCK
+LANG_ENGLISH "Kill Player"
+
+REFERENCE	AACP_PLAYER_EXPLODE
+LANG_ENGLISH "Turn On/Off KillCam"
+
+REFERENCE	AACP_PLAYER_SWITCH_SPECTATOR
+LANG_ENGLISH "Switch to Spectator"
+
+REFERENCE	AACP_PLAYER_SWITCH_TEAM
+LANG_ENGLISH "Switch to Other Team"
+
+REFERENCE	AACP_PLAYER_KILL
+LANG_ENGLISH "Turn On/Off GlobalChat"
+
+REFERENCE	AACP_PLAYER_KICK
+LANG_ENGLISH "^1Kick^7 Player"
+
+REFERENCE	AACP_PLAYER_BAN
+LANG_ENGLISH "^1Ban^7 Player"
+
+REFERENCE AACP_WARNING
+LANG_ENGLISH "^1Warning &&1 out of &&2 before getting kicked!"
+
+REFERENCE	AACP_NOTENABLED
+LANG_ENGLISH "Quick Rcon is not enabled in this server."
+
+REFERENCE	AACP_NOACCESS
+LANG_ENGLISH "You do not have access to the Quick Rcon via GUID ^3&&1^7."
+
+REFERENCE	AACP_NOPLAYER
+LANG_ENGLISH "^1<All Players Protected>"
+
+REFERENCE	AACP_YOU_TARGETED
+LANG_ENGLISH "^1You have been punished!"
+
+REFERENCE	AACP_PLAYER_TARGETED
+LANG_ENGLISH "^1Player ^7&&1^1 has been punished!"
+
+
+//******************************************************************************
+// _dvarmonitor.gsc
+//******************************************************************************
+REFERENCE DVAR_MONITOR_NAME
+LANG_ENGLISH "Variable ^2&&1^7 has changed:"
+
+REFERENCE DVAR_MONITOR_OLD_NEW
+LANG_ENGLISH "Old value: ^3&&1^7. New value: ^3&&2^7."
+
+
+//******************************************************************************
+// _guidcs.gsc
+//******************************************************************************
+REFERENCE GUIDCS_GUID_NOT_ALLOWED
+LANG_ENGLISH "Your GUID is not allowed in this server..."
+
+REFERENCE GUIDCS_INFORMATION
+LANG_ENGLISH "Esta GUID/Name é registrada e protegida ou você não esta usando o nickname registrado."
+
+REFERENCE GUIDCS_CONTACT
+LANG_ENGLISH "&&1"
+
+
+//******************************************************************************
+// _playerdvars.gsc
+//******************************************************************************
+REFERENCE PLAYER_GUID
+LANG_ENGLISH "^7Sua ID eh ^3&&1^7."
+
+
+//******************************************************************************
+// _readyupperiod.gsc
+//******************************************************************************
+REFERENCE READYUP_ALL_PLAYERS_READY
+LANG_ENGLISH "Todos os jogadores estao prontos !"
+
+REFERENCE READYUP_MOD_CHECKSUMS
+LANG_ENGLISH "^3CheckSums^7: &&1."
+
+REFERENCE READYUP_NOPASSWORD
+LANG_ENGLISH "Alerta! Server esta sem senha!"
+
+REFERENCE READYUP_NOT_READY
+LANG_ENGLISH "Voce nao esta pronto"
+
+REFERENCE READYUP_PERIOD
+LANG_ENGLISH "Periodo de preparacao"
+
+REFERENCE READYUP_PERIOD_ROUND
+LANG_ENGLISH "Periodo de intervalo"
+
+REFERENCE READYUP_PRESS_TO_TOGGLE
+LANG_ENGLISH "Aperte^3 [{+activate}] ^7para ficar pronto !"
+
+REFERENCE READYUP_READY
+LANG_ENGLISH "Voce esta pronto !"
+
+REFERENCE READYUP_RECORD_REMINDER
+LANG_ENGLISH ""
+
+REFERENCE READYUP_WAITING_FOR_MORE_PLAYERS
+LANG_ENGLISH "Aguardando mais jogadores..."
+
+
+//******************************************************************************
+// _rsmonitor.gsc
+//******************************************************************************
+REFERENCE RULESET_DISABLED
+LANG_ENGLISH "Ruleset disabled. Restarting the map..."
+
+REFERENCE RULESET_NOT_VALID
+LANG_ENGLISH "Ruleset ^3&&1^7 is not valid or does not support the current gametype."
+
+REFERENCE RULESET_VALID
+LANG_ENGLISH "Novo sistema de regras ^1&&1^7 sendo carregado..."
+
+
+//******************************************************************************
+// _strategyperiod.gsc
+//******************************************************************************
+REFERENCE STRATEGY_BYPASSED
+LANG_ENGLISH "Ignorado"
+
+REFERENCE STRATEGY_GET_READY
+LANG_ENGLISH "Esteja pronto !"
+
+REFERENCE STRATEGY_PERIOD_FINISHED
+LANG_ENGLISH "Tempo de estrategia acabou"
+
+REFERENCE STRATEGY_PERIOD_STARTED
+LANG_ENGLISH "Tempo estrategia: "
+
+REFERENCE PRESS_TO_BYPASS
+LANG_ENGLISH "Aperte^3 [{+activate}] ^7para ignorar"
+
+
+//******************************************************************************
+// _timeout.gsc
+//******************************************************************************
+REFERENCE TIMEOUT_CALLED
+LANG_ENGLISH "Timeout Chamado!"
+
+REFERENCE TIMEOUTS_LEFT
+LANG_ENGLISH "^3&&1^7 has called a timeout. Your team has ^3&&2^7 timeouts left."
+
+REFERENCE TIMEOUTS_NOMORE
+LANG_ENGLISH "^3&&1^7 tried to call a timeout but our team doesn't have any timeouts left."
+
+
+//******************************************************************************
+// _tweaks.gsc
+//******************************************************************************
+REFERENCE TWEAKABLE
+LANG_ENGLISH "Dvar: ^3&&1^7 is now -> ^3&&2^7."
+
+
+//******************************************************************************
+// ui_mp/controls_multi.menu
+//******************************************************************************
+REFERENCE	AACP_MENU
+LANG_ENGLISH "FPS Offset"
+
+REFERENCE CYCLE_FPSLAG
+LANG_ENGLISH "Attach/Rem Suppressor"
+
+REFERENCE DROP_OBJECT
+LANG_ENGLISH "Demo Record"
+
+REFERENCE DROP_WEAPON
+LANG_ENGLISH "Lighting Modes"
+
+REFERENCE SPEC_VIEWMODE
+LANG_ENGLISH "^1Rcon Access"
+
+REFERENCE TIMEOUT_CALL
+LANG_ENGLISH "Call Timeout"
+
+REFERENCE CG_FOV
+LANG_ENGLISH "Cycle FOV"
+
+REFERENCE CG_FOVSCALE
+LANG_ENGLISH "FovScale"
+
+REFERENCE R_FILMUSETWEAKS
+LANG_ENGLISH "FilmTweak"
+
+REFERENCE R_LIGHTTWEAKSUNLIGHT
+LANG_ENGLISH "Sun Light"
+
+REFERENCE R_NORMALMAP
+LANG_ENGLISH "MaxFPS"
+
+
+
+//******************************************************************************
+// ui_mp/hud.menu
+//******************************************************************************
+REFERENCE LB_ROUND
+LANG_ENGLISH "Round - #&&1"
+
+REFERENCE LB_NO_PLAYERS
+LANG_ENGLISH "Aguardando por jogadores"
+
+
+//******************************************************************************
+// ui_mp/scriptmenus/class.menu
+//******************************************************************************
+REFERENCE FAVORITE_ADD
+LANG_ENGLISH "Add Server to Favorites"
+
+REFERENCE SERVER_INFORMATION
+LANG_ENGLISH "Information"
+
+
+//******************************************************************************
+// ui_mp/scriptmenus/team_marinesopfor.menu
+//******************************************************************************
+REFERENCE BROADCASTER
+LANG_ENGLISH "Broadcaster"
+
+
+//******************************************************************************
+// ui_mp/scriptmenus/serverinfo.menu
+//******************************************************************************
+REFERENCE SERVER_INFO
+LANG_ENGLISH "^2Mod Help!"
+
+
+//******************************************************************************
+// _utils.gsc
+//******************************************************************************
+
+REFERENCE BOMB
+LANG_ENGLISH "Explosive Charge"
+
+REFERENCE DESTRUCTIBLE_CAR
+LANG_ENGLISH "Exploding car"
+
+REFERENCE EXPLODING_BARREL
+LANG_ENGLISH "Exploding barrel"
+
+REFERENCE KNIFE
+LANG_ENGLISH "Knife"
+
+REFERENCE HEAD
+LANG_ENGLISH "Head"
+
+REFERENCE HELICOPTER
+LANG_ENGLISH "Helicopter"
+
+REFERENCE LEFT_ARM
+LANG_ENGLISH "Left arm"
+
+REFERENCE LEFT_LEG
+LANG_ENGLISH "Left leg"
+
+REFERENCE LOWER_TORSO
+LANG_ENGLISH "Lower torso"
+
+REFERENCE MASSIVE_INJURIES
+LANG_ENGLISH "Massive injuries"
+
+REFERENCE NECK
+LANG_ENGLISH "Neck"
+
+REFERENCE RIGHT_ARM
+LANG_ENGLISH "Right arm"
+
+REFERENCE RIGHT_LEG
+LANG_ENGLISH "Right leg"
+
+REFERENCE UPPER_TORSO
+LANG_ENGLISH "Upper torso"
+
+
+
+//******************************************************************************
+// Promatch
+//******************************************************************************
+
+
+REFERENCE           SCORE_TIED
+LANG_ENGLISH        "^7Empatado &&1 - &&2"
+
+REFERENCE           SCORE_LOSING
+LANG_ENGLISH        "Perdendo &&1 - &&2"
+
+REFERENCE           SCORE_WINNING
+LANG_ENGLISH        "Vencendo &&1 - &&2"
+
+REFERENCE           SCORE_TIED_WITH
+LANG_ENGLISH        "^7Empatado &&1 - &&2"
+
+REFERENCE           SCORE_LOSING_WITH
+LANG_ENGLISH        "Perdendo &&1 - &&2"
+
+REFERENCE           SCORE_WINNING_WITH
+LANG_ENGLISH        "Vencendo &&1 - &&2"
+
+REFERENCE           NINJADEFUSE
+LANG_ENGLISH        "Ninja Defuse !"
+
+
+REFERENCE           WEAPON_DESERTEAGLE
+LANG_ENGLISH        "Desert Eagle"
+
+//Menu
+
+REFERENCE           GAME_EXPERIENCE_MAY_CHANGE
+LANG_ENGLISH        ""
+//Titulo do mp
+REFERENCE           MULTIPLAYER_CONTROLS
+LANG_ENGLISH        ""
+
+REFERENCE           TWEAKON
+LANG_ENGLISH        "^1FilmTweak 1"
+
+REFERENCE           TWEAKOFF
+LANG_ENGLISH        "^3FilmTweak 0"
+
+REFERENCE           DISTRICT
+LANG_ENGLISH        "^3District Light"
+
+REFERENCE           CRASH
+LANG_ENGLISH        "^3Crash Light"
+
+REFERENCE           VACANT
+LANG_ENGLISH        "^3Vacant Light"
+
+REFERENCE           BACKLOT
+LANG_ENGLISH        "^3Backlot Light"
+
+REFERENCE           CARENTAN
+LANG_ENGLISH        "^3Carentan Light"
+
+REFERENCE           CROSSFIRE
+LANG_ENGLISH        "^3Crossfire Light"
+
+REFERENCE           ORIG
+LANG_ENGLISH        "^1[Color]^7 User Defined"
+
+REFERENCE           DEMOON
+LANG_ENGLISH        "^1[+]^7 Demo recording.."
+
+REFERENCE           DEMOOFF
+LANG_ENGLISH        "^4[-]^7 Demo saved"
+
+//Novas 1.0.6
+
+REFERENCE           FOV1
+LANG_ENGLISH        "^4[-]^7 FOV 65"
+
+REFERENCE           FOV2
+LANG_ENGLISH        "^4[-]^7 FOV 70"
+
+REFERENCE           FOV3
+LANG_ENGLISH        "^4[-]^7 FOV 75"
+
+REFERENCE           FOV4
+LANG_ENGLISH        "^4[-]^7 FOV 80"
+
+REFERENCE           CL_PACKETUP
+LANG_ENGLISH        "Duplicated Packets"
+
+
+REFERENCE           DECAYON
+LANG_ENGLISH        "^4[-]^7 Decal On"
+
+REFERENCE           DECAYOFF
+LANG_ENGLISH        "^4[-]^7 Decal Off"
+
+
+REFERENCE           OFFSET1
+LANG_ENGLISH        "1"
+
+REFERENCE           OFFSET2
+LANG_ENGLISH        "2"
+
+REFERENCE           OFFSET0
+LANG_ENGLISH        "0"
+
+REFERENCE           RESETDVAR
+LANG_ENGLISH        "Bad Dvar Detected! ^7Press ^3B+44 ^7 after spawn to reset."
+
+REFERENCE EXTENDED_OBITUARY
+LANG_ENGLISH "^2&&1^7 killed ^1&&2^7. Dam: &&3. Loc: &&4. Weap: &&5. Dist: &&6."
+
+REFERENCE EXTENDED_OBITUARY_KILLEDBY_WEAPON
+LANG_ENGLISH "Killed by: ^3&&1^7. Weapon: ^3&&2^7."
+
+REFERENCE EXTENDED_OBITUARY_LOCATION_DISTANCE
+LANG_ENGLISH "Hit location: ^3&&1^7. Distance: ^3&&2^7."
+
+REFERENCE SD_DEFENDER_HINT
+LANG_ENGLISH        ""
+REFERENCE SD_ATTACKER_HINT
+LANG_ENGLISH        ""
+
+//******************************************************************************
+// ui_mp/hud.menu | KILLCAM
+//******************************************************************************
+
+REFERENCE           KILLCAM
+LANG_ENGLISH        "KILLCAM"
+
+REFERENCE           ROUND_KILLCAM
+LANG_ENGLISH        "ROUND WINNING KILLCAM"
+
+REFERENCE			FINAL_KILLCAM
+LANG_ENGLISH		"FINAL KILLCAM"
+
+//******************************************************************************
+// maps/mp/gametypes/ctf.gsc
+//******************************************************************************
+REFERENCE ENEMY_FLAG_DROPPED
+LANG_ENGLISH "Enemy flag was dropped!"
+
+REFERENCE ENEMY_FLAG_RETURNED_BY
+LANG_ENGLISH "Enemy flag was returned by &&1!"
+
+REFERENCE FLAG_DROPPED
+LANG_ENGLISH "Your flag was dropped!"
+
+REFERENCE FLAG_DROPPED_BY
+LANG_ENGLISH "&&1 dropped your flag!"
+
+REFERENCE FLAG_RECOVERED_BY
+LANG_ENGLISH "Your flag was recovered by &&1!"
+
+REFERENCE ENEMY_FLAG_RECOVERED_BY
+LANG_ENGLISH "Enemy flag was recovered by &&1!"
+
+REFERENCE YOUR_FLAG_RETURNING_IN
+LANG_ENGLISH "Your flag returning in: &&1"
+
+REFERENCE ENEMY_FLAG_RETURNING_IN
+LANG_ENGLISH "Enemy flag returning in: &&1"
+//******************************************************************************
+// maps/mp/gametypes/ass.gsc
+//******************************************************************************
+REFERENCE ASSASSINATION
+LANG_ENGLISH "Assassination"
+
+REFERENCE ASSASSINATION_ATTACKER
+LANG_ENGLISH "Proteja o V.I.P."
+
+REFERENCE ASSASSINATION_ATTACKER_SCORE
+LANG_ENGLISH "Proteja e escorte o V.I.P. ate a Extraction Zone. Primeiro time com &&1 pontos vence."
+
+REFERENCE ASSASSINATION_DEFENDER
+LANG_ENGLISH "Elimine o V.I.P."
+
+REFERENCE ASSASSINATION_DEFENDER_SCORE
+LANG_ENGLISH "Elimine o V.I.P. ou nao deixe que ele alcance a Extraction Zone. Primeiro time com &&1 pontos vence."
+
+REFERENCE ASSASSINATION_EXTRACTING_VIP
+LANG_ENGLISH "Aguardando..."
+
+REFERENCE ASSASSINATION_VIP_EXTRACTED
+LANG_ENGLISH "V.I.P. extraido com Sucesso!"
+
+REFERENCE ASSASSINATION_VIP_ELIMINATED
+LANG_ENGLISH "O V.I.P.foi eliminado!"
+
+//******************************************************************************
+// maps/mp/gametypes/kc.gsc
+//******************************************************************************
+REFERENCE KILL_CONFIRMED
+LANG_ENGLISH "Kill Confirmed"
+
+REFERENCE OBJECTIVES_KC
+LANG_ENGLISH "Confirme os kills recolhendo os dogtags."
+
+REFERENCE OBJECTIVES_KC_SCORE
+LANG_ENGLISH "Confirme os kills recolhendo os dogtags. Primeiro time com &&1 pontos vence."
+
+REFERENCE OBJECTIVES_KC_HINT
+LANG_ENGLISH "Confirme os kills recolhendo os dogtags."
+
+//******************************************************************************
+// maps/mp/gametypes/gg.gsc
+//******************************************************************************
+REFERENCE GUNGAME
+LANG_ENGLISH "Gun Game"
+
+REFERENCE GUNGAME_OBJECTIVES
+LANG_ENGLISH "Suba de nivel matando os oponentes!"
+
+REFERENCE GUNGAME_SCORE
+LANG_ENGLISH "Suba de nivel matando os oponentes! O primeiro que chegar na ultima arma e completar ganha."
+
+REFERENCE GUNGAME_HINT
+LANG_ENGLISH "Elimine os oponentes."
+
+REFERENCE GUNGAME_WINNER
+LANG_ENGLISH "Chegou ao topo e fez a limpa!"
+
+//******************************************************************************
+// maps/mp/gametypes/re.gsc
+//******************************************************************************
+REFERENCE RETRIEVAL
+LANG_ENGLISH "Retrieval"
+
+REFERENCE OBJECTIVES_RE_ATTACKER
+LANG_ENGLISH "Recupere os objetivos."
+
+REFERENCE OBJECTIVES_RE_ATTACKER_SCORE
+LANG_ENGLISH "Recupere os objetivos. Primeiro time com &&1 pontos vence."
+
+REFERENCE OBJECTIVES_RE_ATTACKER_HINT
+LANG_ENGLISH "Recupere os objetivos."
+
+REFERENCE OBJECTIVES_RE_DEFENDER
+LANG_ENGLISH "Proteja os objetivos de serem recuperados pelos inimigos."
+
+REFERENCE OBJECTIVES_RE_DEFENDER_SCORE
+LANG_ENGLISH "Proteja os objetivos de serem recuperados pelos inimigos. Primeiro time com &&1 pontos vence."
+
+REFERENCE OBJECTIVES_RE_DEFENDER_HINT
+LANG_ENGLISH "Proteja os objetivos."
+
+REFERENCE RE_OBJECTIVE_A
+LANG_ENGLISH "Encryption keys"
+
+REFERENCE RE_OBJECTIVE_B
+LANG_ENGLISH "Spy list"
+
+REFERENCE RE_TAKEN
+LANG_ENGLISH "^3&&1^7 recuperou o ^3&&2^7."
+
+REFERENCE RE_DROPPED
+LANG_ENGLISH "The ^3&&1^7 foi perdido."
+
+REFERENCE RE_DROPPED_BY
+LANG_ENGLISH "^3&&1^7 perdeu o ^3&&2^7."
+
+REFERENCE RE_RETURNED
+LANG_ENGLISH "The ^3&&1^7 has been returned to its original location."
+
+REFERENCE RE_RETRIEVED
+LANG_ENGLISH "^3&&1^7 foi recuperado ^3&&2^7."
+
+REFERENCE RE_ONE_RETRIEVED
+LANG_ENGLISH "Um dos objetivos foi concluido."
+
+REFERENCE RE_ALL_RETRIEVED
+LANG_ENGLISH "Objetivos completados."
+
+//******************************************************************************
+// maps/mp/gametypes/tgr.gsc
+//******************************************************************************
+REFERENCE TEAM_GREED
+LANG_ENGLISH "Team Greed"
+
+REFERENCE OBJECTIVES_TGR
+LANG_ENGLISH "Recupere os Drops e leve para o objetivo."
+
+REFERENCE OBJECTIVES_TGR_SCORE
+LANG_ENGLISH "Recupere os Drops e leve para o objetivo. Primeiro time com &&1 pontos vence."
+
+REFERENCE OBJECTIVES_TGR_HINT
+LANG_ENGLISH "Recupere os Drops e leve para o objetivo."
+
+REFERENCE TEAM_DOGTAGS_CAPTURED_BY
+LANG_ENGLISH "^3&&1^7 capturou ^3&&2^7 Drop(s) para nosso time."
+
+REFERENCE ENEMY_DOGTAGS_CAPTURED_BY
+LANG_ENGLISH "^3&&1^7 capturou ^3&&2^7 Drop(s) para o time inimigo."
+//******************************************************************************
+REFERENCE PLAYER_XINGADOR
+LANG_ENGLISH " se acha muito O Jogador, xinga todo mundo com tudo que tem na cabeça..."
+
+REFERENCE CAP_OPEN 
+LANG_ENGLISH "Aperte ^3[USE] ^7para abrir o\n^3Customizar." 
+
+REFERENCE CAP_CYCLE_AND_CLOSE
+LANG_ENGLISH "Aperte ^3[USE] ^7para circular pelos modelos\nAperte ^3[MELEE] ^7para sair."
+
+REFERENCE CAP_INITIALIZING
+LANG_ENGLISH "Abrindo o ^3Customizer."
+
+REFERENCE CAP_SECONDS_LEFT
+LANG_ENGLISH "segundos restantes."
+
+ENDMARKER
+

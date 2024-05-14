@@ -1,0 +1,35 @@
+/*
+saveModel()
+{
+	info["model"] = self.model;
+	info["viewmodel"] = self getViewModel();
+	attachSize = self getAttachSize();
+	info["attach"] = [];
+	
+	assert(info["viewmodel"] != ""); // No viewmodel was associated with the player's model
+	
+	for(i = 0; i < attachSize; i++)
+	{
+		info["attach"][i]["model"] = self getAttachModelName(i);
+		info["attach"][i]["tag"] = self getAttachTagName(i);
+		info["attach"][i]["ignoreCollision"] = self getAttachIgnoreCollision(i);
+	}
+	
+	return info;
+}
+
+loadModel(info)
+{
+	self detachAll();
+	self setModel(info["model"]);
+	self setViewModel(info["viewmodel"]);
+
+	attachInfo = info["attach"];
+	attachSize = attachInfo.size;
+    
+	for(i = 0; i < attachSize; i++)
+		self attach(attachInfo[i]["model"], attachInfo[i]["tag"], attachInfo[i]["ignoreCollision"]);
+}
+*/
+
+codigo no cod2

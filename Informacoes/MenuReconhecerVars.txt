@@ -1,0 +1,4 @@
+
+makeDvarServerInfo( "ui_aliveaxis", 0 );
+
+exp text	(dvarint(ui_aliveallies));

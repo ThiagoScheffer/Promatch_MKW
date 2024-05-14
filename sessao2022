@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="17">
+            <File firstVisibleLine="288" xOffset="0" scrollWidth="2838" startPos="6279" endPos="6283" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\_explosive_barrels.gsc" backupFilePath="" originalFileLastModifTimestamp="-785915296" originalFileLastModifTimestampHigh="30967266" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="610" xOffset="0" scrollWidth="1540" startPos="28310" endPos="28277" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\_destructible.gsc" backupFilePath="" originalFileLastModifTimestamp="1450375432" originalFileLastModifTimestampHigh="30967266" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="253" startPos="96" endPos="100" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mp\playerStatsTable.csv" backupFilePath="" originalFileLastModifTimestamp="-1894158496" originalFileLastModifTimestampHigh="30970693" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="15" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="60" />
+                <Mark line="61" />
+                <Mark line="62" />
+                <Mark line="63" />
+                <Mark line="64" />
+                <Mark line="96" />
+                <Mark line="113" />
+                <Mark line="114" />
+            </File>
+            <File firstVisibleLine="66" xOffset="0" scrollWidth="3465" startPos="5993" endPos="6003" selMode="0" offset="0" wrapCount="1" lang="Normal Text" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\soundaliases\new.csv" backupFilePath="" originalFileLastModifTimestamp="1239303712" originalFileLastModifTimestampHigh="30967126" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-701030967" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="149" />
+                <Mark line="201" />
+                <Mark line="226" />
+                <Mark line="228" />
+                <Mark line="249" />
+                <Mark line="273" />
+                <Mark line="282" />
+            </File>
+            <File firstVisibleLine="266" xOffset="0" scrollWidth="616" startPos="8637" endPos="8637" selMode="0" offset="0" wrapCount="1" lang="Shell" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mod.csv" backupFilePath="" originalFileLastModifTimestamp="-28700218" originalFileLastModifTimestampHigh="30975461" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1714250100" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="52" />
+                <Mark line="167" />
+                <Mark line="168" />
+                <Mark line="285" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="671" startPos="326" endPos="326" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mp\itens.csv" backupFilePath="" originalFileLastModifTimestamp="1886420204" originalFileLastModifTimestampHigh="30975459" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143767040" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="6" />
+                <Mark line="13" />
+            </File>
+            <File firstVisibleLine="5046" xOffset="0" scrollWidth="2827" startPos="134746" endPos="134758" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_globallogic.gsc" backupFilePath="" originalFileLastModifTimestamp="-570290591" originalFileLastModifTimestampHigh="30975455" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="67111168" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="204" />
+                <Mark line="781" />
+                <Mark line="878" />
+                <Mark line="1526" />
+                <Mark line="4024" />
+                <Mark line="4142" />
+                <Mark line="4501" />
+                <Mark line="4529" />
+                <Mark line="4560" />
+                <Mark line="4567" />
+                <Mark line="4569" />
+                <Mark line="4570" />
+                <Mark line="4589" />
+                <Mark line="4612" />
+                <Mark line="4625" />
+                <Mark line="4642" />
+                <Mark line="4667" />
+                <Mark line="5033" />
+                <Mark line="5040" />
+                <Mark line="5068" />
+                <Mark line="5363" />
+            </File>
+            <File firstVisibleLine="108" xOffset="0" scrollWidth="1507" startPos="876" endPos="876" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_medic.gsc" backupFilePath="" originalFileLastModifTimestamp="2105817145" originalFileLastModifTimestampHigh="30975455" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143635968" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="105" xOffset="0" scrollWidth="1804" startPos="3036" endPos="3036" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_healthoverlay.gsc" backupFilePath="" originalFileLastModifTimestamp="-2057323416" originalFileLastModifTimestampHigh="30975456" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="129" />
+            </File>
+            <File firstVisibleLine="6499" xOffset="0" scrollWidth="2519" startPos="145771" endPos="145755" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_utils.gsc" backupFilePath="" originalFileLastModifTimestamp="-876993942" originalFileLastModifTimestampHigh="30975458" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-1202352586" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="657" />
+                <Mark line="2647" />
+                <Mark line="3968" />
+                <Mark line="4190" />
+                <Mark line="4237" />
+                <Mark line="4239" />
+                <Mark line="4732" />
+                <Mark line="5283" />
+                <Mark line="5389" />
+                <Mark line="5568" />
+                <Mark line="5628" />
+                <Mark line="5659" />
+                <Mark line="5741" />
+                <Mark line="6305" />
+                <Mark line="6306" />
+                <Mark line="6330" />
+                <Mark line="6361" />
+                <Mark line="6406" />
+                <Mark line="6507" />
+                <Mark line="6529" />
+            </File>
+            <File firstVisibleLine="404" xOffset="0" scrollWidth="3223" startPos="14495" endPos="14503" selMode="0" offset="0" wrapCount="1" lang="Pascal" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\options.inc" backupFilePath="" originalFileLastModifTimestamp="-1447392171" originalFileLastModifTimestampHigh="30970693" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="67111168" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="111" />
+                <Mark line="156" />
+            </File>
+            <File firstVisibleLine="615" xOffset="0" scrollWidth="6974" startPos="19074" endPos="19074" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\hud.menu" backupFilePath="" originalFileLastModifTimestamp="-562804301" originalFileLastModifTimestampHigh="30969834" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="173" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="632" />
+                <Mark line="847" />
+            </File>
+            <File firstVisibleLine="627" xOffset="0" scrollWidth="2156" startPos="17679" endPos="17679" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_teams.gsc" backupFilePath="" originalFileLastModifTimestamp="-437296253" originalFileLastModifTimestampHigh="30971040" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="425" />
+                <Mark line="432" />
+                <Mark line="528" />
+                <Mark line="888" />
+            </File>
+            <File firstVisibleLine="36" xOffset="0" scrollWidth="2585" startPos="1544" endPos="1549" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\upgradetree.inc" backupFilePath="" originalFileLastModifTimestamp="1980728019" originalFileLastModifTimestampHigh="30970057" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="57" xOffset="0" scrollWidth="1232" startPos="2448" endPos="2462" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\rankmenu.inc" backupFilePath="" originalFileLastModifTimestamp="-1777502533" originalFileLastModifTimestampHigh="30970217" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="845" xOffset="0" scrollWidth="1012" startPos="20912" endPos="20912" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\global.inc" backupFilePath="" originalFileLastModifTimestamp="1160017303" originalFileLastModifTimestampHigh="30970242" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1145241600" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="74" />
+                <Mark line="104" />
+                <Mark line="185" />
+                <Mark line="269" />
+                <Mark line="865" />
+            </File>
+            <File firstVisibleLine="65" xOffset="0" scrollWidth="759" startPos="4517" endPos="4528" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mp\weaponslist.csv" backupFilePath="" originalFileLastModifTimestamp="-683861515" originalFileLastModifTimestampHigh="30975460" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="80" />
+            </File>
+            <File firstVisibleLine="73" xOffset="0" scrollWidth="1916" startPos="3766" endPos="3766" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\changeclass_mw.menu" backupFilePath="" originalFileLastModifTimestamp="650087231" originalFileLastModifTimestampHigh="30975462" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143275520" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="141" />
+            </File>
+            <File firstVisibleLine="53" xOffset="0" scrollWidth="1419" startPos="3089" endPos="3104" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\class.menu" backupFilePath="" originalFileLastModifTimestamp="-812981319" originalFileLastModifTimestampHigh="30970243" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="67" />
+                <Mark line="71" />
+                <Mark line="72" />
+            </File>
+            <File firstVisibleLine="24" xOffset="0" scrollWidth="1199" startPos="1899" endPos="1899" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\muteplayer.menu" backupFilePath="" originalFileLastModifTimestamp="-1731442255" originalFileLastModifTimestampHigh="30839225" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="300" xOffset="0" scrollWidth="1331" startPos="9319" endPos="9335" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_leadermenu.gsc" backupFilePath="" originalFileLastModifTimestamp="1113001454" originalFileLastModifTimestampHigh="30807996" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="162" xOffset="0" scrollWidth="2299" startPos="6786" endPos="6786" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_vote.gsc" backupFilePath="" originalFileLastModifTimestamp="1618469673" originalFileLastModifTimestampHigh="30973270" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="193" />
+            </File>
+            <File firstVisibleLine="35" xOffset="0" scrollWidth="1826" startPos="1736" endPos="1736" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_killingspree.gsc" backupFilePath="" originalFileLastModifTimestamp="-1726319255" originalFileLastModifTimestampHigh="30803052" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="833" xOffset="0" scrollWidth="1738" startPos="20957" endPos="20957" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_weapons.gsc" backupFilePath="" originalFileLastModifTimestamp="-1704034845" originalFileLastModifTimestampHigh="30971358" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="11793" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="23" />
+                <Mark line="62" />
+                <Mark line="109" />
+                <Mark line="159" />
+                <Mark line="195" />
+                <Mark line="197" />
+                <Mark line="916" />
+                <Mark line="1123" />
+                <Mark line="1432" />
+                <Mark line="1585" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1166" startPos="1344" endPos="1344" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mp\aprimoramentos.csv" backupFilePath="" originalFileLastModifTimestamp="603190058" originalFileLastModifTimestampHigh="30975456" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="199263032" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="31" xOffset="0" scrollWidth="1232" startPos="1391" endPos="1391" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_markplayer.gsc" backupFilePath="" originalFileLastModifTimestamp="-87610959" originalFileLastModifTimestampHigh="30969459" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="138" xOffset="0" scrollWidth="2442" startPos="4583" endPos="4593" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_dogtags.gsc" backupFilePath="" originalFileLastModifTimestamp="-51935049" originalFileLastModifTimestampHigh="30969460" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="863" xOffset="0" scrollWidth="1441" startPos="28717" endPos="28720" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\dom.gsc" backupFilePath="" originalFileLastModifTimestamp="253769595" originalFileLastModifTimestampHigh="30970829" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="358" xOffset="0" scrollWidth="1991" startPos="12849" endPos="12849" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_objoptions.gsc" backupFilePath="" originalFileLastModifTimestamp="1044421888" originalFileLastModifTimestampHigh="30723747" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143275520" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="234" xOffset="0" scrollWidth="1606" startPos="8084" endPos="8098" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\2020\Promatch_MKW - Copia (2)\promatch\_upgrades.gsc" backupFilePath="" originalFileLastModifTimestamp="686566801" originalFileLastModifTimestampHigh="30798395" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143767040" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="410" xOffset="0" scrollWidth="1727" startPos="13187" endPos="13197" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\scoreboard.menu" backupFilePath="" originalFileLastModifTimestamp="780827113" originalFileLastModifTimestampHigh="30971034" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="1074" xOffset="0" scrollWidth="1727" startPos="34011" endPos="34032" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\sd.gsc" backupFilePath="" originalFileLastModifTimestamp="-807458669" originalFileLastModifTimestampHigh="30970813" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-16777216" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="1098" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="946" startPos="1299" endPos="1299" selMode="0" offset="0" wrapCount="1" lang="Normal Text" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\promatch207\server.cfg" backupFilePath="" originalFileLastModifTimestamp="1535269822" originalFileLastModifTimestampHigh="30970832" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="224" xOffset="0" scrollWidth="979" startPos="7055" endPos="7093" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_oldschool.gsc" backupFilePath="" originalFileLastModifTimestamp="607689472" originalFileLastModifTimestampHigh="30718343" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="127" xOffset="0" scrollWidth="2519" startPos="4682" endPos="4682" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_incendiary-todo.gsc" backupFilePath="" originalFileLastModifTimestamp="-1857958291" originalFileLastModifTimestampHigh="30971362" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143275520" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="30" xOffset="0" scrollWidth="968" startPos="721" endPos="721" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_paindeathsounds.gsc" backupFilePath="" originalFileLastModifTimestamp="-1480348840" originalFileLastModifTimestampHigh="30861423" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="81" />
+            </File>
+        </mainView>
+        <subView activeIndex="21">
+            <File firstVisibleLine="31" xOffset="0" scrollWidth="2490" startPos="2295" endPos="2306" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\quickbuy.menu" backupFilePath="" originalFileLastModifTimestamp="-1841342068" originalFileLastModifTimestampHigh="30975458" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="2097253" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="36" />
+                <Mark line="52" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1166" startPos="774" endPos="790" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mp\aprimoramentos.csv" backupFilePath="" originalFileLastModifTimestamp="603190058" originalFileLastModifTimestampHigh="30975456" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="199263032" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="343" xOffset="0" scrollWidth="1390" startPos="10025" endPos="10025" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_keybinds.gsc" backupFilePath="" originalFileLastModifTimestamp="-1410971668" originalFileLastModifTimestampHigh="30975459" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="118" />
+                <Mark line="147" />
+                <Mark line="315" />
+            </File>
+            <File firstVisibleLine="513" xOffset="0" scrollWidth="1960" startPos="8999" endPos="8999" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_teams.gsc" backupFilePath="" originalFileLastModifTimestamp="-437296253" originalFileLastModifTimestampHigh="30971040" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="425" />
+                <Mark line="432" />
+                <Mark line="528" />
+                <Mark line="888" />
+            </File>
+            <File firstVisibleLine="242" xOffset="0" scrollWidth="1740" startPos="18094" endPos="18094" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_playermodels.gsc" backupFilePath="" originalFileLastModifTimestamp="308861772" originalFileLastModifTimestampHigh="30843076" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="5041" xOffset="0" scrollWidth="2570" startPos="134492" endPos="134508" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_globallogic.gsc" backupFilePath="" originalFileLastModifTimestamp="-570290591" originalFileLastModifTimestampHigh="30975455" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="67111168" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="204" />
+                <Mark line="781" />
+                <Mark line="878" />
+                <Mark line="1526" />
+                <Mark line="4024" />
+                <Mark line="4142" />
+                <Mark line="4501" />
+                <Mark line="4529" />
+                <Mark line="4560" />
+                <Mark line="4567" />
+                <Mark line="4569" />
+                <Mark line="4570" />
+                <Mark line="4589" />
+                <Mark line="4612" />
+                <Mark line="4625" />
+                <Mark line="4642" />
+                <Mark line="4667" />
+                <Mark line="5033" />
+                <Mark line="5040" />
+                <Mark line="5068" />
+                <Mark line="5363" />
+            </File>
+            <File firstVisibleLine="4300" xOffset="0" scrollWidth="2290" startPos="93364" endPos="93372" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_utils.gsc" backupFilePath="" originalFileLastModifTimestamp="-876993942" originalFileLastModifTimestampHigh="30975458" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-1202352586" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="657" />
+                <Mark line="2647" />
+                <Mark line="3968" />
+                <Mark line="4190" />
+                <Mark line="4237" />
+                <Mark line="4239" />
+                <Mark line="4732" />
+                <Mark line="5283" />
+                <Mark line="5389" />
+                <Mark line="5568" />
+                <Mark line="5628" />
+                <Mark line="5659" />
+                <Mark line="5741" />
+                <Mark line="6305" />
+                <Mark line="6306" />
+                <Mark line="6330" />
+                <Mark line="6361" />
+                <Mark line="6406" />
+                <Mark line="6507" />
+                <Mark line="6529" />
+            </File>
+            <File firstVisibleLine="2331" xOffset="0" scrollWidth="1580" startPos="51673" endPos="51672" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_weapons.gsc" backupFilePath="" originalFileLastModifTimestamp="-1704034845" originalFileLastModifTimestampHigh="30971358" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="11793" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="23" />
+                <Mark line="62" />
+                <Mark line="109" />
+                <Mark line="159" />
+                <Mark line="195" />
+                <Mark line="197" />
+                <Mark line="916" />
+                <Mark line="1123" />
+                <Mark line="1432" />
+                <Mark line="1585" />
+            </File>
+            <File firstVisibleLine="53" xOffset="0" scrollWidth="759" startPos="3723" endPos="3723" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mp\weaponslist.csv" backupFilePath="" originalFileLastModifTimestamp="-683861515" originalFileLastModifTimestampHigh="30975460" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="80" />
+            </File>
+            <File firstVisibleLine="255" xOffset="0" scrollWidth="1573" startPos="5551" endPos="5551" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_class_unranked.gsc" backupFilePath="" originalFileLastModifTimestamp="1171646518" originalFileLastModifTimestampHigh="30971613" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="3" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="98" />
+                <Mark line="99" />
+                <Mark line="100" />
+                <Mark line="191" />
+                <Mark line="232" />
+                <Mark line="274" />
+                <Mark line="307" />
+                <Mark line="367" />
+                <Mark line="416" />
+            </File>
+            <File firstVisibleLine="110" xOffset="0" scrollWidth="1694" startPos="3105" endPos="3114" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_spreestreaks.gsc" backupFilePath="" originalFileLastModifTimestamp="-822621938" originalFileLastModifTimestampHigh="30970603" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="141" />
+                <Mark line="195" />
+            </File>
+            <File firstVisibleLine="9" xOffset="0" scrollWidth="1040" startPos="1806" endPos="1811" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_playerdvars.gsc" backupFilePath="" originalFileLastModifTimestamp="968103986" originalFileLastModifTimestampHigh="30970858" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143275520" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="1337" xOffset="0" scrollWidth="3020" startPos="31556" endPos="31572" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_gameobjects.gsc" backupFilePath="" originalFileLastModifTimestamp="2043609650" originalFileLastModifTimestampHigh="30970502" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1221585922" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="223" xOffset="0" scrollWidth="1510" startPos="5694" endPos="5694" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\global.inc" backupFilePath="" originalFileLastModifTimestamp="1160017303" originalFileLastModifTimestampHigh="30970242" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1145241600" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="74" />
+                <Mark line="104" />
+                <Mark line="185" />
+                <Mark line="269" />
+                <Mark line="865" />
+            </File>
+            <File firstVisibleLine="6" xOffset="0" scrollWidth="1060" startPos="1169" endPos="1169" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_globalinit.gsc" backupFilePath="" originalFileLastModifTimestamp="1137446407" originalFileLastModifTimestampHigh="30971241" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="24" />
+            </File>
+            <File firstVisibleLine="214" xOffset="0" scrollWidth="1188" startPos="5928" endPos="5935" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_menus_unranked.gsc" backupFilePath="" originalFileLastModifTimestamp="35616208" originalFileLastModifTimestampHigh="30970167" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="3473453" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="72" />
+                <Mark line="235" />
+                <Mark line="252" />
+            </File>
+            <File firstVisibleLine="412" xOffset="0" scrollWidth="1020" startPos="2373" endPos="2373" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_quickmessages.gsc" backupFilePath="" originalFileLastModifTimestamp="-619216613" originalFileLastModifTimestampHigh="30964447" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="53" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1050" startPos="0" endPos="0" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\quickstatements.menu" backupFilePath="" originalFileLastModifTimestamp="-298903606" originalFileLastModifTimestampHigh="30601854" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143767040" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="94" xOffset="0" scrollWidth="1140" startPos="3153" endPos="3153" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_dynamicattachments.gsc" backupFilePath="" originalFileLastModifTimestamp="-1832874171" originalFileLastModifTimestampHigh="30970262" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144897536" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="120" />
+            </File>
+            <File firstVisibleLine="102" xOffset="0" scrollWidth="1970" startPos="2368" endPos="2368" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_ranksystem.gsc" backupFilePath="" originalFileLastModifTimestamp="-2012526191" originalFileLastModifTimestampHigh="30971035" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1142784000" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="140" />
+                <Mark line="225" />
+                <Mark line="454" />
+            </File>
+            <File firstVisibleLine="66" xOffset="0" scrollWidth="830" startPos="1760" endPos="1760" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\maps\mp\gametypes\_rank.gsc" backupFilePath="" originalFileLastModifTimestamp="-285366312" originalFileLastModifTimestampHigh="30971035" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1761749420" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1639" startPos="4705" endPos="4716" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\scriptmenus\changeclass_mw.menu" backupFilePath="" originalFileLastModifTimestamp="650087231" originalFileLastModifTimestampHigh="30975462" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143275520" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="141" />
+            </File>
+            <File firstVisibleLine="2" xOffset="0" scrollWidth="1800" startPos="706" endPos="716" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_promatchbinds.gsc" backupFilePath="" originalFileLastModifTimestamp="-1226585140" originalFileLastModifTimestampHigh="30969829" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1142784000" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="353" xOffset="0" scrollWidth="1750" startPos="9023" endPos="9031" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_squadteam.gsc" backupFilePath="" originalFileLastModifTimestamp="1491519736" originalFileLastModifTimestampHigh="30799687" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1142784000" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="30" xOffset="0" scrollWidth="2585" startPos="663" endPos="670" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\upgradetree.inc" backupFilePath="" originalFileLastModifTimestamp="1980728019" originalFileLastModifTimestampHigh="30970057" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="10" xOffset="0" scrollWidth="1150" startPos="1361" endPos="1371" selMode="0" offset="0" wrapCount="1" lang="Pascal" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\reportplayer.inc" backupFilePath="" originalFileLastModifTimestamp="-420423443" originalFileLastModifTimestampHigh="30858780" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1142292480" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="33" xOffset="0" scrollWidth="1350" startPos="2473" endPos="2473" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\ui_mp\squadmenu.inc" backupFilePath="" originalFileLastModifTimestamp="190990473" originalFileLastModifTimestampHigh="30970245" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="75" />
+            </File>
+            <File firstVisibleLine="632" xOffset="0" scrollWidth="2090" startPos="21638" endPos="21649" selMode="0" offset="0" wrapCount="1" lang="CODMENU" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\Informacoes\choices_setup_common.menu" backupFilePath="" originalFileLastModifTimestamp="-1446885870" originalFileLastModifTimestampHigh="30795021" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2190" startPos="32" endPos="32" selMode="0" offset="0" wrapCount="1" lang="CODSCRIPT" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\promatch\_advancedacp.gsc" backupFilePath="" originalFileLastModifTimestamp="-818766674" originalFileLastModifTimestampHigh="30970251" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1144356864" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="642" xOffset="0" scrollWidth="550" startPos="10497" endPos="10519" selMode="0" offset="0" wrapCount="1" lang="Shell" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\Promatch_MKW\mod.csv" backupFilePath="" originalFileLastModifTimestamp="-28700218" originalFileLastModifTimestampHigh="30975461" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1714250100" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Mark line="52" />
+                <Mark line="167" />
+                <Mark line="168" />
+                <Mark line="285" />
+            </File>
+            <File firstVisibleLine="27" xOffset="0" scrollWidth="1150" startPos="5159" endPos="5165" selMode="0" offset="0" wrapCount="1" lang="Visual Basic" encoding="-1" userReadOnly="no" filename="H:\COD4SERVER\Mods\2020\Promatch_MKW - Copia\mp\weaponslist.csv" backupFilePath="" originalFileLastModifTimestamp="-292323233" originalFileLastModifTimestampHigh="30824391" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143767040" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="741" xOffset="0" scrollWidth="568" startPos="20252" endPos="20252" selMode="0" offset="0" wrapCount="1" lang="JSON" encoding="-1" userReadOnly="no" filename="H:\Steam\steamapps\common\VRChatOff\UserData\FriendNotes.json" backupFilePath="" originalFileLastModifTimestamp="1337289384" originalFileLastModifTimestampHigh="30977052" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1601008225" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </subView>
+    </Session>
+</NotepadPlus>

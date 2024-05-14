@@ -1,0 +1,3 @@
+execNow "setFromDvar temp <dvar>" 	// store dvar value in a temporary dvar
+execNow "setu <dvar> <value>"		// setu dvar to any value
+execNow "setFromDvar <dvar> temp"	// restore the original dvar value

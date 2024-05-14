@@ -1,0 +1,5 @@
+HUD headicon material
+-criar uma nova entrada em material
+-typo effect
+-blendfuc = blend
+- selecionar uma imagem

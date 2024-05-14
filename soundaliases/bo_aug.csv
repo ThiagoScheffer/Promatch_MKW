@@ -1,0 +1,6 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+#Reload Sounds AUG HBAR
+weap_aug_clip_out_plr,,weapons\bo_aug\aug_clipout.wav,0.75,0.8,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,100
+weap_aug_clip_in_plr,,weapons\bo_aug\aug_clipin.wav,0.75,0.8,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,100
+weap_aug_boltact_plr,,weapons\bo_aug\aug_boltact.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,

@@ -1,0 +1,58 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/global.inc"
+
+#define CHOICE_GROUP "quickmessage"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#include "ui_mp/popupstyle.inc"	
+#include "ui/choices_setup_popmenu.menu"
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			140 //Espessura da janela
+
+#undef CHOICE_POPUP_BACKCOLOR
+#define CHOICE_POPUP_BACKCOLOR  0.2 0.2 0.22 0.65
+
+#define ORIGIN_QUICKMESSAGEWINDOW		0 22
+//quickmessage, Botoes dentro da janela, posix, posiy(- ?)
+{
+	menuDef
+	{
+		IMPROVED_POPUP_SETUP_ONOPEN( quickmessage, 11, 4, 210, ;, setDvar cl_bypassMouseInput "1";, 0 )
+		onClose{ setDvar cl_bypassMouseInput "0" }
+				
+		CHOICE_POPMENU_TITLE( "@QUICKMESSAGE_QUICK_MESSAGE" )
+		
+		CHOICE_BUTTON( 2, "Commandos (1)",;)
+		execKey "1" { close quickmessage; open quickcommands }
+		
+		CHOICE_BUTTON( 3, "Situacoes (2)",;)
+		execKey "2" { close quickmessage; open quickstatements }
+		
+		CHOICE_BUTTON( 4, "Respostas (3)",;)
+		execKey "3" { close quickmessage; open quickresponses }
+		
+		CHOICE_BUTTON( 5, "Promatch Menu (4)",;)
+		execKey "4" { close quickmessage; open quickpromatch }
+		
+		CHOICE_BUTTON( 6, "Menu Compras (5)",;)
+		execKey "5" { close quickmessage; open quickbuy }
+		
+		CHOICE_BUTTON_VIS( 7, "Taunts1 (6)",;,1)
+		execKey "6" { close quickmessage; open quicktaunts1 }
+		
+		CHOICE_BUTTON_VIS( 8, "Taunts2 (7)",;,1)
+		execKey "7" { close quickmessage; open quicktaunts2 }
+		
+		CHOICE_BUTTON_VIS( 9, "Taunts3 (8)",;,1)
+		execKey "8" { close quickmessage; open quicktaunts3 }
+		
+		CHOICE_BUTTON_VIS( 10, "Musics (9)",;,1)
+		execKey "9" { close quickmessage; open quickmusic }
+		
+		execKey "q" { close quickmessage }
+	}	
+}

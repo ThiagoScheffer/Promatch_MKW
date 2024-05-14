@@ -1,0 +1,19 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+#weap_cm901_fire_npc,,weps/cm901/weap_cm901_slmn_1.wav,0.93,0.98,max,1,1.1,35,13780,weapon,,,,0.7,all_mp,,,,weapon4
+#weap_cm901_fire_npc,,weps/cm901/weap_cm901_slmn_1.wav,0.93,0.98,max,1,1.1,35,10600,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+#weap_cm901_fire_plr,,weps/cm901/weap_cm901_slst_1.wav,0.91,0.94,wpnplyr,1,1.1,500000,,local,,,,0.85,,,,,weapon2,,,,
+
+#weap_cm901_silencer_shot_npc,,weps/cm901/weap_magpulsilenced_slmn_3d3.wav,0.42,0.44,wpnai,0.85,0.95,35,2000,weapon,,,,0.7,all_mp,,,,weapon4,
+#weap_cm901_silencer_shot_npc,,weps/cm901/weap_magpulsilenced_slmn_3d3.wav,0.5,0.52,wpnai,0.85,0.95,35,8400,weapon,,,,0.7,!ac130 all_mp,,,,weapon4,
+#weap_cm901_silencer_shot_plr,,weps/cm901/weap_magpulsilenced_slst_3d3.wav,0.4,0.42,wpnplyr,0.85,0.95,500000,,local,,,,0.85,,,,,weapon2,,,,
+
+weap_cm901_lift_plr,,weps/cm901/wpfoly_cm901_reload_lift_v1.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+
+weap_cm901_clipout_plr,,weps/cm901/wpfoly_cm901_reload_clipout_v1.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+
+weap_cm901_clipin_plr,,weps/cm901/wpfoly_cm901_reload_clipin_v1.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+
+weap_cm901_chamber_plr,,weps/cm901/wpfoly_cm901_reload_chamber_v1.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+
+weap_m4carbine_first_chamber_plr,,weps/cm901/wpfoly_m4reload_chamber_v10.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,

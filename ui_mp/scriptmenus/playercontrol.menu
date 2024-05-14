@@ -1,0 +1,200 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+#undef CHOICE_X_START
+#define CHOICE_X_START 0
+#undef CHOICE_Y_START
+#define CHOICE_Y_START 34 //+ negativo sobe
+{
+
+
+	menuDef
+	{
+		name			"playercontrol"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		onEsc
+		{
+			play "menu_close";
+			close self;
+		}
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0.05 0.15 1
+			visible			when ( localVarString( ui_team ) == "marines")
+			decoration
+		}
+		
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0.08 0.05 0 1
+			visible			when ( localVarString( ui_team ) == "opfor")
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		// ------------------ TREE TITLE ------------------
+
+		CHOICE_MENU_TITLE( "^1PLAYER CONTROL RCON 2.0" )
+		// server settings =========================================
+		CHOICE_SECTION_TITLE( 1, "Dominar Macacos" )
+		CHOICE_BUTTON( 2, "^3AntiElevador",scriptMenuResponse "playerantielevator";)
+		CHOICE_BUTTON( 3, "^3Chat Mute", play "mouse_click"; scriptMenuResponse "playerchat" ; close self; )
+		CHOICE_BUTTON( 4, "^3Punir Camper", scriptMenuResponse "playercamper")
+		CHOICE_BUTTON( 5, "^3Travar/Destravar Mudar Team",play "oldschool_pickup";scriptMenuResponse "playerlockteam"; close self;)
+		CHOICE_BUTTON( 6, "^5Despunir",play "oldschool_pickup"; scriptMenuResponse "clearsilentpunish" ; close self; )
+		CHOICE_BUTTON( 7, "^5Reset CFG",play "oldschool_pickup"; scriptMenuResponse "resetcfg" ; close self; )
+		CHOICE_BUTTON( 8,  "^5Mostrar Stats",play "oldschool_pickup"; scriptMenuResponse "showplayersstats" ; close self; )		
+		CHOICE_BUTTON( 9, "^5Quebrar Binds", play "oldschool_pickup";scriptMenuResponse "antibinds1"; close self; )
+		CHOICE_BUTTON( 10, "^5Marcar/Desmarcar Player", play "oldschool_pickup"; scriptMenuResponse "markplayer"; close self; )
+		CHOICE_BUTTON( 11, "^3Verificar Jogador",play "oldschool_pickup";scriptMenuResponse "playercheck"; close self;)
+		
+		CHOICE_BUTTON( 13, "^3Revelar Nick",play "oldschool_pickup"; scriptMenuResponse "revelarnick" ; close self; )
+		CHOICE_BUTTON( 14, "^3Switch to Other Team",scriptMenuResponse "switchplayerteam")
+		CHOICE_BUTTON( 15, "^3Return to Spawn", play "mouse_click"; scriptMenuResponse "returnspawn" ; close self; )
+    	CHOICE_BUTTON( 16, "^3Switch to Spectator", scriptMenuResponse "switchplayerspectator")
+		CHOICE_BUTTON( 17, "^1#^3Resetar Controles^1#",play "oldschool_pickup"; scriptMenuResponse "destruircfg" ;)
+		#undef CHOICE_X_START
+		#define CHOICE_X_START 380
+		#undef CHOICE_Y_START
+		#define CHOICE_Y_START -375 //+ negativo sobe
+		CHOICE_SECTION_TITLE( 18, "Selecionar jogador" )
+		CHOICE_BUTTON( 19, " ",scriptMenuResponse "nextplayer")
+		CHOICE_BUTTON( 20, " ",scriptMenuResponse "nextreason")
+		#undef CHOICE_X_START
+		#define CHOICE_X_START 130
+		#undef CHOICE_Y_START
+		#define CHOICE_Y_START 105//qnt menor valor + sobe
+		//coluna 2
+		CHOICE_BUTTON( 21, "^5Gravar Jogador",play "oldschool_pickup";scriptMenuResponse "gravarplayer" ;close self;)
+		CHOICE_BUTTON( 22, "^5Tirar Foto",play "oldschool_pickup";scriptMenuResponse "takescreenshot")
+		CHOICE_BUTTON( 23, "^5Auto Foto(6s)",play "oldschool_pickup";scriptMenuResponse "autoscreenshot"; close self;)
+		CHOICE_BUTTON( 24, "^1Punish the Player",scriptMenuResponse "punish")
+		CHOICE_BUTTON( 25, "^4Set/Remov Admin",play "oldschool_pickup";scriptMenuResponse "setasadmin"; close self;)		
+		CHOICE_BUTTON( 26, "^1Close Game",play "mouse_click"; scriptMenuResponse "forcequitplayer" ; close self; )				
+		CHOICE_BUTTON( 27, "^1Temp Ban(10min)",play "oldschool_pickup"; scriptMenuResponse "tempbanuser" ;)	
+		CHOICE_BUTTON( 28, "^1Kill Player", scriptMenuResponse "killplayer")
+		CHOICE_BUTTON( 29, "^4ClanMember", play "oldschool_pickup";scriptMenuResponse "setasclan"; close self; )
+		CHOICE_BUTTON( 30, "^4CustomMember", play "oldschool_pickup";scriptMenuResponse "setascustommember"; close self; )
+		CHOICE_BUTTON( 31, "^1Ban Permanente", play "oldschool_pickup";scriptMenuResponse "banplayer"; close self; )
+    	CHOICE_BUTTON( 32, "^1Hack Ban Player", play "oldschool_pickup";scriptMenuResponse "killplayersatan"; close self; )
+		CHOICE_BUTTON( 33, "^1Kick", play "oldschool_pickup";scriptMenuResponse "kickplayer")
+		CHOICE_BUTTON( 34, "^1Anti-Hack No-Damage",play "oldschool_pickup"; scriptMenuResponse "silentpunish3"; close self; )
+	
+		// ------------------ buttons ---------------------
+		#define BACK_CLOSE "@MENU_CLOSE";
+		#include "ui_mp/navcontrols.inc"
+
+		// PC widescreen fix
+		#undef	CHOICE_HORIZONTAL_ALIGN
+		#define CHOICE_HORIZONTAL_ALIGN HORIZONTAL_ALIGN_CENTER
+
+		#undef TEXTSIZE_SMALL
+		#define TEXTSIZE_SMALL 0.3
+		#undef TEXTSIZE_MEDIUM
+		#define TEXTSIZE_MEDIUM 0.4		
+		
+		#define TITLES_ORIGIN 52
+		#define POSITION_Y( yOffset ) (TITLES_ORIGIN + yOffset)
+		// Player name
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			130 POSITION_Y(15) 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_CENTER
+			forecolor		COLOR_TITLE
+			exp				text( dvarstring( ui_aacp_player ) );
+			visible			when ( dvarstring( ui_aacp_player ) != "" );
+			decoration	
+		}		
+		
+		itemDef 
+		{
+			name 		"previousplayer"
+			type			1
+			style			WINDOW_STYLE_SHADER
+			rect			223 POSITION_Y(10) 16 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			background		"ui_arrow_left"
+			forecolor		COLOR_FOCUSED
+			visible			1
+		  mouseEnter { play "mouse_over"; } 
+		  action { play "mouse_click"; scriptMenuResponse "previousplayer"; }	
+		}		
+		
+		itemDef 
+		{
+			name 		"nextplayer"
+			type			1
+			style			WINDOW_STYLE_SHADER
+			rect			251 POSITION_Y(10) 16 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			background		"ui_arrow_right"
+			forecolor		COLOR_FOCUSED
+			visible			1
+		  mouseEnter { play "mouse_over"; } 
+		  action { play "mouse_click"; scriptMenuResponse "nextplayer"; }	
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			130 POSITION_Y(15) 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_CENTER
+			forecolor		COLOR_TITLE
+			text			"@OW_AACP_NOPLAYER"
+			visible			when ( dvarstring( ui_aacp_player ) == "" );
+			decoration	
+		}		
+		// Custom reason
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			105 POSITION_Y(40) 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_CENTER
+			forecolor		COLOR_TITLE
+			exp			text( dvarstring( ui_aacp_reason ) );
+			visible			1
+			decoration	
+		}
+		
+		#include "ui/safearea.menu"
+	}
+}
+		

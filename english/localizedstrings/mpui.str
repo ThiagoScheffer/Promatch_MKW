@@ -1,0 +1,138 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SPETSNAZ
+LANG_ENGLISH        "Attack"
+
+REFERENCE           OPFOR
+LANG_ENGLISH        "Attack"
+
+REFERENCE           SAS
+LANG_ENGLISH        "Defense"
+
+REFERENCE           MARINES_SHORT
+LANG_ENGLISH        "Defense"
+
+REFERENCE           SPETSNAZ_SHORT
+LANG_ENGLISH        "Attack"
+
+REFERENCE           OPFOR_SHORT
+LANG_ENGLISH        "Attack"
+
+REFERENCE           SAS_SHORT
+LANG_ENGLISH        "Defense"
+
+REFERENCE           SPECTATE
+LANG_ENGLISH        "Spectate"
+
+REFERENCE           MP44
+LANG_ENGLISH        "MP44"
+
+REFERENCE           1_AMERICAN
+LANG_ENGLISH        "1. American"
+
+REFERENCE           2_AMERICAN
+LANG_ENGLISH        "2. American"
+
+REFERENCE           1_BRITISH
+LANG_ENGLISH        "1. British"
+
+REFERENCE           2_BRITISH
+LANG_ENGLISH        "2. British"
+
+REFERENCE           1_RUSSIAN
+LANG_ENGLISH        "1. Russian"
+
+REFERENCE           2_RUSSIAN
+LANG_ENGLISH        "2. Russian"
+
+REFERENCE           ASSAULT_RIFLES
+LANG_ENGLISH        " Assault"
+
+REFERENCE           SUB_MACHINE_GUNS
+LANG_ENGLISH        " Specops"
+
+REFERENCE           LIGHT_MACHINE_GUNS
+LANG_ENGLISH        " Blackops"
+
+REFERENCE           SHOTGUNS
+LANG_ENGLISH        " Support"
+
+REFERENCE           SNIPER_RIFLES
+LANG_ENGLISH        " Sniper"
+
+REFERENCE           RENAME_CLASS
+LANG_ENGLISH        "Rename Class"
+
+REFERENCE           CREATE_A_CLASS
+LANG_ENGLISH        "Choose your Class"
+
+REFERENCE           PERK_PRE
+LANG_ENGLISH        ""
+
+REFERENCE           CHALLENGE_PRE
+LANG_ENGLISH        "Challenge:"
+
+REFERENCE           CAMO_PRE
+LANG_ENGLISH        ""
+
+REFERENCE           CAMO_MENU
+LANG_ENGLISH        "4. Camo"
+
+
+REFERENCE           SIDE_ARM
+LANG_ENGLISH        "Pistols"
+
+
+REFERENCE           SPECTATING_PRE
+LANG_ENGLISH        "^1Spectating:"
+
+
+REFERENCE           PRIMARY_WEAPON1
+LANG_ENGLISH        "1. Primary Weapon"
+
+
+REFERENCE           CHOOSE_CLASS
+LANG_ENGLISH        "^1Choose your Class"
+
+
+REFERENCE           SIDE_ARM1
+LANG_ENGLISH        "2. Pistols"
+
+REFERENCE           SPECIAL_GRENADE
+LANG_ENGLISH        "3. Grenades"
+
+REFERENCE           WOODLAND
+LANG_ENGLISH        "Red Tiger"
+
+REFERENCE           RED_TIGER
+LANG_ENGLISH        "Orange Tiger"
+
+REFERENCE           BLUE_TIGER
+LANG_ENGLISH        "Reptile Skin"
+
+REFERENCE           GRIP
+LANG_ENGLISH        "Grip"
+
+REFERENCE           END_GAME_WARNING
+LANG_ENGLISH        "Are you sure you wish to end the session for all players?"
+
+REFERENCE           CHOOSE_CLASS_CAP
+LANG_ENGLISH        "CREATE A CLASS"
+
+REFERENCE           CUSTOM_CLASSES
+LANG_ENGLISH        "Custom Classes"
+
+REFERENCE           DEFAULT_CLASSES
+LANG_ENGLISH        "Classes"
+
+REFERENCE           PERKS_AND_INVENTORY
+LANG_ENGLISH        "Perks & Inventory"
+
+REFERENCE           CREATE_A_CLASS_CAP
+LANG_ENGLISH        "Weapon Selection"
+
+ENDMARKER
+
+

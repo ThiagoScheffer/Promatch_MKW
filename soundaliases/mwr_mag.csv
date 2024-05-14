@@ -1,0 +1,14 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+# MWR MAGNUM Model: Kortun/Sektor_Gaza_Xou
+
+weap_mwr_magnum_fire_plr,,weps/mwr_magnum/wpn_h1_44mag_shot_01.wav,0.72,0.79,wpnplyr,1.1,1.2,500000,,local,,,,0.85,,,,,weapon2,,,,
+weap_mwr_magnum_fire_npc,,weps/mwr_magnum/wpn_h1_44mag_shot_01.wav,0.82,0.88,wpnai,0.85,0.95,35,8400,weapon,,,,0.7,!ac130 all_mp,,,,weapon4,
+weap_mwr_magnum_fire_npc,,weps/mwr_magnum/wpn_h1_44mag_shot_01.wav,0.82,0.88,wpnai,0.85,0.95,35,10920,weapon,,,,0.7,all_mp,,,,weapon4,
+
+44mag_clipout_plr,,weps/mwr_magnum/44mag_clipout.wav,0.45,0.5,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+44mag_clipin_plr,,weps/mwr_magnum/44mag_clipin_aki.wav,0.45,0.5,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+44mag_chamber_plr,,weps/mwr_magnum/44mag_chamber.wav,0.45,0.5,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+44mag_ins_01,,weps/mwr_magnum/44mag_ins_01.wav,0.45,0.5,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+44mag_ins_aki_03,,weps/mwr_magnum/44mag_ins_02.wav,0.45,0.5,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+44mag_ins_aki_04,,weps/mwr_magnum/44mag_ins_03.wav,0.45,0.5,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,

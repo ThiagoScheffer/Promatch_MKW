@@ -1,0 +1,21 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+
+
+#Kar 98,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+gr_kar98_bolt_back_plr,,WAW/gr_kar98_bolt_back.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_kar98_bolt_front_plr,,WAW/gr_kar98_bolt_forward.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_kar98_bolt_down_plr,,WAW/arisaka_bolt_down.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_kar98_bolt_up_plr,,WAW/gr_kar98_bolt_up.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_kar98_clip_in_plr,,WAW/m1gar_clip_in.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_kar98_clip_eject_plr,,WAW/gr_kar98_clip_eject.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_kar98_clip_land_plr,,WAW/gr_kar98_clip_land.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+
+gr_rifle_rechamber_3p,,WAW\rifle_rechamber_3p.wav,1,1,wpnai,1,1,35,2000,weapon,,,,0.8,all_mp,,,,weapon4
+gr_rifle_open_3p,,WAW\rifle_open_3p.wav,1,1,wpnai,1,1,35,2000,weapon,,,,0.8,all_mp,,,,weapon4
+gr_rifle_round_in_3p,,WAW\rifle_rechamber_3p.wav,1,1,wpnai,1,1,35,2000,weapon,,,,0.8,all_mp,,,,weapon4
+gr_rifle_close_3p,,WAW\rifle_close_3p.wav,1,1,wpnai,1,1,35,2000,weapon,,,,0.8,all_mp,,,,weapon4
+
+gr_kar98_shell_in_plr,,WAW/round_in_01.wav,0.6,0.8,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+

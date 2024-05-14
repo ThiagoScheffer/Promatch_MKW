@@ -1,0 +1,120 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+//=========================================================================
+//=================ESC AFTER PLAYER SPAWN==================================
+//=========================================================================
+{
+	menuDef
+	{
+		name			"team_marinesopfor"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		soundloop 		"music_mainmenu_mp"
+		blurWorld		7.0
+		onOpen
+		{
+					
+			exec "setdvartotime ui_time_marker"; 	// animation start marker			
+			play "menu_slidein";
+			play "menu_close";
+			execondvarintvalue sv_running 0 "set tmp_ui_reconnect 1";
+		}
+		onClose
+		{
+		}
+		onEsc
+		{
+			scriptMenuResponse "back";
+			play "menu_close";
+		}
+		
+		//NewBack
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 670 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN;
+			background		"animbg_blur_front"
+			visible			1
+			decoration
+		}
+		
+		#define blacktitle "SELECT TEAM - " + gametypename()
+		
+		
+		#define SDMODETEAM (gametype() == "sd" || gametype() == "tdm" || gametype() == "war")
+		
+		#define NOTEAMMODE (gametype() != "sd")
+		
+		//MODEL
+		#include "ui_mp/blackwindowmodel.inc"
+
+		// map display ================================================
+		#include "ui_mp/tactical_map.inc";		
+		
+		//======================================================================================================
+		//===================== MENU SELECTION  - MENU OPTIONS APOS TER SELECIONADO TIME ESC====================
+		//======================================================================================================
+		#undef buttonAlign
+		#define buttonAlign 0 0
+
+		#undef SETS_X
+		#define SETS_X 75
+		#undef SETS_Y
+		#define SETS_Y 50
+	
+		#define MAINPOSX 80
+		#define MAINPOSY 20
+		#define MAIN_BUTTON(id,title,script,vis) \
+				BUTTONBLACK(MAINPOSX, (MAINPOSY + id * 30), 80,title,script,vis,title)\
+		
+		MAIN_BUTTON(5,"AUTO ASSIGN",scriptMenuResponse "autoassign",when(( team( name ) == "TEAM_SPECTATOR" ) && NOTEAMMODE))
+		MAIN_BUTTON(6,"ATTACK",scriptMenuResponse "axis",when(NOTEAMMODE))
+		MAIN_BUTTON(7,"DEFENSE",scriptMenuResponse "allies",when(NOTEAMMODE))
+		MAIN_BUTTON(8,"SPECTATOR",scriptMenuResponse "spectator",when(NOTEAMMODE))
+		
+		MAIN_BUTTON(5,"AUTO ASSIGN",scriptMenuResponse "autoassign",when( ( team( name ) == "TEAM_SPECTATOR" ) && SDMODETEAM))
+		MAIN_BUTTON(6,"ATTACK",scriptMenuResponse "axis",when( ( team( name ) == "TEAM_ALLIES" ) || ( team( name ) == "TEAM_SPECTATOR" ) && SDMODETEAM))
+		MAIN_BUTTON(7,"DEFENSE",scriptMenuResponse "allies",when( ( team( name ) == "TEAM_AXIS" ) || ( team( name ) == "TEAM_SPECTATOR" ) && SDMODETEAM))
+		MAIN_BUTTON(8,"SPECTATOR",scriptMenuResponse "spectator",when( ( team( name ) != "TEAM_SPECTATOR" ) && SDMODETEAM))
+		MAIN_BUTTON( 9, "OPTIONS", close self; open main_options;, 1 )
+		
+		MAIN_BUTTON(14,"^1QUIT",open popup_leavegame,1)
+		//HEAD(5,"THISSSSS")
+		
+		//fundo quadrado
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			50 45 540 420
+			backcolor		0 0 0 1
+			visible			when( localvarBool( ui_hidemainmenu ) );
+			decoration
+		}
+		
+		//seta informacao de estar atualizando a versao
+		itemDef
+        {
+            name                      "infoupdate"
+            rect                      -100 -360 100 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+            style                     WINDOW_STYLE_FILLED
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlignY                18
+            textScale                 0.375
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            action                    {  }
+            exp                       text ( ( "^1ATUALIZANDO VERSAO DO MOD - AGUARDE... !" ) );
+            visible                   when ( ( dvarstring( "ui_versionupdate" ) != "concluido" ) )
+        }
+	}
+}

@@ -1,0 +1,335 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           EXTREME_CONDITIONING
+LANG_ENGLISH        "Runner"
+
+REFERENCE           STOPPING_POWER
+LANG_ENGLISH        "Stopping Power"
+
+REFERENCE           BANDOLIER
+LANG_ENGLISH        "Bandolier"
+
+REFERENCE           DEEP_IMPACT
+LANG_ENGLISH        "Deep Impact"
+
+REFERENCE           JUGGERNAUT
+LANG_ENGLISH        "Armor"
+
+REFERENCE           SONIC_BOOM
+LANG_ENGLISH        "High Explosive Damage"
+
+REFERENCE           BOMB_SQUAD
+LANG_ENGLISH        "Bomb Squad"
+
+REFERENCE           LAST_STAND
+LANG_ENGLISH        "Disable"
+
+REFERENCE           MARTYRDOM
+LANG_ENGLISH        "Disable"
+
+
+REFERENCE           STEADY_AIM
+LANG_ENGLISH        "Steady Aim"
+
+REFERENCE           DOUBLE_TAP
+LANG_ENGLISH        "Fast Fire"
+
+REFERENCE           SLEIGHT_OF_HAND
+LANG_ENGLISH        "Fast Reload"
+
+
+REFERENCE           OVERKILL
+LANG_ENGLISH        "Disable"
+
+REFERENCE           FRAG_X_3
+LANG_ENGLISH        "Disable"
+
+REFERENCE           SPECIAL_GRENADES_X_3
+LANG_ENGLISH        "Disable"
+
+REFERENCE           C4_X_2
+LANG_ENGLISH        "C4"
+
+REFERENCE           DEAD_SILENCE
+LANG_ENGLISH        "Dead Silence"
+
+REFERENCE           IRON_LUNGS
+LANG_ENGLISH        "Iron Lungs"
+
+REFERENCE           UAV_JAMMER
+LANG_ENGLISH        "UAV Jammer"
+
+REFERENCE           EAVESDROP
+LANG_ENGLISH        "Disable"
+
+REFERENCE           CLAYMORE_X_2
+LANG_ENGLISH        "Clay"
+
+REFERENCE           RPG7_X_2
+LANG_ENGLISH        "Disable"
+
+REFERENCE           NONE
+LANG_ENGLISH        "None"
+
+REFERENCE           GRENADE_LAUNCHER
+LANG_ENGLISH        "Disable"
+
+REFERENCE           GRIP
+LANG_ENGLISH        "Grip"
+
+//Addon menu
+REFERENCE           ATTACHMENT
+LANG_ENGLISH        "Attachment"
+
+//definiçao do perk
+REFERENCE           NO_ATTACHMENT
+LANG_ENGLISH        ""
+
+
+//---------Pistols
+//beretta
+REFERENCE           SEMIAUTOMATIC_WITH_A
+LANG_ENGLISH        "^1Hip Acc:^7[70%] ^1Dano:^7[35] ^1Dano Max:^7[15m] ^1Dano Peito:^7[49] ^1Pen:^7[Baixo] ^1Headshot:^7[70] ^1Recoil:^7[Baixo] ^1FireRate:^7[3-Burst]"
+
+//USP->glock
+REFERENCE           SEMIAUTOMATIC_WITH_MEDIUM1
+LANG_ENGLISH        "^1Hip Acc:^7[70%] ^1Dano:^7[30] ^1Dano Max:^7[15m] ^1Dano Peito:^7[45] ^1Pen:^7[Baixo] ^1Headshot:^7[60] ^1Recoil:^7[Baixo] ^1FireRate:^7[Semi]"
+
+//COLT ->57
+REFERENCE           SEMIAUTOMATIC_WITH_MEDIUM
+LANG_ENGLISH        "^1Hip Acc:^7[60%] ^1Dano:^7[35] ^1Dano Max:^7[15m] ^1Dano Peito:^7[52] ^1Pen:^7[Alto] ^1Headshot:^7[70] ^1Recoil:^7[Baixo] ^1FireRate:^7[Semi]"
+
+//EAGLES
+REFERENCE           SEMIAUTOMATIC_WITH_HIGH
+LANG_ENGLISH        "^1Hip Acc:^7[45%] ^1Dano:^7[40] ^1Dano Max:^7[18m] ^1Dano Peito:^7[60] ^1Pen:^7[Medio] ^1Headshot:^7[80] ^1Recoil:^7[Moder.] ^1FireRate:^7[Semi]"
+
+//taurus 44
+REFERENCE           GOLD_PLATED_SEMIAUTOMATIC
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[65] ^1Dano Max:^7[30m] ^1Dano Peito:^7[65] ^1Pen:^7[Alto] ^1Headshot:^7[120] ^1Recoil:^7[Moder.] ^1FireRate:^7[Semi]"
+
+
+//---------Smgs
+//mp5
+REFERENCE           FULLY_AUTOMATIC_WITH
+LANG_ENGLISH        "^1Hip Acc:^7[50%] ^1Dano:^7[30] ^1Dano Max:^7[15m] ^1Dano Peito:^7[60] ^1Headshot:^7[60] ^1Recoil:^7[Baixo] ^1FireRate:^7[Moderado]"
+
+//skorp -> Bizon
+REFERENCE           FULLY_AUTOMATIC_WITH1
+LANG_ENGLISH        "^1Hip Acc:^7[45%] ^1Dano:^7[35] ^1Dano Max:^7[25m] ^1Dano Peito:^7[45] ^1Headshot:^7[45] ^1Recoil:^7[Medio] ^1FireRate:^7[Rapido]"
+
+//uzi -> Sko vo
+REFERENCE           FULLY_AUTOMATIC_WITH2
+LANG_ENGLISH        "^1Hip Acc:^7[45%] ^1Dano:^7[20] ^1Dano Max:^7[15m] ^1Dano Peito:^7[28] ^1Headshot:^7[28] ^1Recoil:^7[Baixo] ^1FireRate:^7[Rapido]"
+
+//AKu
+REFERENCE           FULLY_AUTOMATIC_WITH3
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[40] ^1Dano Max:^7[25m] ^1Dano Peito:^7[80] ^1Headshot:^7[80] ^1Recoil:^7[Alto] ^1FireRate:^7[Moderado]"
+
+//p90-> ump45
+REFERENCE           FULLY_AUTOMATIC_WITH4
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[40] ^1Dano Max:^7[25m] ^1Dano Peito:^7[48] ^1Headshot:^7[80] ^1Recoil:^7[Moder.] ^1FireRate:^7[Moderado]"
+
+//---------Assault
+//AK
+REFERENCE           FULLY_AUTOMATIC_WITH5
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[45] ^1Dano Max:^7[70m] ^1Dano Peito:^7[54] ^1Pen:^7[Alto] ^1Headshot:^7[81] ^1Recoil:^7[Alto] ^1FireRate:^7[Medio]"
+
+//M4- ACR
+REFERENCE           FULLY_AUTOMATIC_WITH8
+LANG_ENGLISH        "^1Hip Acc:^7[45%] ^1Dano:^7[30] ^1Dano Max:^7[30m] ^1Dano Peito:^7[42] ^1Pen:^7[Baixo] ^1Headshot:^7[60] ^1Recoil:^7[Baixo] ^1FireRate:^7[Rapido]"
+
+//G3 - an94 SECRET
+REFERENCE           SINGLEFIRE_WITH_A_HIGH
+LANG_ENGLISH        "^1Hip Acc:^7[40%] ^1Dano:^7[40] ^1Dano Max:^7[70m] ^1Dano Peito:^7[56] ^1Pen:^7[Medio] ^1Headshot:^7[56]^1Recoil:^7[Alto]^1FireRate:^7[Moderado]"
+
+//G36 -> Augh
+REFERENCE           FULLY_AUTOMATIC_WITH7
+LANG_ENGLISH        "^1Hip Acc:^7[45%] ^1Dano:^7[35] ^1Dano Max:^7[30m] ^1Dano Peito:^7[48] ^1Pen:^7[Baixo] ^1Headshot:^7[70] ^1Recoil:^7[Moder.] ^1FireRate:^7[Moderado]"
+
+//m16
+REFERENCE           SEMIAUTOMATIC_WITH_THREE
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[40] ^1Dano Max:^7[40m] ^1Dano Peito:^7[52] ^1Pen:^7[Medio] ^1Headshot:^7[62] ^1Recoil:^7[Moder.] ^1FireRate:^7[Rapido]"
+
+//M14 -> RSSS
+REFERENCE           SINGLEFIRE_WITH_HIGH
+LANG_ENGLISH        "^1Hip Acc:^7[15%] ^1Dano:^7[60] ^1Dano Max:^7[70m] ^1Dano Peito:^7[72] ^1Pen:^7[Alto] ^1Headshot:^7[90] ^1Recoil:^7[Alto] ^1FireRate:^7[Single]"
+
+//Mp44 -> sig556
+REFERENCE           FULLY_AUTOMATIC_WITH6
+LANG_ENGLISH        "^1Hip Acc:^7[40%] ^1Dano:^7[35] ^1Dano Max:^7[40m] ^1Dano Peito:^7[56] ^1Pen:^7[Medio] ^1Headshot:^7[70]^1Recoil:^7[Alto]^1FireRate:^7[Moderado]"
+
+
+REFERENCE           GRENADE_LAUNCHER_ATTACHMENT
+LANG_ENGLISH        ""
+
+REFERENCE           PORTABLE_SHOULDERLAUNCHED
+LANG_ENGLISH        ""
+
+
+//---------Snipers
+//M40a3s
+
+REFERENCE           BOLTACTION_SNIPER_RIFLE
+LANG_ENGLISH        "^1Hip Acc:^7[50%] ^1Dano:^7[70] ^1Dano Peito:^7[350] ^1Dano Max:^7[1000m] ^1Headshot:^7[350] ^1Recoil:^7[Baixo] ^1Pen:^7[Medio]"
+
+//R7
+REFERENCE           BOLTACTION_SNIPER_RIFLE1
+LANG_ENGLISH        "^1Hip Acc:^7[40%] ^1Dano:^7[90] ^1Dano Peito:^7[320] ^1Dano Max:^7[1000m] ^1Headshot:^7[560] ^1Recoil:^7[Moderado] ^1Pen:^7[Medio]"
+
+//Dragunov -> DSL Secret
+REFERENCE           SEMIAUTOMATIC_SNIPER
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[300] ^1Dano Peito:^7[1500] ^1Dano Max:^7[All] ^1Headshot:^7[1500] ^1Pen:^7[Mt Alta]"
+
+//m21 -> L96
+REFERENCE           SEMIAUTOMATIC_SNIPER2
+LANG_ENGLISH        "^1Hip Acc:^7[45%] ^1Dano:^7[70] ^1Dano Peito:^7[630] ^1Dano Max:^7[1000m] ^1Headshot:^7[630] ^1Recoil:^7[Moderado] ^1Pen:^7[Alta]"
+
+//Barret -> Cheytac
+REFERENCE           SEMIAUTOMATIC_SNIPER1
+LANG_ENGLISH        "^1Hip Acc:^7[30%] ^1Dano:^7[100] ^1Dano Peito:^7[500] ^1Dano Max:^7[All] ^1Headshot:^7[500] ^1Recoil:^7[Alto] ^1Pen:^7[Mt Alta]"
+
+
+//---------SHOTGUNS
+
+//M4010
+REFERENCE           SEMIAUTOMATIC_COMBAT
+LANG_ENGLISH        "^1Hip Acc:^7[100%] ^1Dano:^7[40] ^1Dano Peito:^7[80] ^1Dano Max:^7[57m] ^1Headshot:^7[160] ^1Recoil:^7[Moderado] ^1FireRate:^7[Baixo]"
+
+//m870
+REFERENCE           PUMP_ACTION_SHOTGUN_EFFECTIVE
+LANG_ENGLISH        "^1Hip Acc:^7[90%] ^1Dano:^7[40] ^1Dano Peito:^7[50] ^1Dano Max:^7[10m] ^1Headshot:^7[75] ^1Recoil:^7[Alto] ^1FireRate:^7[Baixo]"
+
+//---------LMGS
+
+//RPD-cross
+REFERENCE           FULLY_AUTOMATIC_WITH9
+LANG_ENGLISH        "^1Hip Acc:^7[65%] ^1Dano:^7[100] ^1Dano Peito:^7[400] ^1Dano Max:^7[100m] ^1Headshot:^7[500] ^1FireRate:^7[Unico]"
+
+//SAW->cm901
+REFERENCE           FULLY_AUTOMATIC_WITH10
+LANG_ENGLISH        "^1Hip Acc:^7[70%] ^1Dano:^7[40] ^1Dano Peito:^7[80] ^1Dano Max:^7[57m] ^1Headshot:^7[160] ^1Recoil:^7[Baixo] ^1FireRate:^7[Alto]"
+
+//M60-TESLA
+REFERENCE           FULLY_AUTOMATIC_WITH11
+LANG_ENGLISH        "Projeto Wunderwaffe"
+
+REFERENCE           CHARGE_OF_PLASTIC_EXPLOSIVES
+LANG_ENGLISH        "Charge of plastic explosives, set off manually with a detonator."
+
+REFERENCE           DIRECTIONAL_ANTIPERSONNEL
+LANG_ENGLISH        "Directional anti-personnel mine, set off by an enemy entering its proximity."
+
+REFERENCE           ANTIPERSONNEL_DEVICE
+LANG_ENGLISH        "Anti-personnel device that destroys the target with a burst of flying shrapnel."
+
+REFERENCE           DEVICE_THAT_BLINDS_AND
+LANG_ENGLISH        "Device that Blinds."
+
+REFERENCE           DEVICE_THAT_CREATES_A
+LANG_ENGLISH        "Smoke Device"
+
+REFERENCE           DEVICE_THAT_DISORIENTS
+LANG_ENGLISH        "Tatical device that explode after 7sec, combined Flash + Smoke"
+
+REFERENCE           GRENADE_LAUNCHER_ATTACHMENT1
+LANG_ENGLISH        ""
+
+REFERENCE           REPLACE_THE_IRON_SIGHTS
+LANG_ENGLISH        ""
+
+REFERENCE           GRIP_ATTACHMENT_
+LANG_ENGLISH        "Grip attachment.\n"
+
+REFERENCE           WEAPON_ATTACHMENT
+LANG_ENGLISH        "Attachment"
+
+REFERENCE           DEMOLITIONS
+LANG_ENGLISH        "Demolitions"
+
+REFERENCE           SNIPER
+LANG_ENGLISH        "Sniper"
+
+REFERENCE           CREATE_A_CLASS
+LANG_ENGLISH        "Create a Class"
+
+REFERENCE           CHALLENGES
+LANG_ENGLISH        "Challenges"
+
+REFERENCE           HARDCORE_GAMETYPES
+LANG_ENGLISH        "Hardcore Gametypes"
+
+REFERENCE           OLDSCHOOL_GAMETYPES
+LANG_ENGLISH        "Oldschool Gametypes"
+
+REFERENCE           CLAN_TAG
+LANG_ENGLISH        "Clan Tag"
+
+REFERENCE           FRAG_1
+LANG_ENGLISH        "Frag / &&1"
+
+REFERENCE           FRAG_1_WEAPON_FLASH_GRENADE
+LANG_ENGLISH        "Frag / Flash"
+
+REFERENCE           FRAG_1_WEAPON_SMOKE_GRENADE
+LANG_ENGLISH        "Frag / Smoke"
+
+REFERENCE           FRAG_1_WEAPON_STUN_GRENADE
+LANG_ENGLISH        "Flash / Smoke"
+
+REFERENCE           _X_1
+LANG_ENGLISH        "&&1 x 1"
+
+REFERENCE           GRENADES_COMBO1
+LANG_ENGLISH        "Frag / &&1"
+
+REFERENCE           FRAG_X_1
+LANG_ENGLISH        "Frag"
+
+REFERENCE           3X_WEAPON_FLASH_GRENADE
+LANG_ENGLISH        "Flash"
+
+REFERENCE           3X_WEAPON_SMOKE_GRENADE
+LANG_ENGLISH        "Smoke"
+
+REFERENCE           3X_WEAPON_STUN_GRENADE
+LANG_ENGLISH        "Impact Frag"
+REFERENCE           OPTION_NOT_AVAILABLE
+LANG_ENGLISH        "Option not available when Smoke Grenade is equiped in Special Grenade Option."
+
+REFERENCE           ENHANCED_ZOOM_ACOG_SCOPE
+LANG_ENGLISH        ""
+
+REFERENCE           INVISIBLE_ON_GPS_WHEN
+LANG_ENGLISH        ""
+
+REFERENCE           INCREASED_HEALTH
+LANG_ENGLISH        "Armor, increased protection against explosives and bullets"
+
+REFERENCE           DEEPER_BULLET_PENETRATION
+LANG_ENGLISH        "Better wall penetration for the bullets."
+//Bloody
+REFERENCE           GREEN_WOODLAND_CAMOUFLAGE
+LANG_ENGLISH        "Red tiger stripe camouflage finish."
+
+REFERENCE           RED_TIGER_STRIPE_CAMOUFLAGE
+LANG_ENGLISH        "Orange tiger stripe camouflage finish."
+
+REFERENCE           BLUE_TIGER_STRIPE_CAMOUFLAGE
+LANG_ENGLISH        "Reptile camouflage finish."
+
+ENDMARKER
+
+

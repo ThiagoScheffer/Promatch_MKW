@@ -1,0 +1,21 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+
+,BOW BLACK OPS
+
+weap_bow_reload_npc,,bow_relaod/zm_bow_first_raise.wav,0.55,0.6,wpnai,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+
+
+weap_bow_fire_plr,,elemental_bow/base/fire/base_bow_fire_01.wav,1,,wpnplyr,0.93,1.03,500000,,local,,,,0.85,,,,,weapon2
+weap_bow_fire_npc,,elemental_bow/base/base_bow_fire_01.wav,1,,wpnai,0.8,0.9,35,2000,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+#weap_bow_fire_npc,,elemental_bow/base/base_bow_fire_00.wav,1,,wpnai,0.8,0.9,35,2000,weapon,,,,0.7,all_mp,,,,weapon4
+
+
+#weap_bow_pullback_plr,,elemental_bow/base/pullback/base_bow_pullback_01.wav,0.95,1,wpnplyr,1.0,1.1,10,800,weapon,,0.6,rlooping,0.85,,,,,weapon2
+
+
+
+weap_bow_firstlift_plr,,elemental_bow/base/cancel/base_bow_cancel_00.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_bow_clipin_plr,,elemental_bow/base/pullback/base_bow_pullback_01.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_bow_pullback_plr,,elemental_bow/base/pullback/base_bow_pullback_00.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_bow_pullbackcancel_plr,,elemental_bow/base/cancel/base_bow_cancel_00.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,

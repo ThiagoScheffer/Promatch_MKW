@@ -1,0 +1,426 @@
+-------------------
+WEAPONS APP 2.0
+
+SNIPER
+Heavy Bullets - double damage through walls
+Lightweight Barrel- Run longer
+SoftGrip - Faster aim
+FlakBullets - Spread fire around enemies (dont have perfu)
+
+-subsonic bullets - dizzy the aim when hit the target
+
+hab amarrar as pernas ou algemar?
+
+
+25/06/2022
+[Corrigido]
+-Na compra do FMJ ou HP Ammo - ao comprar um o outro é removido auto.
+-weapon_type_register - reparado registro de tipo de arma
+[Em teste]
+-HPammo e FMJ - funcionamento em testes
+-Mapas no Vote para CSGO
+
+01:56 26/06/2022
+- ajustar som da smoke tosse - curta para smoke longa para gas - ok
+- remover o antibang no inicio? ok
+- sensor se nao usado os 2. ao dar respawn nao compra nem recebe ok
+- tirar dano da fences - ok
+- zerar SCORE - ok
+- Novos menus
+- Lista de upgrades
+- Sistema de Rank 2
+- MSR,Magnum500,R516:36 01/08/2022
+
+01/08/2022
+CreatePlayerBackup fix - 
+Fmj switch off on fix - 
+Added Firearrow - ok (change fx)
+--------------------------------------------------------------------------------
+02/02/2024
+Fixed:
+ CSGO Eagle skin
+23/02/2024
+fixed:  TDM weapons
+teste:  Serverbest score crash fix
+fixed: alguns upgrades n funcionando 
+fixed: attachs bugs
+fixed: medic nao funcionando
+add: CTF modo manual
+fixed: tdm upgrades bugs
+fixed: profile backup error
+fix2 teste:  Serverbest score crash fix - ainda quebrado, nao sei ???
+Spy: [agachado]: sabota arma do alvo,  [deitado]: prende as pernas do alvo por 9 segundos
+fixed: TDM vote
+added: TDM: random spawn weapons
+tempfix: BestKD testes
+added: $$ pontos em varias modos 
+
+02/03/2024
+[para arrumar]
+vivos ou mortos nao atualizando
+mudar para spec em DM , nao da para voltar
+ffkiller error
+icone tag mortos nao setado no scoreboard
+reeditando medic revive
+
+3:29 26/02/2024
+add fov 90
+fixed Spy
+fixed poisonspread info
+fixed halftime bug
+
+03/03/2024
+
+fixed: troca de Skin sem municao
+fixed: icone morto no status
+
+em Testes: 
+Fix medic revive bar
+Fix medic regen/medic
+ninja defuse e player morto...
+
+3-12/03/2024
+[BIG UPDATE]
+inicio ao sistema novo de Menus Promatch 2.0(testes)
+adicionado simbolo [A] = attachment, nos menus de armas para armas com opcoes
+novas opcoes para salvar e carregar classes
+novo sistema de infodisplay, sera usado para informar ao jogador(testes)
+atalhos para carregar as classes via bind
+reajustado HUD VIVOS MORTOS, melhor alinhamento
+removido BOW devido problemas de xmodel
+removida AKCSGO devido ao alto consumo de material
+removido insignias devido a limite de materials do cod4
+adicionado Springfield
+adicionado Colt45
+adicionado Wa2000
+adicionado AN94
+adicionado emblemas
+adicionado sitema de spray
+adicionado sistema de killfeed com emblemas(testes)
+adicionado sistema de avisos no menu ESC
+adicionado atalho para mudar skincsgo B41
+adicionado mais recurso de audio para armas futuras
+adicionado edit sensibilidade em controles
+ajustado danos e recoil de algumas armas
+alguns avisos especiais
+ajustes  no codigo do medico
+ajustes no sistema de $$$
+reparado menu Deathmatch bug menu spectador
+reparado problemas no Playedcard com os emblemas
+reparado modo CTF nao carregando hud
+Modo FX da Killcam experimental
+preparo para introducao do Bots(em off)
+
+01:56 17/03/2024
+[reparados]
+self.antimag erro
+erros de caixa de municao
+problema de troca de armas de bots
+
+[adicionados]
+Sistema de bots em treinamento
+1 teste de rank para os bots.
+[outros]
+ajudado sprays
+
+19/03/2024
+[reparados]
+bots nao querendo reviver kkk
+players bugados no modo medico
+spawn de armas do TDM sem municao
+teambuff nao recebido
+[outros]
+BOT* teste de procura por corpos na volta ???
+bot agora detecta quando estiver sobre o corpo de um macaco morto
+BOTs binds kkkk
+
+
+29/03/2024
+[BIG UPDATE]
+
+[reparados]
+flecha com veneno nao pegando
+kills e $$ em varios modos nao funcionando corretamente
+problemas com a gasmask
+som da berreta
+som da dsr
+sons de HS FIRSBLOOD etc...
+ajustado recoil da VSS
+reparado faltando sons de First blood...kills etc..varios
+problemas na rcon ao mudar modo d jogo
+problemas no menu de voto
+varios outros detalhes
+
+[adicionados]
+sangue em hits
+novo sistema de killcam - em teste
+explode a cabeça kkk
+firearrow - flecha com fogo
+shockarrow - flecha paralisante - [nao ativa ainda]
+carepackage - drop especial [nao ativo ainda]
+rope -set de cordas para subir no mapa [nao ativo ainda]
+
+novo menu integrado, aos modos de jogo
+Sistema de smoke e Teargas - afeta o jogador sem mascara
+novo som ao Nuke
+modo GG
+modo assassination
+SNIPER L96 AWP
+ASSAULT ARX160
+SMG CZ805
+AKIMBOP226
+[outros]
+Atualizado menu de votos para novo sistema
+2 botoes de voto unicos para DM
+removida CSGO AWP para liberar recursos cod4x
+removida CSGO DSEAGLE para liberar recursos cod4x
+-EM TESTE NO SERVIDOR
+
+30/03/2024
+[adicionados]
+BOTS ANDAM AGORA AQUI!
+mp_canal_bf3 mp_rats_sansa_room mp_toujane_v2
+mirage,nuketown,mp_csgo_inferno,mp_csgo_mirage,mp_csgo_office,
+mp_mw3_hardhat,mp_nuketown,mp_summit,mp_crash3,mp_efa_lake
+
+[reparados]
+ajustes na finalkillcam para morte em explosivos
+erros nos emblemas 
+erros no sangue fx
+
+[outros]
+alterado sistema de voto
+remodelado como os mapas sao carregados
+
+
+31/03/2024
+[adicionados]
+outros tipos de FX para hit e sangue
+implementado shockarrow. disponivel para compra agora.(espero q funcione kk)
+
+[reparados]
+erro de killcam ao usar granadas
+hatchet agora gruda no player ao acertar
+semtex erro indefinido, agora gruda corretamente antes de explodir
+erros de FX em mapas do CSGO, e spray n funcionando.
+[outros]
+tentativa de reparo bug dos rounds
+bots medicos agora deitam no chao para reviver
+trocada para mp_toujane_snow, toujane2 nao funciona os bots nem fodendo.
+outros testes com o killcam time
+
+
+01/04/2024
+ajustado nivel dos bots
+magnade puxa como um ima as armas agora
+mag afeta weapons nos bots para n deixar eles pegarem nova arma.
+ajustes na arma VSS
+aprimorado o restos das funcoes da ShockArrow
+adicionado indicado de tipo de morte para shock
+-inicio dos testes para destravar os bots quando trancam pelo map.
+
+02/04/2024
+[adicionados]
+efeito de sangue para flecha
+2 novos mapas[Alcatraz e Highrise]
+bots nao enxergam dentro da fumaça ou se o player estiver dentro.
+bots pode nao perceber se voce roubou o uniforme inimigo
+
+[reparados]
+reparado bug de nao ter pistola
+
+[outros]
+ajustado efeitos de sangue em varios tipos de armas
+
+
+03/04/2024
+[adicionados]
+Rope - via menu de compra - drop em alguns lugares uma paracord para subir (em TESTE)
+Carepackage - via menu de compra - heli drop uma caixa com item aleatorio (em TESTE)
+[reparados]
+bug de 3 armas devido codigo antigo do cod4
+bug da MP5 silenciada sem som ao recarregar
+[outros]
+added varios codigos novos para as novas funcoes
+
+
+
+04/04/2024
+[adicionados]
+Possibildade de comprar uma vida e usar o BOT para reviver no via spec (EM TESTES !!!!)
+[reparados]
+bug da smoke nao sendo aplicada ao jogador
+[outros]
+criado um log para ver onde os bots bugam mais.
+
+05/04/2024
+[adicionados]
+4 novas caixas no Carepackage sendo uma a PandoraBox secreta.
+icone ao ROPE/CAREPACKAGE/NUKE (temporario)
+medico com novo modelo
+mais falas para os bots
+[reparados]
+erro de FX explodir a cabeça em certos mapas
+varios ajustes e reparos na compra de vida do bot
+erro ao programar modo de jogo nos BOTS
+[outros]
+ajustado velocidade de andar mirado e armas leves
+em teste um autofix rapido para os bot que trancam mt
+
+
+06/04/2024
+[adicionados]
+4 novos mapas
+sistema do Rope de subir e descer.
+[reparados]
+$$$ nao registrando direto no SD
+bugs de FX em mapas custom
+erros ao usar items e morrer
+erro do carepackage ao dropar
+[outros]
+ajustes nos bots 
+
+
+
+
+
+
+10/04/2024
+[BIG UPDATE]
+-Possivel agora carregar mapas maiores-
+[adicionados]
+icone ao itens especiais
+novos icones para a tela
+medalhas para tipos de kills e outros
+modelo para ativar os itens especiais
+som ao Zipline
+novo sons para uso no mod
+novos sons de morte
+Tumbas ao morrer, pode ser comprada no menu de compras
+-Armas-
+UMP45
+CM901
+870MCS
+GROZA
+IMBEL
+TAC330
+-Menu-
+link para conectar aos servers
+refeito menu de armas para por mais armas kkk
+logo novo para VSS
+icone para membros Core
+icone para membros VSS
+Mais suporte para mapas custom
+ajsutado bots para uso de armas automaticas
+[reparados]
+bug da troca de modelos
+usando o Crossbow e facada dando baixo dano
+bug do rope ao descer e ficar trancando
+
+[outros]
+Rope pode ser distribuido em Squad
+reajuStado Imbel
+
+
+18/04/2024
+[adicionados]
+Avisos de Nuke e Maleta ao finalizar o jogo
+BOT usa spray em voce se te matar na faca
+UAV Teambuff - tem testes
+[reparados]
+alguns bugs de efeito
+alguns players nao recebendo $$$
+crossfire ROPE bug
+bug de reset de $$$
+bug selecao de FIRE SHOCK POISON Arrow
+bug som do NUKE apenas para o jogador que chamou
+[outros]
+ajustes na shotgun 870
+mais valores ao SQUAD
+ajustes no CAREPACKAGE custo real agora é 350.
+ajuste no rank dos bots para max level 6 - pq 7 os nego vao chorar demais
+-------------------------------------------------------------
+FIX: misclicar compras muitas vezes !! bloquera isso
+***ideias***
+bot taunt facada
+som do shock - ok
+som de $$$ - ok
+som do zipline - ok
+algo unico no package - ok
+
+perk spot on death - ok
+perk claygas - ok
+
+menu filmtweaks no menu principal - ok
+menu options no menu spec - ok
+Minimaps e hud no HC opcoes no para ver ou na o hud - OK
+som ao ativar o pda - ok
+medico procura player feridos low life hc - ok
+def buff block reviver - ok
+
+predator missile - ok
+juggernaut - ok
+UAV Drone - ok
+filmtweak padrao todos -ok
+bug filmtwk menu - ok
+teambuff icon fix - ok
+smokecolors - ok
+novos sons de avisos - ok
+Granada de vacuo - ok
+novos efeitos - ok
+best stats -ok
+
+desativar uav marks ao explo o drone - ok
+vacant drone n toma dano - ok
+carepackt hitkill n resetando - ok
+loot perk 
+-insta medic
+-
+
+xxx/04/2024 - final version
+[BIG UPDATE]
+[adicionados]
+adicionado efeitos de som, shock,gas,veneno,fogo etc
+perk spotondeath
+perk claygas
+efeitos em varios itens do jogo
+Smokes com cores
+Granada de Implosao
+Missil predador
+UAV Drone
+Carepackage
+Juggernaut
+[reparados]
+bugs de HC para os perks
+bugs do bestplayer
+bug no rcon map
+[outros]
+ajustado o jogo para o uso do Teambuff
+outros botoes no menu options
+opcoes de ativar desativar hud itens
+menu filmtweaks no menu principal
+menu options no menu spec
+Novo icone dos Squads
+medals no votemap
+
+
+
+18/04/2024 - PATCH
+[adicionados]
+SpyDrone FX, som e explosao
+[reparados]
+desativar uav marks ao explodir o drone
+altura do drone nao recebendo dano em certos mapas
+hitkill carepackage nao resetando
+[outros]
+ajustes no pickaxe
+ajustes da 870
+novos codigos para tratar os avisos e sons
+
+
+
+[adicionados]
+[reparados]
+[outros]
+
+

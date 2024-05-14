@@ -1,0 +1,3 @@
+common_mp
+gfx_smoke_trail01
+gfx_fire_roar_pm

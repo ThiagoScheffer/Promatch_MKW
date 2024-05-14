@@ -1,0 +1,35 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+#US
+#Nuke
+US_1mc_nuke_ready,1,mp/us/nuke/nuke_ready_us.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+US_1mc_nuke_friendly,1,mp/us/nuke/nuke_friendly_us.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+US_1mc_nuke_enemy,1,mp/us/nuke/nuke_enemy_us.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+#UK
+#Nuke
+UK_1mc_nuke_ready,1,mp/uk/nuke/nuke_ready_uk.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+UK_1mc_nuke_friendly,1,mp/uk/nuke/nuke_friendly_uk.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+UK_1mc_nuke_enemy,1,mp/uk/nuke/nuke_enemy_uk.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+#RU
+#Nuke
+RU_1mc_nuke_ready,1,mp/ru/nuke/nuke_ready_ru.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+RU_1mc_nuke_friendly,1,mp/ru/nuke/nuke_friendly_ru.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+RU_1mc_nuke_enemy,1,mp/ru/nuke/nuke_enemy_ru.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+#AB
+#Nuke
+AB_1mc_nuke_ready,1,mp/ab/nuke/nuke_ready_ab.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+AB_1mc_nuke_friendly,1,mp/ab/nuke/nuke_friendly_ab.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+AB_1mc_nuke_enemy,1,mp/ab/nuke/nuke_enemy_ab.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+#All
+mp_killstreak_nuke,,mp/all/mp_killstrk_nuclearstrike.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+#Nuke
+nuke_aftermath,,weapons/nuke/airlift_nuclear_aftmath.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+nuke_drop,,weapons/nuke/nuke_detonate.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+nuke_explode,,weapons/nuke/airlift_nuclear_exp.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+nuke_fuse,,weapons/nuke/elm_mortar_incoming02.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+nuke_warning,,weapons/nuke/nuke_warning.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3

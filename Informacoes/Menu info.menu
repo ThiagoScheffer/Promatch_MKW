@@ -1,0 +1,40 @@
+//RESPONSE DESTE MENU = A CLASSE (ASSAULT)
+//scriptMenuResponse "loadout_primary:g36c";\ == seta a arma	
+//scriptMenuResponse "loadout_primary:"weapRef; = loadout_primary:g36c
+//REF_AK47 = 1 groupArg = "assault" - weaponRef=ak47
+// primary weapon items
+
+LOCAL_WEAPON_ITEMTESTE( suffix, 8, "8. teste", "assault", REF_M4 )\
+
+
+		
+#define LOCAL_PRIMARY_WEAPON_ACTIONTESTE( suffix, weapClass, weapRef ) \
+play "mouse_click"; \
+setdvar loadout_primary_attachment silencer;\
+setdvar loadout_primary g36c; \
+scriptMenuResponse "loadout_primary_attachment:assault:silencer";\
+scriptMenuResponse "loadout_primary:g36c";\
+UPDATE_PERK1 \
+close self;		
+
+		
+//setdvar loadout_primary_attachment attachmentName; 
+//scriptMenuResponse "loadout_primary_attachment::attachmentName";\		
+//scriptMenuResponse "loadout_secondary_attachment:"groupArg":"attachmentName;
+		//LOCAL_ATTACHMENT_ITEMX( 8, stat_slot, "assault", NUM_SUPPRESSOR, "silencer", ;, ptype, statDvar, SILENCER_NEW_BITMASK )
+#define LOCAL_WEAPON_ITEMTESTE( suffix, itemNum, weaponName, weaponClass, weaponRef )\
+CHOICE_BUTTON_FOCUS_VIS_NOHI( itemNum, "", ;, WI_FOCUS_ACTION( weaponClass, weaponRef ), ;, when( !dvarBool( "weap_allow_"weaponClass"_"weaponRef ) ); ) \
+CHOICE_DBUTTON_VIS( itemNum, weaponName, when( 1 ); ) \
+CHOICE_BUTTON_FOCUS_VIS_ADV( itemNum, weaponName, LOCAL_PRIMARY_WEAPON_ACTIONTESTE( suffix, weaponClass, weaponRef ), \
+WI_FOCUS_ACTION( weaponClass, weaponRef ), ;, when( dvarBool( "weap_allow_"weaponClass"_"weaponRef ) );, \
+dvarBool( "weap_allow_"weaponClass"_"weaponRef ) ) \
+	
+
+//executa uma açao quqndo o valor em "" for = ?	
+uiScript openMenuOnDvar "ui_team" marines "changeclass_marines_mw";	
+
+
+
+dvarString( "scr_allies" )
+dvarInt( "splitscreen" )
+team( name ) == "TEAM_ALLIES"

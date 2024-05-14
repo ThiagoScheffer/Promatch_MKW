@@ -1,0 +1,19 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+# bren GHOSTS
+
+weap_bren_fire_plr,,weapons\bren\weap_bren_fire.wav,1,1,wpnplyr,1,1,500000,,local,,,,1,,,,,weapon2,,,,
+weap_bren_fire_npc,,weapons\bren\weap_bren_fire.wav,0.93,0.98,max,1,1.1,35,13780,weapon,,,,0.7,all_mp,,,,weapon4
+weap_bren_fire_npc,,weapons\bren\weap_bren_fire.wav,0.90,0.95,max,1,1.1,35,10600,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+
+weap_brensilenced_fire_plr,,weapons\bren\weap_bren_sil_fire.wav,0.5,0.55,wpnplyr,0.93,1.03,500000,,local,,,,0.85,,,,,weapon2
+weap_brensilenced_fire_npc,,weapons\bren\weap_bren_sil_fire.wav,0.66,0.72,wpnai,0.8,0.9,35,8400,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+weap_brensilenced_fire_npc,,weapons\bren\weap_bren_sil_fire.wav,0.56,0.62,wpnai,0.8,0.9,35,2000,weapon,,,,0.7,all_mp,,,,weapon4
+
+# bren RELOAD SOUNDS
+weap_bren_chamber_plr,,weapons/bren/weap_bren_chamber.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_bren_clipout_plr,,weapons/bren/weap_bren_clipout.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_bren_clipin_plr,,weapons/bren/weap_bren_clipin.wav,1,1,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+
+
+

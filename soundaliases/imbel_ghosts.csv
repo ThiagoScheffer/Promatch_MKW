@@ -1,0 +1,13 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+
+
+
+weap_imbel_fire_npc,,weps/imbel/weap_imbel_rlmn_08b5.wav,0.93,0.98,max,1,1.1,35,10600,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+weap_imbel_fire_npc,,weps/imbel/weap_imbel_rlmn_08b5.wav,0.93,0.98,max,1,1.1,35,13780,weapon,,,,0.7,all_mp,,,,weapon4
+weap_imbel_fire_plr,,weps/imbel/weap_imbel_rlst_08b5.wav,0.91,0.94,wpnplyr,0.65,0.75,500000,,local,,,,0.85,,,,,weapon2,,,,
+
+wpfoly_imbel_reload_clipin_v2,,weps/imbel/wpfoly_imbel_reload_clipin_v2.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+wpfoly_imbel_reload_end_v3,,weps/imbel/wpfoly_imbel_reload_end_v3.wav,0.55,0.6,wpnplyr,0.95,1.05,7,500,reload2d,,,,0.85,,,,,weapon2,
+wpfoly_imbel_reload_clipout_v2,,weps/imbel/wpfoly_imbel_reload_clipout_v2.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+wpfoly_imbel_reload_chamber_v3,,weps/imbel/wpfoly_imbel_reload_chamber_v3.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,

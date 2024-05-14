@@ -1,0 +1,125 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+{
+
+	#undef buttonAlign
+	#define buttonAlign 0 0
+	
+	#undef SETS_X
+	#define SETS_X 75
+	#undef SETS_Y
+	#define SETS_Y 50
+
+	menuDef
+	{
+		name			quickbuy
+		focusColor		COLOR_FOCUSED
+		fullScreen		0
+		blurWorld		4.8
+		rect			0 0 640 480
+		onOpen
+		{
+			setLocalVarBool ui_hidemainmenu 1;
+			setDvar cl_bypassMouseInput 0 ; ;
+		}
+		onClose
+		{
+			setDvar cl_bypassMouseInput 0 ; ;
+			setLocalVarBool ui_hidemainmenu 0;			
+		}
+		onEsc
+		{
+			close self;
+		}
+		
+		#define blacktitle "BUY MENU"
+		#include "ui_mp/blackwindowmodel.inc"
+
+		#define TPOSX 80
+		#define TPOSY 30
+		
+		#define BUY_BUTTON(id,title,script,execnowact,vis,visbought) \
+				BUYBUTTONEXECNOW(TPOSX, (TPOSY + id * 30), 80,title,script,execnowact,vis)\
+				itemDef \
+				{ \
+					type			ITEM_TYPE_BUTTON \
+					rect			(TPOSX + 90) (TPOSY + id * 30) 12 12 0 0 \
+					style			WINDOW_STYLE_FILLED \
+					backcolor		0 200 0 1 \
+					visible			when(visbought) \
+					decoration \
+				} 				
+				
+				//PREPROC_TEXT_DRAW_ALIGNED_EXP( (310) 0 256 20 CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN, 0 0, ""+tablelookup("mp/itens.csv",2,dvarString("ui_compra_highlighted" ),4), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_MIDDLE_LEFT, COLOR_TITLE )\
+		#define PRICE int(tablelookup("mp/itens.csv",2,dvarString("ui_compra_highlighted" ),4))
+		
+		HEAD(0,"GEAR")
+		BUY_BUTTON(2,"^7Defuse Kit","defusekit","set ui_compra_highlighted defusekit",when ( stat( 3181 ) >= PRICE ), stat( 2380 ) > 0 )
+		BUY_BUTTON(3,"^7Gas-Mask","gasmask","set ui_compra_highlighted gasmask",when ( stat( 3181 ) >= PRICE ), stat( 2381 ) > 0)
+		BUY_BUTTON(4,"^7FMJ Ammo","fmjammo","set ui_compra_highlighted fmjammo",when ( stat( 3181 ) >= PRICE ), stat( 2384 ) > 0)
+		BUY_BUTTON(5,"^7HollowP Ammo","hpammo","set ui_compra_highlighted hpammo",when ( stat( 3181 ) >= PRICE ), stat( 2385 ) > 0)
+		BUY_BUTTON(6,"^7Anti-Toxin","antitoxin","set ui_compra_highlighted antitoxin",when ( stat( 3181 ) >= PRICE ), stat( 2382 ) > 0)
+		BUY_BUTTON(7,"^7Anti-Mag","antimag","set ui_compra_highlighted antimag",when ( stat( 3181 ) >= PRICE ), stat( 2383 ) > 0)
+		
+		//col 2		
+		#undef TPOSX 
+		#define TPOSX 185		
+		BUY_BUTTON(2,"^7FireArrow","firearrow","set ui_compra_highlighted firearrow",when ( stat( 3181 ) >= PRICE ), stat( 2386 ) > 0)
+		BUY_BUTTON(3,"^7PoisonArrow","poisonarrow","set ui_compra_highlighted poisonarrow",when ( stat( 3181 ) >= PRICE ), stat( 2394 ) > 0)
+		BUY_BUTTON(4,"^7ShockArrow","shockarrow","set ui_compra_highlighted shockarrow",when ( stat( 3181 ) >= PRICE ), stat( 2395 ) > 0)
+		//BUY_BUTTON(5,"^7Carepackage","carepackage","set ui_compra_highlighted carepackage",when ( stat( 3181 ) >= PRICE ), stat( 2396 ) > 0)
+		//BUY_BUTTON(5,"^7ImploderNade","buyimplodernade","set ui_compra_highlighted buyimplodernade",when ( stat( 3181 ) >= PRICE ), stat( 2407 ) > 0)
+		BUY_BUTTON(5,"^7Rope","com_drop_rope","set ui_compra_highlighted com_drop_rope",when ( stat( 3181 ) >= PRICE ), stat( 2397 ) > 0)
+		//abaixo
+		BUY_BUTTON(9,"^7ImploderNade","buyimplodernade","set ui_compra_highlighted buyimplodernade",when ( stat( 3181 ) >= PRICE ), stat( 2407 ) > 0)
+		#undef TPOSX 
+		#undef TPOSY 
+		#define TPOSX 80
+		#define TPOSY 30
+		
+		HEAD(11,"ITEMS")
+		BUY_BUTTON(9,"^7SnapShot","buysnapshot","set ui_compra_highlighted buysnapshot",when ( stat( 3181 ) >= PRICE ), stat( 2387 ) > 0)
+		BUY_BUTTON(10,"^7Decoy","buydecoy","set ui_compra_highlighted buydecoy",when ( stat( 3181 ) >= PRICE ), stat( 2390 ) > 0)
+		BUY_BUTTON(11,"^7TearGas","buyteargrenade","set ui_compra_highlighted buyteargrenade",when ( stat( 3181 ) >= PRICE ), stat( 2388 ) > 0)
+		BUY_BUTTON(12,"^7MagNade","buymagnade","set ui_compra_highlighted buymagnade",when ( stat( 3181 ) >= PRICE ), stat( 2389 ) > 0)
+		BUY_BUTTON(13,"^7Sensor","buyclaymore","set ui_compra_highlighted buyclaymore",when ( stat( 3181 ) >= PRICE ), stat( 2393 ) > 0)
+		
+		#undef SETS_X
+		#define SETS_X 375
+		#undef SETS_Y
+		#define SETS_Y -310 //mais perto de zero desce <- headbutton
+		
+		
+		
+		#undef TPOSX 
+		#undef TPOSY 		
+		#define TPOSX 450
+		#define TPOSY 20
+		
+		HEAD(18,"PROTECTION")
+		BUY_BUTTON(2,"^7Kevlar + Helmet","kitarmor","set ui_compra_highlighted kitarmor",when ( stat( 3181 ) >= PRICE ), stat( 2391 ) > 0)
+		BUY_BUTTON(3,"^7Heavy Kevlar","heavykevlar","set ui_compra_highlighted heavykevlar",when ( stat( 3181 ) >= PRICE ), stat( 2392 ) > 0)
+		
+		HEAD(22,"SPECIAL")
+		BUY_BUTTON(5,"^7Tombs","tombstones","set ui_compra_highlighted tombstones",when ( stat( 3181 ) >= PRICE ), stat( 2398 ) > 0)
+		
+		BUY_BUTTON(6,"^7SmokeVerde","greensmoke","set ui_compra_highlighted greensmoke",when ( stat( 3181 ) >= PRICE ), stat( 2401 ) > 0)
+		BUY_BUTTON(7,"^7SmokeLaranja","orangesmoke","set ui_compra_highlighted orangesmoke",when ( stat( 3181 ) >= PRICE ), stat( 2402 ) > 0)
+		BUY_BUTTON(8,"^7SmokeAzul","bluesmoke","set ui_compra_highlighted bluesmoke",when ( stat( 3181 ) >= PRICE ), stat( 2403 ) > 0)
+		BUY_BUTTON(9,"^7SmokeVermelha","redsmoke","set ui_compra_highlighted redsmoke",when ( stat( 3181 ) >= PRICE ), stat( 2404 ) > 0)
+		
+		#undef SETS_X
+		#define SETS_X 375
+		#undef SETS_Y
+		#define SETS_Y 50
+		
+		
+		HEAD(16,"^3YOUR $: ^1" + stat( 3181 ))	
+		HEAD(17,"^2PRICE: ^7" + PRICE)
+		HEAD(18,"^2STATUS: ^1" + ""+tablelookup("mp/itens.csv",2,dvarString("ui_compra_highlighted" ),3))
+		
+		//HEADWEAPONS(35,"^2PENETRATION: ^7" + ""+tablelookup("mp/weaponslist.csv",3,dvarString("ui_compra_highlighted" ),6))
+	}
+}

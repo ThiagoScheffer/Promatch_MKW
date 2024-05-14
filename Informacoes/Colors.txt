@@ -1,0 +1,11 @@
+azul 0.082 0.176 1 1
+vermelho 0.750 0 0 1
+laranja 1 0.336 0 1
+amarelo 1 1 0 1
+branco  1 1 1 1
+preto  0 0 0 1
+verde 0 0.859 0 1
+roxo 0.602 0 0.602 0.8
+marrom  0.453 0.301 0.215 1
+cinza  0.434 0.434 0.434 1
+lilas 0.801 0 0.402 0.8

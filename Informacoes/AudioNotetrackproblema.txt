@@ -1,0 +1,21 @@
+weap_sc2010_lift_plr weap_ak47_lift_plr
+weap_sc2010_clipout_plr weap_ak47_clipout_plr
+weap_sc2010_clipin_plr weap_ak47_clipin_plr
+weap_sc2010_chamber_plr weap_ak47_chamber_plr
+melee_knife_stab melee_knife_stab
+
+
+trocar nome1 e mantem o funcionando n2
+
+
+melee_knife_stab melee_knife_stab
+ak5c_clipout weap_g36_clipout_plr
+ak5c_clipin weap_g36_clipin_plr
+ak5c_bolt weap_g36_chamber_plr
+
+
+melee_knife_stab melee_knife_stab
+weap_g36_lift_plr weap_g36_lift_plr
+weap_g36_clipout_plr weap_g36_clipout_plr
+weap_g36_clipin_plr weap_g36_clipin_plr
+weap_g36_chamber_plr weap_g36_chamber_plr

@@ -1,0 +1,20 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+# MWR S-TAC AGRESSOR Model: Kortun/Sektor_Gaza_Xou
+
+
+
+weap_stac_sil_fire_plr,,weps/mwr_stac/wpn_suppressed_pew_03.wav,0.72,0.79,wpnplyr,0.8,0.9,500000,,local,,,,0.85,,,,,weapon2
+weap_stac_sil_fire_npc,,weps/mwr_stac/wpn_suppressed_pew_03.wav,0.76,0.82,wpnai,0.95,1.05,35,8400,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+weap_stac_sil_fire_npc,,weps/mwr_stac/wpn_suppressed_pew_03.wav,0.76,0.82,wpnai,0.95,1.05,35,10920,weapon,,,,0.7,all_mp,,,,weapon4
+
+weap_stac_fire_plr,,weps/mwr_stac/weap_stac_fire.wav,0.72,0.79,wpnplyr,0.8,0.9,500000,,local,,,,0.85,,,,,weapon2
+weap_stac_fire_npc,,weps/mwr_stac/weap_stac_fire.wav,0.76,0.82,wpnai,0.95,1.05,35,8400,weapon,,,,0.7,!ac130 all_mp,,,,weapon4
+weap_stac_fire_npc,,weps/mwr_stac/weap_stac_fire.wav,0.76,0.82,wpnai,0.95,1.05,35,10920,weapon,,,,0.7,all_mp,,,,weapon4
+
+weap_zatvor_in,,weps/mwr_stac/weap_zatvor_in.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,100
+weap_zatvor_out,,weps/mwr_stac/weap_zatvor_out.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_tac_zatvor_in,,weps/mwr_stac/weap_zatvor_in.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,100
+weap_tac_zatvor_out,,weps/mwr_stac/weap_zatvor_out.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_tac_clipout,,weps/mwr_stac/weap_clipout.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,
+weap_tac_clipin,,weps/mwr_stac/weap_clipin.wav,0.55,0.6,wpnplyr,1,1,7,500,reload2d,,,,0.85,,,,,weapon2,

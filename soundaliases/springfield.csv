@@ -1,0 +1,14 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+
+#Springfield,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#weap_springfield_fire_plr,,WAW/wpn_Springfield_st_f.wav,0.72,0.79,wpnplyr,0.8,0.9,500000,,local,,,,0.85,,,weap_springfield_act_plr,,weapon2
+#weap_springfield_act_plr,,WAW/wpn_Springfield_st_f.wav,0.72,0.79,wpnplyr,0.8,0.9,500000,,local,,,,0.85,,,,,weapon2
+#weap_springfield_fire,,WAW/wpn_Springfield_mn.wav,1,1,wpnai,1,1,35,2000,weapon,,,,0.8,all_mp,,,,weapon4
+gr_springfield_bolt_back_plr,,WAW/gr_kar98_bolt_back.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_bolt_front_plr,,WAW/gr_kar98_bolt_forward.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_bolt_down_plr,,WAW/arisaka_bolt_down.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_bolt_up_plr,,WAW/gr_kar98_bolt_up.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_clip_in_plr,,WAW/m1gar_clip_in.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_clip_eject_plr,,WAW/gr_kar98_clip_eject.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_clip_land_plr,,WAW/gr_kar98_clip_land.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50
+gr_springfield_shell_in_plr,,WAW/round_in_01.wav,1,1,,1,1,7,500,reload,,,,0.7,all_mp,,,,weapon2,50

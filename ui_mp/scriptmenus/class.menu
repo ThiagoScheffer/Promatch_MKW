@@ -1,0 +1,225 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+//=========================================================================
+//=================ESC AFTER PLAYER SPAWN==================================
+//=========================================================================
+{
+	menuDef
+	{
+		name			"class"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		soundloop 		"music_mainmenu_mp"
+		blurWorld		6.0
+		onOpen
+		{
+			execondvarintvalue sv_running 0 "set tmp_ui_reconnect 1";
+			
+			exec "setdvartotime ui_time_marker"; 	// animation start marker
+			
+			//exec "wait 1000; set temp 1 ";
+			//exec "set temp 1";
+			
+			play "menu_slidein";
+		}
+		onClose
+		{
+			//exec "set temp 0";
+		}
+		onEsc
+		{
+			scriptMenuResponse "back";
+			play "menu_close";
+		}
+				
+		#define blacktitle "MAIN MENU - MODERN COD4X 2024 V10 - BUILD 01052024"
+		
+		
+		//MODEL
+		#include "ui_mp/blackwindowmodel.inc"
+		
+		#define MAINPOSX 80
+		#define MAINPOSY 20
+		
+		// map display ================================================
+		//#define MAP_X (MAINPOSX + 70)
+		//#define MAP_Y MAINPOSY
+		
+		#include "ui_mp/tactical_map.inc";	
+		
+		//atraso nos botoes
+		#undef MOVE_SPEEDFX
+		#define MOVE_SPEEDFX 330 	
+		
+		//======================================================================================================
+		//===================== MENU SELECTION  - MENU OPTIONS APOS TER SELECIONADO TIME ESC====================
+		//======================================================================================================
+		#undef buttonAlign
+		#define buttonAlign 0 0
+
+		#undef SETS_X
+		#define SETS_X 75
+		#undef SETS_Y
+		#define SETS_Y 50
+	
+	
+		#define MAIN_BUTTON(id,title,script,vis) \
+				BUTTONBLACK(MAINPOSX, (MAINPOSY + id * 30), 80,title,script,vis,title)\
+				
+		#define WEAPON2_BUTTON(id,title,script,execnowact,vis) \
+				BUYBUTTONEXECNOWWEAPONS(MAINPOSX, (MAINPOSY + id * 25), 80,title,script,execnowact,vis)\
+				
+		#define MEDALS(id,title,image,vis,dist,medalnum,statsinfo) \
+				BUTTONEXECNOWMEDALS(dist,MAINPOSX, (MAINPOSY + id * 27),title,image,vis,medalnum,statsinfo)\
+	
+		//CHOICE_FOOTNOTE_VIS( "KILL THE BALISTIC KNIFE DOG", 30, 400, when( !localvarBool( ui_hideBack ) ) )	
+		
+		#define HEADTEXTS(itemIndex, textArg) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			(MAINPOSX - 30 ) (MAINPOSY + 22 + itemIndex * 25) 150 1 0 0 \
+			exp				rect x ((MAINPOSX - 30 ) + FRAME_ANIMATEFX(300))\
+			exp				text(textArg) \			
+			textfont		UI_FONT_NORMAL \
+			textscale		0.35 \
+			textstyle		0 \
+			textAlignY		-2 \
+			textAlign		ITEM_ALIGN_CENTER \
+			forecolor		0.8 0.8 1 1 \
+			background		"line_horizontal" \
+			backcolor		0.8 0.8 1 1 \
+			visible			when(FADEFX == 0) \
+			decoration \
+		}
+		
+		#define AVISOSTEXTS(itemIndex, textArg) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			(MAINPOSX - 30 ) (MAINPOSY + 22 + itemIndex * 25) 150 1 0 0 \
+			exp				rect x ((MAINPOSX - 30 ) + FRAME_ANIMATEFX(300))\
+			exp				text(textArg) \			
+			textfont		UI_FONT_NORMAL \
+			textscale		0.25 \
+			textstyle		0 \
+			textAlignY		-2 \
+			textAlign		ITEM_ALIGN_CENTER \
+			forecolor		0.8 0.8 1 1 \
+			background		"line_horizontal" \
+			backcolor		0.8 0.8 1 1 \
+			visible			when(FADEFX == 0) \
+			decoration \
+		}
+		
+		
+		HEAD(1,gametypename() + " - " + dvarString(mapname))
+
+		MAIN_BUTTON(3,"Escolher Armas",scriptMenuResponse "changeweapon",1)
+		MAIN_BUTTON(4,"Mudar Time",scriptMenuResponse "changeteam",1)		
+		MAIN_BUTTON(5,"Opcoes do jogo",open options_promatch,1)
+		MAIN_BUTTON(6,"Atalhos",open keybinds_promatch,1)
+		MAIN_BUTTON(7,"Controles",open promatch_controls,1)
+		MAIN_BUTTON(8,"Controles Antigos",open main_controls,1)		
+		MAIN_BUTTON(9,"Perks Speciais",open upgradetree,1)
+		MAIN_BUTTON(10,"Menu de Compra",open quickbuy,1)
+		MAIN_BUTTON(11,"Rank",open rankmenu,1)
+		MAIN_BUTTON(12,"Menu do Squad",open squadmenu,1)		
+		MAIN_BUTTON(13,"Backup do Usuario",open profilebackup,1)
+		
+		MAIN_BUTTON(14,"^1Quit/Sair",open popup_leavegame,1)
+		
+		//ultima fila
+		#undef MAINPOSX 
+		#undef MAINPOSY 		
+		#define MAINPOSX 210
+		#define MAINPOSY -370//mais negativo sobe
+		
+		
+		MAIN_BUTTON(16,"Spray",open spray,1)
+		MAIN_BUTTON(17,"Emblemas",open emblemas,1)
+	
+		MAIN_BUTTON(18,"Report Player",open reportplayer,1)
+		MAIN_BUTTON(19,"Menu Filmtweaks",open quickpromatchgfx;close self;,1)
+		//MAIN_BUTTON(19,"^1Server Control",open advancedacp;close self;,when( stat(3473) != 0 ))
+		//MAIN_BUTTON(20,"^1Player Control",open playercontrol;close self;,when( stat(3473) != 0 ))
+		
+		
+		HEADTEXTS(25,"[AVISOS]")
+		AVISOSTEXTS(26,"^2" + dvarstring(ui_aviso1))
+		AVISOSTEXTS(27,"^2" + dvarstring(ui_aviso2))
+		AVISOSTEXTS(28,"^2" + dvarstring(ui_aviso3))
+		
+		//#undef MAINPOSX 
+		#undef MAINPOSY
+		//#define MAINPOSX 80
+		#define MAINPOSY 20
+		
+		
+		//MAIN_BUTTON(13,"Conectar [COBRAS]",exec "connect 146.235.43.187:28698";,1)
+		//MAIN_BUTTON(14,"Conectar [PCI]",exec "connect 45.235.98.60:28965";,1)
+		
+		#undef MAINPOSX
+		#define MAINPOSX 330
+		MEDALS(12,"Mestre dos Kills","rank_prestige1",when(stat(3201) >= 20000 && FADEFX == 0),0,1,stat(3201))
+		MEDALS(12,"Mestre dos Headshots","rank_prestige2",when(stat(2308) >= 1000 && FADEFX == 0),25,2,stat(2308))
+		MEDALS(12,"Faca do Carniceiro","rank_prestige3",when(stat(2309) >= 1000 && FADEFX == 0),50,3,stat(2309))
+		
+		MEDALS(12,"Genocida ACE","rank_prestige4",when(stat(2322) >= 100 && FADEFX == 0),75,4,stat(2322))
+		MEDALS(12,"Wallhacker","rank_prestige5",when(stat(2321) >= 100 && FADEFX == 0),100,5,stat(2321))
+		MEDALS(12,"Mestre dos OWNAGES","rank_prestige6",when(stat(2313) >= 100 && FADEFX == 0),125,6,stat(2313))
+		
+		MEDALS(12,"Sanguinario do FirstBlood","rank_prestige7",when(stat(2320) >= 1000 && FADEFX == 0),150,7,stat(2320))
+		MEDALS(12,"Mestre Defusador","rank_prestige8",when(stat(2318) >= 1000 && FADEFX == 0),175,8,stat(2318))
+		MEDALS(12,"Mestre do Explosivo","rank_prestige9",when(stat(2319) >= 1000 && FADEFX == 0),200,9,stat(2319))
+		
+		MEDALS(12,"O Banqueiro","rank_prestige10",when(stat(3181) >= 100000 && FADEFX == 0),225,10,stat(3181))
+		
+		
+		//FICOU no TOPO HEAD  MAINPOSX 310 MAINPOSX 410
+		/*#undef MAINPOSX 
+		#undef MAINPOSY 		
+		#define MAINPOSX 310
+		#define MAINPOSY -370
+		*/
+		
+		#undef MAINPOSY 		
+		#define MAINPOSY -390
+
+		#undef MAINPOSX
+		#define MAINPOSX 290
+		
+		WEAPON2_BUTTON(33,dvarString( customclass0 ),"customclass0","set ui_button_highlighted CARREGADA",when(stat(250) != 0))		
+		
+		#undef MAINPOSX
+		#define MAINPOSX 390
+		HEADTEXTS(32,"[CLASSES SALVAS]")
+		WEAPON2_BUTTON(33,dvarString( customclass1 ),"customclass1","set ui_button_highlighted CARREGADA",when(stat(251) != 0))
+		
+		#undef MAINPOSX
+		#define MAINPOSX 490
+		
+		WEAPON2_BUTTON(33,dvarString( customclass2 ),"customclass2","set ui_button_highlighted CARREGADA",when(stat(252) != 0))
+		
+		//fundo quadrado
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			50 45 540 420
+			backcolor		0 0 0 1
+			visible			when( localvarBool( ui_hidemainmenu ) );
+			decoration
+		}		
+	}
+	#include "ui_mp/options.inc"
+	#include "ui_mp/upgradetree.inc"
+	#include "ui_mp/rankmenu.inc"
+	#include "ui_mp/squadmenu.inc"
+	#include "ui_mp/profilebackup.inc"
+	#include "ui_mp/reportplayer.inc"
+}

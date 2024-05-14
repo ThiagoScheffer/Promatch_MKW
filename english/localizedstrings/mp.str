@@ -1,0 +1,358 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           CANT_CAPTURE_FLAG
+LANG_ENGLISH        "You can only capture the flags marked on your compass."
+
+REFERENCE           KILLCAM
+LANG_ENGLISH        "KILLCAM"
+
+REFERENCE           ROUNDCAM
+LANG_ENGLISH        "ROUNDCAM"
+
+REFERENCE           STARTING_NEW_ROUND
+LANG_ENGLISH        "Starting new round..."
+
+REFERENCE           PRESS_ATTACK_TO_SKIP
+LANG_ENGLISH        "Press Attack to skip"
+
+REFERENCE           PRESS_USE_TO_SKIP
+LANG_ENGLISH        "Press Use to skip"
+
+REFERENCE           PRESS_ATTACK_TO_RESPAWN
+LANG_ENGLISH        "Press Attack to respawn"
+
+REFERENCE           PRESS_USE_TO_RESPAWN
+LANG_ENGLISH        "Press Use to respawn"
+
+REFERENCE           PRESS_ACTIVATE_TO_RESPAWN
+LANG_ENGLISH        "Press ^3[{+activate}]^7 to respawn"
+
+REFERENCE           PRESS_ACTIVATE_TO_SKIP
+LANG_ENGLISH        "Press ^3[{+activate}]^7 to skip"
+
+REFERENCE           PRESS_USERELOAD_TO_RESPAWN
+LANG_ENGLISH        "Press ^3[{+usereload}]^7 to respawn"
+
+REFERENCE           PRESS_USERELOAD_TO_SKIP
+LANG_ENGLISH        "Press ^3[{+usereload}]^7 to skip"
+
+REFERENCE           CONNECTED
+LANG_ENGLISH        "&&1 Connected"
+
+REFERENCE           DISCONNECTED
+LANG_ENGLISH        "&&1 Disconnected"
+
+REFERENCE           SCORE_LIMIT_REACHED
+LANG_ENGLISH        "Score limit reached"
+
+REFERENCE           ROUND_LIMIT_REACHED
+LANG_ENGLISH        "Round limit reached"
+
+REFERENCE           TIME_LIMIT_REACHED
+LANG_ENGLISH        "Time limit reached"
+
+REFERENCE           WINS
+LANG_ENGLISH        "&&1 Wins!"
+
+REFERENCE           TIE
+LANG_ENGLISH        "The game is a tie!"
+
+REFERENCE           MATCH_TIE
+LANG_ENGLISH        "The match is a tie!"
+
+REFERENCE           FRIENDLY_FIRE_WILL_NOT
+LANG_ENGLISH        "Friendly fire will not be tolerated!"
+
+REFERENCE           AUTOBALANCE_NEXT_ROUND
+LANG_ENGLISH        "Teams will be auto-balanced next round"
+
+REFERENCE           AUTOBALANCE_SECONDS
+LANG_ENGLISH        "Teams will be auto-balanced in &&1 seconds"
+
+REFERENCE           AUTOBALANCE_NOW
+LANG_ENGLISH        "Auto-balancing teams"
+
+REFERENCE           VOTE_CALLED
+LANG_ENGLISH        "Vote Called:  "
+
+REFERENCE           VOTE_YES
+LANG_ENGLISH        "(F1) Yes:  "
+
+REFERENCE           VOTE_NO
+LANG_ENGLISH        "(F2)  No:  "
+
+REFERENCE           NEUTRAL
+LANG_ENGLISH        "Neutral:  "
+
+REFERENCE           VOTE_MAPRESTART
+LANG_ENGLISH        "Map Restart"
+
+REFERENCE           VOTE_NEXTMAP
+LANG_ENGLISH        "Next Map"
+
+REFERENCE           PERCENT
+LANG_ENGLISH        " - &&1%"
+
+
+REFERENCE           ALLIESOBJECTIVEHELD
+LANG_ENGLISH        "Defense have held the objective"
+
+REFERENCE           AXISOBJECTIVEHELD
+LANG_ENGLISH        "Attack have held the objective."
+
+REFERENCE           ALLIESOBJECTIVECAPTURED
+LANG_ENGLISH        "Defense have captured the objective"
+
+REFERENCE           AXISOBJECTIVECAPTURED
+LANG_ENGLISH        "Attack have captured the objective."
+
+REFERENCE           ALLIES_WIN_MATCH
+LANG_ENGLISH        "Defense have won the match!"
+
+REFERENCE           AXIS_DEFEND
+LANG_ENGLISH        "Defend the objective from the Defense attack!"
+
+REFERENCE           RETURN_EDITOR
+LANG_ENGLISH        "Back to Mission List"
+
+REFERENCE           PLAY_TYPE
+LANG_ENGLISH        "Choose Play Type"
+
+REFERENCE           ATTACK_PLAY
+LANG_ENGLISH        "Attack Play"
+
+REFERENCE           DEFEND_PLAY
+LANG_ENGLISH        "Defend Play"
+
+REFERENCE           TEAM_TYPE
+LANG_ENGLISH        "Choose Team Type"
+
+REFERENCE           UPTEAM
+LANG_ENGLISH        "Defense"
+
+REFERENCE           DOWNTEAM
+LANG_ENGLISH        "Attack"
+
+REFERENCE           ALLIES_WIN_ROUND
+LANG_ENGLISH        "Defense win the round"
+
+REFERENCE           SPAWN_NEXT_ROUND
+LANG_ENGLISH        ""
+
+REFERENCE           SABOTAGE_COUNTDOWN
+LANG_ENGLISH        "Sabotage"
+
+REFERENCE           MARINES_NAME
+LANG_ENGLISH        "Defense"
+
+REFERENCE           SAS_NAME
+LANG_ENGLISH        "Defense"
+
+REFERENCE           OPFOR_NAME
+LANG_ENGLISH        "Attack"
+
+REFERENCE           SPETSNAZ_NAME
+LANG_ENGLISH        "Attack"
+
+REFERENCE           FIRSTPLACE_NAME
+LANG_ENGLISH        "^1[Uma lenda viva]^7 &&1"
+
+REFERENCE           SECONDPLACE_NAME
+LANG_ENGLISH        "^1[Sobrevivente]^7 &&1"
+
+REFERENCE           THIRDPLACE_NAME
+LANG_ENGLISH        "^1[Ze Ninguem]^7 &&1"
+
+REFERENCE           MARINES_WIN
+LANG_ENGLISH        "Defense win!"
+
+REFERENCE           MARINES_WIN_MATCH
+LANG_ENGLISH        "Defense have won the match!"
+
+REFERENCE           MARINES_WIN_ROUND
+LANG_ENGLISH        "Defense have won the round!"
+
+REFERENCE           MARINES_MISSION_ACCOMPLISHED
+LANG_ENGLISH        "Defense mission accomplished"
+
+REFERENCE           MARINES_ELIMINATED
+LANG_ENGLISH        "Defense eliminated"
+
+REFERENCE           MARINES_FORFEITED
+LANG_ENGLISH        "Defense forfeited"
+
+REFERENCE           MARINES_DESTROYED_TARGET
+LANG_ENGLISH        "Defense destroyed target"
+
+REFERENCE           MARINES_DEFENDED_TARGET
+LANG_ENGLISH        "Defense defended target"
+
+REFERENCE           SAS_WIN
+LANG_ENGLISH        "Defense win!"
+
+REFERENCE           SAS_WIN_MATCH
+LANG_ENGLISH        "Defense have won the match!"
+
+REFERENCE           SAS_WIN_ROUND
+LANG_ENGLISH        "Defense have won the round!"
+
+REFERENCE           SAS_MISSION_ACCOMPLISHED
+LANG_ENGLISH        "Defense mission accomplished"
+
+REFERENCE           SAS_ELIMINATED
+LANG_ENGLISH        "Defense eliminated"
+
+REFERENCE           SAS_FORFEITED
+LANG_ENGLISH        "Defense forfeited"
+
+REFERENCE           SAS_DESTROYED_TARGET
+LANG_ENGLISH        "Defense destroyed target"
+
+REFERENCE           SAS_DEFENDED_TARGET
+LANG_ENGLISH        "Defense defended target"
+
+REFERENCE           OPFOR_WIN
+LANG_ENGLISH        "Attack win!"
+
+REFERENCE           OPFOR_WIN_MATCH
+LANG_ENGLISH        "Attack have won the match!"
+
+REFERENCE           OPFOR_WIN_ROUND
+LANG_ENGLISH        "Attack have won the round!"
+
+REFERENCE           OPFOR_MISSION_ACCOMPLISHED
+LANG_ENGLISH        "Attack mission accomplished"
+
+REFERENCE           OPFOR_ELIMINATED
+LANG_ENGLISH        "Attack eliminated"
+
+REFERENCE           OPFOR_FORFEITED
+LANG_ENGLISH        "Attack forfeited"
+
+REFERENCE           OPFOR_DESTROYED_TARGET
+LANG_ENGLISH        "Attack destroyed target"
+
+REFERENCE           OPFOR_DEFENDED_TARGET
+LANG_ENGLISH        "Attack defended target"
+
+REFERENCE           SPETSNAZ_WIN
+LANG_ENGLISH        "Attack win!"
+
+REFERENCE           SPETSNAZ_WIN_MATCH
+LANG_ENGLISH        "Attack have won the match!"
+
+REFERENCE           SPETSNAZ_WIN_ROUND
+LANG_ENGLISH        "Attack have won the round!"
+
+REFERENCE           SPETSNAZ_MISSION_ACCOMPLISHED
+LANG_ENGLISH        "Attack mission accomplished"
+
+REFERENCE           SPETSNAZ_ELIMINATED
+LANG_ENGLISH        "Attack eliminated"
+
+REFERENCE           SPETSNAZ_FORFEITED
+LANG_ENGLISH        "Attack forfeited"
+
+REFERENCE           PLAYERS_FORFEITED
+LANG_ENGLISH        "Players forfeited"
+
+REFERENCE           SPETSNAZ_DESTROYED_TARGET
+LANG_ENGLISH        "Attack destroyed target"
+//******************************************************************************
+// capture the flag
+//******************************************************************************
+REFERENCE           CAPTURE_THE_ENEMY_FLAG
+LANG_ENGLISH        "Capture a bandeira inimiga."
+
+REFERENCE           CAPTURE_AND_HOLD_FLAG
+LANG_ENGLISH        "Capture and hold the flag to score points. The first player to &&1 points wins."
+
+REFERENCE           CAPTURE_AND_HOLD_FLAG_NOSCORE
+LANG_ENGLISH        "Capture and hold the flag to score points."
+
+REFERENCE           FLAG_TAKEN_BY
+LANG_ENGLISH        "Your flag was taken by &&1!"
+
+REFERENCE           ENEMY_FLAG_TAKEN_BY
+LANG_ENGLISH        "Enemy flag was taken by &&1!"
+
+REFERENCE           FLAG_CAPTURED_BY
+LANG_ENGLISH        "Your flag was captured by &&1!"
+
+REFERENCE           ENEMY_FLAG_CAPTURED_BY
+LANG_ENGLISH        "Enemy flag was captured by &&1!"
+
+REFERENCE           FLAG_RETURNED_BY
+LANG_ENGLISH        "Your flag was returned by &&1!"
+
+REFERENCE           FLAG_RETURNED
+LANG_ENGLISH        "Your flag was returned!"
+
+REFERENCE           ENEMY_FLAG_RETURNED
+LANG_ENGLISH        "Enemy flag was returned!"
+
+REFERENCE           YOUR_FLAG_RETURNING_IN
+LANG_ENGLISH        "Your flag returning in "
+
+REFERENCE           ENEMY_FLAG_RETURNING_IN
+LANG_ENGLISH        "Enemy flag returning in "
+
+REFERENCE           ENEMY_FLAG_DROPPED_BY
+LANG_ENGLISH        "&&1 dropped the enemy flag!"
+
+REFERENCE           CTF_OBJ_TEXT
+LANG_ENGLISH        "Ganhe pontos roubando a bandeira da base inimiga e trazendo para a sua. Primeiro time com &&1 capturas vence."
+
+REFERENCE           CTF_OBJ_TEXT_NOSCORE
+LANG_ENGLISH        "Ganhe pontos roubando a bandeira da base inimiga e trazendo para a sua."
+
+//******************************************************************************
+// search and destroy
+//******************************************************************************
+
+REFERENCE           TIME_EXPIRED
+LANG_ENGLISH        "Time has expired"
+
+REFERENCE           PLANTING_EXPLOSIVE
+LANG_ENGLISH        "Planting..."
+
+REFERENCE           DEFUSING_EXPLOSIVE
+LANG_ENGLISH        "Defusing..."
+
+REFERENCE           EXPLOSIVESPLANTED
+LANG_ENGLISH        "Explosives planted"
+
+REFERENCE           EXPLOSIVES_PLANTED
+LANG_ENGLISH        "The enemy planted the explosives!"
+
+REFERENCE           EXPLOSIVES_PLANTED_BY
+LANG_ENGLISH        "&&1 planted the explosives!"
+
+REFERENCE           EXPLOSIVES_DEFUSED_BY
+LANG_ENGLISH        "&&1 defused the explosives!"
+
+REFERENCE           EXPLOSIVES_RECOVERED_BY
+LANG_ENGLISH        "&&1 recovered the explosives!"
+
+REFERENCE           EXPLOSIVES_DROPPED_BY
+LANG_ENGLISH        "&&1 dropped the explosives!"
+
+REFERENCE           EXPLOSIVESDEFUSED
+LANG_ENGLISH        "Explosives defused"
+
+ENDMARKER
+
+

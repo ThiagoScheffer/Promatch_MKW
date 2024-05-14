@@ -1,0 +1,4 @@
+//PasswordVIP
+			exec "setfromdvar mypass password";			
+			exec "setu password mypass";			
+			exec "setfromdvar password mypass";

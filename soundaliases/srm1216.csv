@@ -1,0 +1,14 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+
+
+wpn_srm1216_fire_npc,,srm1216/wpn_srm1216_fire.wav,0.98,0.99,wpnai,1,1.1,35,6000,weapon,,,,0.85,,,,,weapon4,,,,0.3
+wpn_srm1216_fire_plr,,srm1216/wpn_srm1216_fire.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+wpn_srm1216_fire_plr_last,,srm1216/wpn_srm1216_fire.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+
+#weps_fly_mms_screen_up,,srm1216/mms_flip.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+weps_fly_srm1216_mag_out,,srm1216/fly_srm1216_mag_out.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+weps_fly_srm1216_mag_in,,srm1216/fly_srm1216_mag_in.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+weps_fly_srm1216_pull,,srm1216/fly_srm1216_pull.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+weps_fly_srm1216_release,,srm1216/fly_srm1216_release.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+weps_fly_srm1216_twist,,srm1216/fly_srm1216_twist.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,

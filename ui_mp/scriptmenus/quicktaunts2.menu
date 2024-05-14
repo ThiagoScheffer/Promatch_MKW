@@ -1,0 +1,121 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+//#define ORIGIN_QUICKMESSAGEWINDOW		0 16
+//quickmessage, Botoes dentro da janela, pos X, comprimento
+{
+
+#undef buttonAlign
+#define buttonAlign 0 0
+
+#undef SETS_X
+#undef SETS_Y
+
+menuDef
+{
+	name			quicktaunts2
+	focusColor		COLOR_FOCUSED
+	fullScreen		0
+	blurWorld		4.8
+	rect			0 0 640 480
+	onOpen
+	{
+	}
+	onClose
+	{
+	}
+	onEsc
+	{
+		close self;
+	}
+#define blacktitle "TAUNTS"
+#include "ui_mp/blackwindowmodel.inc"
+
+#define TPOSX 80
+#define TPOSY 30
+#define TAUNT_NAME(id,title,taunt) \
+		BUTTONBLACK(TPOSX, (TPOSY + id * 30), 80,title,scriptMenuResponse taunt,1,title)\
+	
+	
+//"@"+tablelookup("soundaliases/new.csv",4,NAME,3)	
+	
+	
+	//HEAD(0, "@MENU_GRAPHICS")
+	//TAUNT_NAME(1,"acertomizeravi",taunt1)
+	TAUNT_NAME(1,"naomemastaste",taunt67)
+	TAUNT_NAME(2,"porratodasuja",taunt68)
+	TAUNT_NAME(3,"oogputo",taunt69)
+	TAUNT_NAME(4,"oqtaprocurando",taunt70)
+	TAUNT_NAME(5,"paracomessaporra",taunt71)
+	TAUNT_NAME(6,"parademintirrapaz",taunt72)
+	TAUNT_NAME(7,"bandida",taunt73)
+	TAUNT_NAME(8,"pegueivcbandido",taunt74)
+	TAUNT_NAME(9,"peidao",taunt75)	
+	TAUNT_NAME(10,"picapaurachador",taunt76)
+	TAUNT_NAME(11,"sinistroviado",taunt77)
+	TAUNT_NAME(12,"qualpremio",taunt78)	
+	TAUNT_NAME(13,"quedeliciakra",taunt79)
+	#undef TPOSX
+	#define TPOSX 180
+	TAUNT_NAME(1,"quemmanda",taunt80)
+	TAUNT_NAME(2,"queriaticomer",taunt81)
+	TAUNT_NAME(3,"rabaodetiro",taunt82)
+	TAUNT_NAME(4,"risadabrasil",taunt83)
+	TAUNT_NAME(5,"risadagordo",taunt84)
+	TAUNT_NAME(6,"risadagordo2",taunt85)	
+	TAUNT_NAME(7,"risadagrabriel_01",taunt86)
+	TAUNT_NAME(8,"risadakiko",taunt87)
+	TAUNT_NAME(9,"risadamulher",taunt88)
+	TAUNT_NAME(10,"risadao",taunt89)
+	TAUNT_NAME(11,"risadao2",taunt90)
+	TAUNT_NAME(12,"risadao3",taunt91)	
+	TAUNT_NAME(13,"Risadasbugadas",taunt92)
+	#undef TPOSX
+	#define TPOSX 280
+	TAUNT_NAME(1,"saobandodefdp",taunt93)
+	TAUNT_NAME(2,"risadakiko",taunt94)
+	TAUNT_NAME(3,"soubemmacho",taunt95)
+	TAUNT_NAME(4,"tadoendo",taunt96)
+	TAUNT_NAME(5,"tamofdido",taunt97)
+	TAUNT_NAME(6,"tapitatudobem",taunt98)	
+	TAUNT_NAME(7,"tialucia",taunt99)
+	TAUNT_NAME(8,"tiramaodabunda",taunt100)
+	TAUNT_NAME(9,"lmbeuocu",taunt101)
+	TAUNT_NAME(10,"tomaroutravez",taunt102)
+	TAUNT_NAME(11,"vaamerda",taunt103)
+	TAUNT_NAME(12,"Vaidarpquemtecome",taunt104)
+	TAUNT_NAME(13,"vaimorrer",taunt105)
+	#undef TPOSX
+	#define TPOSX 380
+	TAUNT_NAME(1,"vaitmarcutranq",taunt106)
+	TAUNT_NAME(2,"valeuvacilao",taunt107)
+	TAUNT_NAME(3,"vembucetadecoco",taunt108)
+	TAUNT_NAME(4,"voucravarfaca",taunt109)
+	TAUNT_NAME(5,"voudormirdepoisdssa",taunt110)
+	TAUNT_NAME(6,"vtnc",taunt111)	
+	TAUNT_NAME(7,"ehfodavelho",taunt112)
+	TAUNT_NAME(8,"mantarrokralho",taunt113)
+	TAUNT_NAME(9,"mantorradesliga",taunt114)
+	TAUNT_NAME(10,"mantorravafoder",taunt115)
+	TAUNT_NAME(11,"tutututudididi",taunt116)
+	TAUNT_NAME(12,"miseria_de_tico",taunt117)
+	TAUNT_NAME(13,"rubaopaucueca",taunt118)
+	#undef TPOSX
+	#define TPOSX 480
+	TAUNT_NAME(1,"rubaovtcessaveia",taunt119)
+	TAUNT_NAME(2,"ox_sacou",taunt120)
+	TAUNT_NAME(3,"ox_velhoputo",taunt121)
+	TAUNT_NAME(4,"leitinhokoreano",taunt122)
+	TAUNT_NAME(5,"encre_risada4",taunt123)
+	TAUNT_NAME(6,"blknegociosegurar",taunt124)	
+	/*TAUNT_NAME(7,"TAUNT124",taunt1)
+	TAUNT_NAME(8,"TAUNT125",taunt1)
+	TAUNT_NAME(9,"TAUNT126",taunt1)
+	TAUNT_NAME(10,"TAUNT127",taunt1)
+	TAUNT_NAME(11,"TAUNT128",taunt1)
+	TAUNT_NAME(12,"TAUNT129",taunt1)
+	TAUNT_NAME(13,"TAUNT130",taunt1)*/
+	
+}
+
+}

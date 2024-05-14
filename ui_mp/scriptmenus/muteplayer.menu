@@ -1,0 +1,78 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#define OPTIONS_STYLE			1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/custom.inc"
+
+
+{
+	menuDef
+	{
+		name 			"muteplayer"
+		fullScreen 		0
+		rect 			0 0 640 480				// Size and position of the menu
+		focusColor 		COLOR_FOCUSED			// Menu focus color for text and items
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		soundloop 		"music_mainmenu_mp"
+		onEsc
+		{
+			play "menu_close";			
+			close self;
+		}
+		PREPROC_SHADER_DRAW( -120 0 880 480, 0 0, "white", 0 0 0 0.75, 0, 1, 0 0 0 0 )
+		
+		#undef BACK_OPEN
+		#define BACK_OPEN exec "wait";
+		#include "ui_mp/navcontrols.inc"
+		CHOICE_MENU_TITLE( "PLAYERS RANKS" )
+	
+		//execkeyint 13 { play "mouse_click"; uiScript mutePlayer; }
+		execkeyint 32
+		{
+			play "mouse_click";
+		}
+		
+		//NewBack
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			FULLSCREEN_WIDE
+			background		"animbg_blur_front"
+			visible			1
+			decoration
+		}
+
+		#include "ui_mp/menu_tarjas.inc"
+		
+		
+		#undef CHOICE_X_START
+		#undef CHOICE_Y_START
+		#define CHOICE_X_START			-400
+		#define CHOICE_Y_START			-20
+
+		CHOICE_SECTION_TITLE( 45, "MELHOR JOGADOR")
+		CHOICE_BUTTON( 46, "Nome: ^3" + dvarString( ui_stat_bestname ),;)
+		CHOICE_BUTTON( 47, "Kills: ^3" + dvarString( ui_stat_bestkills ),;)
+		CHOICE_BUTTON( 48, "K/D: ^3" + dvarString( ui_stat_bestkd ),;)
+		CHOICE_BUTTON( 49, "RANK: ^3" + dvarString( ui_stat_bestrank ),;)
+		
+		CHOICE_SECTION_TITLE( 51, "CHEATERS ARROMBADOS")
+		CHOICE_BUTTON( 52, "Ultimo: " + dvarString( ui_stat_bannedname ),;)
+		CHOICE_BUTTON( 53, "Banidos: " + dvarString( ui_stat_bannedcount ),;)
+		
+		CHOICE_SECTION_TITLE( 54, "PIORES SACOS DE BOSTA DO SERVER")
+		CHOICE_BUTTON( 55, "CoronaVirus: ^3" + dvarString( ui_stat_worst1 ),;)
+		CHOICE_BUTTON( 56, "Zika Virus: ^3" + dvarString( ui_stat_worst2 ),;)
+		CHOICE_BUTTON( 57, "Ebola: ^3" + dvarString( ui_stat_worst3 ),;)
+		
+		//CHOICE_SECTION_TITLE( 65, "MODO DE RANK")
+		//CHOICE_BUTTON_VIS( 66, "INICIAR RANK",scriptMenuResponse "start_ranking";,when( stat( 3182 ) == 0))
+		//CHOICE_DBUTTON_VIS_NOHI( 66, "RANK JA INICIADO",when( stat( 3182 ) != 0);)		
+		
+		//CHOICE_SECTION_TITLE( 67, "^1CUIDADO ! AO CLICKAR SERA RESETADO !")
+		//CHOICE_SECTION_TITLE( 68, "^1(NECESSARIO 30000 EVP)")
+		//CHOICE_BUTTON( 69, "^3RESETAR RANK/KD",scriptMenuResponse "ResetRankStats";close self)		
+	}
+}

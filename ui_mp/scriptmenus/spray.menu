@@ -1,0 +1,121 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+//#include "ui_mp/choices_setup_common.menu"
+{
+
+	#undef buttonAlign
+	#define buttonAlign 0 0
+
+	#undef SETS_X
+	#undef SETS_Y
+
+	menuDef
+	{
+		name			spray
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		fullScreen		0
+		blurWorld		8.0
+		rect			0 0 640 480		
+		onOpen
+		{
+			setLocalVarBool ui_hidemainmenu 1;
+		}
+		onClose
+		{
+			setLocalVarBool ui_hidemainmenu 0;
+		}
+		onEsc
+		{
+			play "menu_close";
+			close self;
+		}
+	
+			#define blacktitle "SPRAYS"
+			#include "ui_mp/blackwindowmodel.inc"
+
+		
+			
+			#define TPOSX 70
+			#define TPOSY 7
+			#define sprayshader "spray" + stat(3480) + "_menu"
+			
+			//SHADER BOX SAVE RESOURCES
+			itemDef
+			{
+				rect			49 45 540 420 //HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+				//rect			49 45 540 420
+				style			WINDOW_STYLE_SHADER
+				exp				material( "spray0_menu" );
+				forecolor		1 1 1 1
+				border		WINDOW_BORDER_SUNKEN 
+				bordercolor	0 0 0 1 
+				visible			1
+				decoration
+			}
+			
+			//SELECIONADO MATERIAL
+			/*itemDef //caixa fundo
+			{ 
+				style		WINDOW_STYLE_FILLED 
+				rect		200 390 60 60 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP 
+				backcolor	0.3 0.3 0.3 0.75 
+				border		1 
+				bordercolor	0.9 0.4 0.8 1 
+				visible		1 
+				decoration 
+			} 
+			itemDef
+			{			//(X-D Y+sob)
+				rect			200 390 60 60 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+				forecolor		1 1 1 1
+				style			WINDOW_STYLE_SHADER
+				exp				material( sprayshader );
+				visible 		1
+				decoration
+			}	*/
+			
+			//3480
+			#define SPRAY(id,shader,title,vis) \
+			BUTTONSHADERICONSTITLE(TPOSX, (TPOSY + id * 50), 80,shader,title,vis,id,title)\
+			
+			//HEAD(0, "@MENU_GRAPHICS")
+			SPRAY( 1,"","spray0", when(stat( 3480 ) == 0) )
+			SPRAY( 2,"", "spray1", when(stat( 3480 ) == 1) )
+			SPRAY( 3,"", "spray2",when(stat( 3480 ) == 2) )
+			SPRAY( 4,"", "spray3",when(stat( 3480 ) == 3) )
+			SPRAY( 5,"", "spray4",when(stat( 3480 ) == 4) )
+			SPRAY( 6, "","spray5",when(stat( 3480 ) == 5))
+			SPRAY( 7,"", "spray6",when(stat( 3480 ) == 6))
+			SPRAY( 8,"", "spray7",when(stat( 3480 ) == 7))
+			#undef TPOSX
+			#define TPOSX 140
+			SPRAY( 1, "","spray8",when(stat( 3480 ) == 8))
+			SPRAY( 2,"", "spray9",when(stat( 3480 ) == 9))
+			SPRAY( 3,"", "spray10",when(stat( 3480 ) == 10))
+			SPRAY( 4, "","spray11",when(stat( 3480 ) == 11))
+			SPRAY( 5,"", "spray12",when(stat( 3480 ) == 12)	)		
+			SPRAY( 6, "","spray13",when(stat( 3480 ) == 13))
+			SPRAY( 7,"", "spray14",when(stat( 3480 ) == 14))
+			SPRAY( 8, "","spray15",when(stat( 3480 ) == 15))
+			#undef TPOSX
+			#define TPOSX 220
+			SPRAY( 1, "","spray16",when(stat( 3480 ) == 16))
+			SPRAY( 2,"", "spray17",when(stat( 3480 ) == 17))
+			SPRAY( 3,"", "spray18",when(stat( 3480 ) == 18))
+			SPRAY( 4,"", "spray19",when(stat( 3480 ) == 19))
+			SPRAY( 5,"", "spray20",when(stat( 3480 ) == 20))
+			SPRAY( 6,"", "spray21",when(stat( 3480 ) == 21))
+			SPRAY( 7,"", "spray22",when(stat( 3480 ) == 22))
+			SPRAY( 8, "","spray23",when(stat( 3480 ) == 23))
+			#undef TPOSX
+			#define TPOSX 310
+			SPRAY( 1,"", "spray24",when(stat( 3480 ) == 24))
+			SPRAY( 2,"", "spray25",when(stat( 3480 ) == 25))
+			SPRAY( 3,"", "spray26",when(stat( 3480 ) == 26))
+			SPRAY( 4,"", "spray27",when(stat( 3480 ) == 27))
+			SPRAY( 5,"", "spray28",when(stat( 3480 ) == 28))
+			SPRAY( 6,"", "spray29",when(stat( 3480 ) == 29))
+	}
+}

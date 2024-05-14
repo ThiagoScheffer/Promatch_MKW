@@ -1,0 +1,28 @@
+0,2380,defusekit,Kit defusar,50,1,0,ITEM
+1,2381,gasmask,Anti-Smoke Mascara,65,1,0,ITEM
+2,2382,antitoxin,Anti-toxina,250,1,0,ITEM
+3,2383,antimag,EMP protecao,85,1,0,ITEM
+4,2384,fmjammo,Alta perfuracao Baixo impacto,350,0,0,ITEM
+5,2385,hpammo,Alto impacto Baixa pernetration,350,0,0,ITEM
+6,2386,firearrow,Flecha com fogo,350,0,0,ITEM
+7,2387,buysnapshot,Revela os jogadores na volta,85,1,2370,GRENADE
+8,2388,buyteargrenade,Granada de gas,100,1,2371,GRENADE
+9,2389,buymagnade,EMP Nade,100,1,2372,GRENADE
+10,2390,buydecoy,Simula sons.,50,1,0,GRENADE
+11,2391,kitarmor,Colete e Capacete.,150,0,0,ITEM
+12,2392,heavykevlar,Colete pesado,300,0,0,ITEM
+13,2393,buyclaymore,Avisa se alguem chegar perto,150,0,0,WEAPON
+13,2394,poisonarrow,Flecha com veneno,350,0,0,ITEM
+13,2395,shockarrow,Paralisa o alvo,350,0,0,ITEM
+13,2396,LIVRE,LIVRE,350,0,0,ITEM
+13,2397,com_drop_rope,ativa item especial para acessar pontos no mapa,300,0,0,ITEM
+14,2398,tombstones,ao morrer uma tumba aparece,120,0,0,ITEM
+15,2399,LIVRE,LIVRE,350,0,0,ITEM
+16,2400,LIVRE,LIVRE,350,0,0,ITEM
+17,2401,greensmoke,fumaca verde.,150,0,0,ITEM
+18,2402,orangesmoke,fumaca laranja.,150,0,0,ITEM
+19,2403,bluesmoke,fumaca azul.,150,0,0,ITEM
+20,2404,redsmoke,fumaca vermelha.,150,0,0,ITEM
+21,2405,LIVRE,LIVRE,350,0,0,ITEM
+22,2406,LIVRE,LIVRE,350,0,0,ITEM
+23,2407,buyimplodernade,Imploder Nade(Experimental),300,1,0,ITEM

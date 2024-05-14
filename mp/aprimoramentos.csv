@@ -1,0 +1,56 @@
+#stat,valor,nomupgrade,desc
+501,80,upgradefolego,Aumenta bastante o quao longe o jogador pode correr.
+502,50,upgradefalldamage,Reduz o dano ao cair.
+503,50,LIVRE,LIVRE
+504,250,upgradeprecisionshoot,Ao atingir alguem nas maos ha uma chance de derrubar a arma.
+505,50,upgradedangercloser,Aumenta o Dano de explosivos
+506,50,upgradetakedown,ao matar nao mostrar o icone indicador de morte para o time inimigo.
+507,90,upgradecoldblooded,nao pode ser marcado e imune a sensor clay e outros futuros itens.
+508,250,upgradeincognito,todas acoes do jogo estao ocultas sem killfeed ou killcam.
+509,50,upgradeperipherals,Minimap ampliado.
+510,250,upgrademedicpro,[Medico] Pode reviver e dar suporte.
+511,70,upgradefastrevive,[Medico] Diminui o tempo para reviver um aliado.
+512,150,upgradefastRegen,[Medico] Regenera a vida.
+513,50,upgrademedkitPack,[Medico] Aumenta a quantidade de medkits.
+514,20,upgrademedicsmoke,[Medico] Ao reviver um aliado recebe uma nova smoke.
+515,20,upgradeammopack,[Medico] Caixas de Medkits podem dar alguma municao.
+516,250,upgradewallbang,[Sniper] - 50% chance de wallhitkill.
+517,100,upgradewalldamageresist,Reduz o Dano pela parede.
+518,50,upgradefastchange,Aumenta velocidade de colocar acessorios.
+519,250,upgradecollateral,[Sniper] Hit pode dar dano em outros ao redor.
+520,350,upgradespotondeath,O player que te matar sera revelado no mapa
+521,250,upgradebombdisarmer,Pode roubar e Destruir a maleta.
+522,200,upgradesensorgas,SensorClay ao explodir libera gas.
+523,450,upgradespydronepro,Spydrone pode mostrar posicao dos alvos.
+524,50,upgradesitrep,Detecta itens pela parede.
+525,70,upgradescavenger,Aumenta as chances de conseguir itens nos corpos.
+526,50,LIVRE,LIVRE
+527,80,upgradeteargas,Aumenta o alcance da teargas.
+528,300,upgradeposiondamage,flechas com Veneno e pode infectar jogadores ao redor.
+529,50,LIVRE,LIVRE
+530,250,upgradecapturenaderesist,Quem estiver capturando/armando objetivos fica imune a nades.
+531,20,LIVRE,LIVRE
+532,50,upgradebuffreset,Apos usar o Teambuff Reseta o contador.
+533,70,upgradehackspot,HackSpot ao marcar voce o inimigo tambem se torna visivel.
+534,30,upgradedropitems,Ao matar um inimigo pode dropar a arma e granadas .
+535,20,LIVRE,LIVRE
+536,150,upgradesensorseeker,SensorSeeker aprimora o SensorClay mostrando onde o alvo esta.
+537,50,LIVRE,usado Resetar essa tabela.
+538,50,skilleliteSteal,rouba upgrades dos inimigos ao redor.
+539,70,skillbarbedwire,Spawn uma Barreira de arames.
+540,50,skillmedicshare,regenera a vida de todos ao redor tambem.
+541,60,skillsteathspy,consegue roubar uniformes dos corpos.
+542,450,LIVRE,LIVRE
+543,350,LIVRE,LIVRE
+544,350,LIVRE,LIVRE
+545,350,LIVRE,LIVRE
+546,350,LIVRE,LIVRE
+547,240,skillbuffcarepackage,[5 Kills ] Libera o Carepackage. 
+548,100,skillbuffuphand,Corrida++ Reload++ Resistencias++
+549,100,skillbuffdefense,Anula os treinamentos dos inimigos e protege o nosso time. Colete Classe 4
+550,100,skillbuffhealing,Regenera a vida com um Buff de 300HP. Restaura os seus Medkits.
+551,100,skillbuffnowhere,Remove treinamentos de stealth do inimigos.Stealth kills e Minimap hack.
+552,100,skillbuffjammer,Desativa todo o HUD dos inimigos. Ativa modo Stealth para o time.
+553,100,skillbuffhack,Desativa a perfuracao pelas paredes.Pode sabotar o tempo da bomb.
+554,100,skillbuffspydrone,[3 Kills ] Chama o Spydrone para mostrar alvos no radar.
+555,350,skillbuffpredator,[5 Kills ] Ativa o missil predador. 

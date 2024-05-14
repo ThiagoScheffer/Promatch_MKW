@@ -1,0 +1,149 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+//#include "ui_mp/choices_setup_common.menu"
+{
+
+	#undef buttonAlign
+	#define buttonAlign 0 0
+
+	#undef SETS_X
+	#undef SETS_Y
+
+	menuDef
+	{
+		name			emblemas
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		fullScreen		0
+		blurWorld		8.0
+		rect			0 0 640 480		
+		onOpen
+		{
+			setLocalVarBool ui_hidemainmenu 1;
+			exec "set ui_emblemstatus1 CUSTO AO SELECIONAR $100"
+		}
+		onClose
+		{
+			setLocalVarBool ui_hidemainmenu 0;
+		}
+		onEsc
+		{
+			play "menu_close";
+			close self;
+		}
+	
+			#define blacktitle "EMBLEMAS"
+			#include "ui_mp/blackwindowmodel.inc"
+
+			//EMBLEMA SELECIONADO MATERIAL
+			itemDef
+			{			//(X-D Y+sob)
+				rect			-55 20 120 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+				forecolor		1 1 1 1
+				style			WINDOW_STYLE_SHADER
+				exp				material( playercard_emblem_ + stat(3481));
+				visible 		1
+				decoration
+			}
+			
+			#define TPOSX 70
+			#define TPOSY 20
+			
+			#define EMBLEMASTATUS(itemIndex, textArg) \
+					itemDef \
+					{ \
+						style			WINDOW_STYLE_FILLED \
+						rect			(TPOSX - 26 ) (TPOSY - 10 + (itemIndex * 30)) 150 1 0 0 \
+						exp				text(textArg) \
+						textfont		UI_FONT_NORMAL \
+						textscale		0.25 \
+						textstyle		0 \
+						textAlignY		-2 \
+						textAlign		ITEM_ALIGN_CENTER \
+						forecolor		0.8 0.8 1 1 \
+						background		"line_horizontal" \
+						backcolor		0.8 0.8 1 1 \
+						visible			1 \
+						decoration \
+					}
+		
+			#define EMBLEMAS(id,shader,vis) \
+			BUTTONBLACKSHADER(TPOSX, (TPOSY + id * 30), 80,shader,scriptMenuResponse shader,vis,id)\
+		
+			//HEAD(0, "@MENU_GRAPHICS")
+			//CHOICE_BUTTON( 6, "EMBLEMAS    ",;)
+			EMBLEMAS( 1,"playercard_emblem_0",1)
+			EMBLEMAS( 2, "playercard_emblem_1", 1 )
+			EMBLEMAS( 3, "playercard_emblem_2", 1 )
+			EMBLEMAS( 4, "playercard_emblem_3", 1 )
+			EMBLEMAS( 5, "playercard_emblem_4", 1 )
+			EMBLEMAS( 6, "playercard_emblem_5",1 )
+			EMBLEMAS( 7, "playercard_emblem_6",1 )
+			EMBLEMAS( 8, "playercard_emblem_7", 1 )
+			EMBLEMAS( 9, "playercard_emblem_8",1 )
+			EMBLEMAS( 10, "playercard_emblem_9",1 )
+			EMBLEMAS( 11, "playercard_emblem_10", 1 )
+			EMBLEMAS( 12, "playercard_emblem_11", 1 )
+			EMBLEMAS( 13, "playercard_emblem_12", 1 )
+			EMBLEMAS( 14, "playercard_emblem_13", 1 )
+			#undef TPOSX
+			#define TPOSX 180
+			EMBLEMAS( 1, "playercard_emblem_14",1 )
+			EMBLEMAS( 2, "playercard_emblem_15",1 )
+			EMBLEMAS( 3, "playercard_emblem_16", 1 )
+			EMBLEMAS( 4, "playercard_emblem_17", 1 )
+			EMBLEMAS( 5, "playercard_emblem_18",1 )
+			EMBLEMAS( 6, "playercard_emblem_19",1 )
+			EMBLEMAS( 7, "playercard_emblem_20", 1 )
+			/*EMBLEMAS( 8, "playercard_emblem_21", 1 )
+			EMBLEMAS( 9, "playercard_emblem_22", 1 )
+			EMBLEMAS( 10, "playercard_emblem_23", 1 )
+			EMBLEMAS( 11, "playercard_emblem_24", 1 )
+			EMBLEMAS( 12, "playercard_emblem_25", 1 )
+			EMBLEMAS( 13, "playercard_emblem_26", 1 )
+			EMBLEMAS( 14, "playercard_emblem_27", 1 )
+			#undef TPOSX
+			#define TPOSX 280
+			EMBLEMAS( 1, "playercard_emblem_28", 1 )
+			EMBLEMAS( 2, "playercard_emblem_29", 1 )
+			EMBLEMAS( 3, "playercard_emblem_30", 1 )
+			EMBLEMAS( 4, "playercard_emblem_31", 1 )
+			EMBLEMAS( 5, "playercard_emblem_32", 1 )
+			EMBLEMAS( 6, "playercard_emblem_33", 1 )
+			EMBLEMAS( 7, "playercard_emblem_34",1 )
+			EMBLEMAS( 8, "playercard_emblem_35",1 )
+			EMBLEMAS( 9, "playercard_emblem_36", 1 )
+			EMBLEMAS( 10, "playercard_emblem_37", 1 )
+			EMBLEMAS( 11, "playercard_emblem_38", 1 )
+			EMBLEMAS( 12, "playercard_emblem_39", 1 )
+			EMBLEMAS( 13, "playercard_emblem_40", 1 )
+			EMBLEMAS( 14, "playercard_emblem_41",1 )
+			#undef TPOSX
+			#define TPOSX 380
+			EMBLEMAS( 1, "playercard_emblem_42",1 )
+			EMBLEMAS( 2, "playercard_emblem_43", 1 )
+			EMBLEMAS( 3, "playercard_emblem_44", 1 )
+			EMBLEMAS( 4, "playercard_emblem_45", 1 )
+			EMBLEMAS( 5, "playercard_emblem_46", 1 )
+			EMBLEMAS( 6, "playercard_emblem_47", 1 )
+			EMBLEMAS( 7, "playercard_emblem_48", 1 )
+			EMBLEMAS( 8, "playercard_emblem_49",1 )
+			EMBLEMAS( 9, "playercard_emblem_50", 1 )*/
+			//EMBLEMAS( 10, "playercard_emblem_51", 1 )
+			//EMBLEMAS( 11, "playercard_emblem_52", 1 )
+			//EMBLEMAS( 12, "playercard_emblem_53", 1 )
+			//EMBLEMAS( 13, "playercard_emblem_54", 1 )
+			//EMBLEMAS( 14, "playercard_emblem_55", 1 )
+			#undef TPOSX
+			#define TPOSX 480
+			//EMBLEMAS( 1, "playercard_emblem_56", 1 )
+			//EMBLEMAS( 2, "playercard_emblem_57", 1 )
+			//EMBLEMAS( 3, "playercard_emblem_58", 1 )
+			//EMBLEMAS( 4, "playercard_emblem_59", 1 )
+			//EMBLEMAS( 5, "playercard_emblem_60", 1 )		
+			
+			EMBLEMASTATUS(13,"^1" + dvarstring(ui_emblemstatus1))
+			EMBLEMASTATUS(14,"^2$$$: " + stat(3181))
+	}
+}

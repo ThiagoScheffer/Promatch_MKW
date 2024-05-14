@@ -1,0 +1,4 @@
+weap_r5rgp_pullout_chamber_plr weap_r5rgp_pullout_chamber_plr
+weap_r5rgp_chamber_plr weap_r5rgp_chamber_plr
+weap_r5rgp_clipin_plr weap_r5rgp_clipin_plr
+weap_r5rgp_clipout_plr weap_r5rgp_clipout_plr

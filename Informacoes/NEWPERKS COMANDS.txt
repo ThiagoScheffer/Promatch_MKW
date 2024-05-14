@@ -1,0 +1,17 @@
+player_footstepsThreshhold 0 - MINIMA VELOCIDADE QUE PRECIS PARA FAZER BARULHO
+player_meleeChargeFriction 1200 - IDEIAL 5000
+player_scopeExitOnDamage 0 - DAMAGE EXIT SCOPE
+player_sprintCameraBob "0.5" - sprint bob
+player_sprintSpeedScale 1.5 -> 1.6/7 AGILITY
+player_sprintTime 4 -> 8-10 MARATON
+bg_fallDamageMaxHeight "300"
+bg_fallDamageMinHeight "128"
+cg_laserForceOn "0"
+cg_laserLight "0"
+perk_parabolicRadius "400"
+perk_sprintMultiplier "2"
+perk_weapRateMultiplier "0.75"
+perk_weapReloadMultiplier "0.5"
+perk_weapSpreadMultiplier "0.65"
+perk_grenadeDeath "frag_grenade_short_mp"
+perk_explosiveDamage "25"

@@ -1,0 +1,220 @@
+#include "ui_mp/global.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+{
+
+	#undef buttonAlign
+	#define buttonAlign 0 0
+	
+	#undef SETS_X
+	#define SETS_X 75 //< >
+	#undef SETS_Y
+	#define SETS_Y 50 //up down
+
+	menuDef
+	{
+		name			"changeclass_mw"
+		focusColor		COLOR_FOCUSED
+		fullScreen		0
+		blurWorld		4.8
+		soundloop 		"music_mainmenu_mp"
+		rect			0 0 640 480
+		onOpen
+		{
+			//EXEMPLOS
+		//setu com_maxfps 125; setfromdvar com_maxfps tempfps
+		//exec "setfromdvar ui_name name";
+			exec "setfromdvar showfps cg_drawfps"; //salva o fps em um var temp
+			exec "setu cg_drawfps 0";// desativa o fps e grava na cfg setu
+			exec "setu cg_drawfps 0";
+			
+			exec "set ui_slotname SALVAR CLASSE"
+
+		}
+		onClose
+		{
+			exec "set ui_slotname SALVAR CLASSE"
+			exec "setfromdvar cg_drawfps showfps"; //restaura o FPS caso esteja ligado
+		}
+		onEsc
+		{
+			play "menu_close";
+			close self;
+		}
+		//--------3188 RANK -0-8
+		#define blacktitle "WEAPONS" + " ^3[PRIMARY: ^1" + dvarString( "loadout_primary" ) + " ^2DMG: ^7" + ""+tablelookup("mp/weaponslist.csv",3,dvarString("ui_button_highlighted" ),5) + "^3] ^3[SECONDARY: ^1" + dvarString( "loadout_secondary" ) + "^3] ^3ITEM: ^1" + dvarString( "curr_sgrenade" )
+		#include "ui_mp/blackwindowmodel.inc"
+
+	
+
+		#define TPOSX 80
+		#define TPOSY 30
+	
+		#define HEADWEAPONS(itemIndex, textArg) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			(TPOSX - 37 ) (TPOSY + 22 + itemIndex * 25) 150 1 0 0 \
+			exp				text(" " +textArg) \
+			textfont		UI_FONT_NORMAL \
+			textscale		0.35 \
+			textstyle		0 \
+			textAlignY		-2 \
+			textAlign		ITEM_ALIGN_CENTER \
+			forecolor		0.8 0.8 1 1 \
+			background		"line_horizontal" \
+			backcolor		0.8 0.8 1 1 \
+			visible			1 \
+			decoration \
+		}
+		
+		
+		#define STATUSINFO(itemIndex, textArg) \
+		itemDef \
+		{ \
+			style			ITEM_TYPE_TEXT \
+			rect			(TPOSX) (TPOSY + itemIndex * 25) 150 1 0 0 \
+			exp				text(textArg) \
+			textfont		UI_FONT_NORMAL \
+			textscale		0.35 \
+			textstyle		0 \
+			textAlignY		-2 \
+			textAlign		ITEM_ALIGN_LEFT \
+			forecolor		0.8 0.8 1 1 \
+			backcolor		0.8 0.8 1 1 \
+			visible			1 \
+		}
+	
+		#define WEAPON_BUTTON(id,title,execnowact,vis) \
+				BUYBUTTONEXECNOWWEAPONS(TPOSX, (TPOSY + id * 25), 80,title,"loadout_weapon:"title,execnowact,vis)\
+		
+		#define WEAPONSAVE_BUTTON(id,title,script,execnowact,vis) \
+				BUYBUTTONEXECNOWWEAPONS(TPOSX, (TPOSY + id * 25), 80,title,script,execnowact,vis)\
+				
+		#define CLASS_BUTTON(id,title,script,cmd,vis) \
+				BUTTONTEXTBOXCLASS(TPOSX, (TPOSY + id * 25), 80, title, script,cmd, vis, id,15,15) \
+				
+		
+		//PREPROC_TEXT_DRAW_ALIGNED_EXP( TPOSX TPOSY 256 20 CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN, 0 0, 
+		//""+tablelookup("mp/weaponslist.csv",2,dvarString("ui_button_highlighted" ),4), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_MIDDLE_LEFT, COLOR_TITLE )\
+		
+		HEADWEAPONS(1,"ASSAULT")	
+		WEAPON_BUTTON(2,"HONEY-BADGER","set ui_button_highlighted HONEY-BADGER",1)		
+		WEAPON_BUTTON(3,"M16A3","set ui_button_highlighted M16A3",1)
+		WEAPON_BUTTON(4,"M4-CARBINE(A)","set ui_button_highlighted M4-CARBINE",1)		
+		WEAPON_BUTTON(5,"ARX160(A)","set ui_button_highlighted ARX160",1)		
+		WEAPON_BUTTON(6,"REMINGTON-R5(A)","set ui_button_highlighted REMINGTON-R5",1)		
+		WEAPON_BUTTON(7,"SCARH","set ui_button_highlighted SCARH",1)
+		WEAPON_BUTTON(8,"CM901(A)","set ui_button_highlighted CM901",1)
+		WEAPON_BUTTON(9,"G3A4(A)","set ui_button_highlighted G3A4",1)
+		WEAPON_BUTTON(10,"AK-47(A)","set ui_button_highlighted AK-47",1)
+		WEAPON_BUTTON(11,"GALIL","set ui_button_highlighted GALIL",1)
+		WEAPON_BUTTON(12,"AN94(A)","set ui_button_highlighted AN94",1)
+		WEAPON_BUTTON(13,"GROZA","set ui_button_highlighted GROZA",1)
+		WEAPON_BUTTON(14,"IMBEL","set ui_button_highlighted IMBEL",1)				
+		//CLASS_BUTTON(15,"^10-^7","classload0","customclass0",1)		
+		//WEAPON2_BUTTON(16,dvarString( customclass0 ),"customclass0","set ui_button_highlighted CARREGADA",when(stat(250) != 0))
+		
+				
+		#undef TPOSX
+		#define TPOSX 180
+		HEADWEAPONS(1,"SHOTGUN")
+		WEAPON_BUTTON(2,"W1200","set ui_button_highlighted W1200",1)
+		WEAPON_BUTTON(3,"M1014","set ui_button_highlighted M1014",1)
+		WEAPON_BUTTON(4,"870MCS","set ui_button_highlighted 870MCS",1)
+		WEAPON_BUTTON(5,"SRM1216","set ui_button_highlighted SRM1216",1)
+		HEADWEAPONS(6,"SMG")
+		WEAPON_BUTTON(7,"UZI(A)","set ui_button_highlighted UZI",1)
+		WEAPON_BUTTON(8,"MP5A3(A)","set ui_button_highlighted MP5A3",1)
+		WEAPON_BUTTON(9,"FN-P90(A)","set ui_button_highlighted FN-P90",1)		
+		WEAPON_BUTTON(10,"VECTOR(A)","set ui_button_highlighted VECTOR",1)
+		WEAPON_BUTTON(11,"AK74U(A)","set ui_button_highlighted AK74U",1)
+		WEAPON_BUTTON(12,"CZ805(A)","set ui_button_highlighted CZ805",1)		
+		WEAPON_BUTTON(13,"UMP45(A)","set ui_button_highlighted UMP45",1)
+		
+		//HEADWEAPONS(14,"[CLASSES SALVAS]")
+		//CLASS_BUTTON(15,"^11-^7","classload1","customclass1",1)		
+		//WEAPON2_BUTTON(16,dvarString( customclass1 ),"customclass1","set ui_button_highlighted CARREGADA",when(stat(253) != 0))
+		//HEADWEAPONS(15,"^2DAMAGE: ^7" + ""+tablelookup("mp/weaponslist.csv",3,dvarString("ui_button_highlighted" ),5))
+		//HEADWEAPONS(16,"^2RANGE: ^7" + ""+tablelookup("mp/weaponslist.csv",3,dvarString("ui_button_highlighted" ),6))	
+		
+		
+		#undef TPOSX
+		#define TPOSX 280
+		HEADWEAPONS(1,"SNIPERS")
+		WEAPON_BUTTON(2,"M40A3","set ui_button_highlighted M40A3",1)
+		WEAPON_BUTTON(3,"R700","set ui_button_highlighted R700",1)
+		WEAPON_BUTTON(4,"M24","set ui_button_highlighted M24",1)
+		WEAPON_BUTTON(5,"M40A5","set ui_button_highlighted M40A5",1)
+		WEAPON_BUTTON(6,"WA2000","set ui_button_highlighted WA2000",1)
+		WEAPON_BUTTON(7,"AWP","set ui_button_highlighted AWP",1)		
+		WEAPON_BUTTON(8,"DSR-50","set ui_button_highlighted DSR-50",1)
+		HEADWEAPONS(9,"SILENCIADAS")
+		WEAPON_BUTTON(10,"CROSSBOW","set ui_button_highlighted CROSSBOW",1)		
+		WEAPON_BUTTON(11,"VKS","set ui_button_highlighted VKS",1)	
+		WEAPON_BUTTON(12,"MSR(A)","set ui_button_highlighted MSR",1)			
+		WEAPON_BUTTON(13,"TAC330(A)","set ui_button_highlighted TAC330",1)
+				
+		
+		//WEAPON_BUTTON(14,"xxx","set ui_button_highlighted xxx",1)
+		//WEAPON_BUTTON(15,"xxx","set ui_button_highlighted xxx",1)
+		
+		
+		
+		//WEAPON_BUTTON(12,"SPRINGFIELD(A)","set ui_button_highlighted SPRINGFIELD",1)
+		//WEAPON_BUTTON(13,"KAR98K(A)","set ui_button_highlighted KAR98K",1)
+		
+		
+		//STATUSINFO(16,"PRIMARY: ^1" + dvarString( "loadout_primary" ))
+		//STATUSINFO(17,"SECONDARY: ^1" + dvarString( "loadout_secondary" ))
+		//STATUSINFO(18,"NADE: ^1" + dvarString( "curr_sgrenade" ))		
+		
+		#undef TPOSX
+		#define TPOSX 380
+		HEADWEAPONS(1,"SECONDARY")
+		WEAPON_BUTTON(2,"KNIFE","set ui_button_highlighted KNIFE",1)
+		WEAPON_BUTTON(3,"ICEPICK","set ui_button_highlighted ICEPICK",1)
+		WEAPON_BUTTON(4,"BERETTA","set ui_button_highlighted BERETTA",1)
+		WEAPON_BUTTON(5,"USP45","set ui_button_highlighted USP45",1)
+		WEAPON_BUTTON(6,"COLT45","set ui_button_highlighted COLT45",1)
+		WEAPON_BUTTON(7,"BERETTA23r","set ui_button_highlighted BERETTA23r",1)
+		WEAPON_BUTTON(8,"DE-357","set ui_button_highlighted DE-357",1)		
+		WEAPON_BUTTON(9,"MAGNUM-500","set ui_button_highlighted MAGNUM-500",1)
+		WEAPON_BUTTON(10,"P266AKIMBO","set ui_button_highlighted P266AKIMBO",1)
+		
+		//WEAPON2_BUTTON(16,"^2SALVAR","saveclass","set ui_button_highlighted SALVA",1)
+		//WEAPONSAVE_BUTTON(16,"^2SALVAR","saveclass","set ui_button_highlighted SALVA",1)
+		#undef TPOSX
+		#define TPOSX 480
+		HEADWEAPONS(1,"ITEM")
+		WEAPON_BUTTON(2,"FLASH","set ui_button_highlighted FLASH",1)
+		WEAPON_BUTTON(3,"SMOKE","set ui_button_highlighted SMOKE",1)
+		WEAPON_BUTTON(4,"SEMTEX","set ui_button_highlighted SEMTEX",1)
+		WEAPON_BUTTON(5,"HATCHET","set ui_button_highlighted HATCHET",1)
+		HEADWEAPONS(6,"CLASSICS")
+		WEAPON_BUTTON(7,"SPRINGFIELD(A)","set ui_button_highlighted SPRINGFIELD",1)
+		WEAPON_BUTTON(8,"KAR98K(A)","set ui_button_highlighted KAR98K",1)
+		WEAPON_BUTTON(9,"MP44","set ui_button_highlighted MP44",1)
+		
+		STATUSINFO(14,dvarString( "ui_slotname" ))
+		//HEADWEAPONS(10,"[CLASSES SALVAS]")
+		CLASS_BUTTON(14,"^10-^7","classsave0","customclass0",1)		
+		//WEAPON2_BUTTON(15,dvarString( customclass0 ),"customclass0","set ui_button_highlighted CARREGADA",when(stat(250) != 0))
+		CLASS_BUTTON(15,"^11-^7","classsave1","customclass1",1)	
+		//WEAPON2_BUTTON(16,dvarString( customclass1 ),"customclass1","set ui_button_highlighted CARREGADA",when(stat(253) != 0))
+		CLASS_BUTTON(16,"^12-^7","classsave2","customclass2",1)		
+		//WEAPON2_BUTTON(17,dvarString( customclass2 ),"customclass2","set ui_button_highlighted CARREGADA",when(stat(256) != 0))
+		
+		
+		/*HEADWEAPONS(10,"^2DAMAGE: ^7" + ""+tablelookup("mp/weaponslist.csv",3,dvarString("ui_button_highlighted" ),5))
+		HEADWEAPONS(11,"^2RANGE: ^7" + ""+tablelookup("mp/weaponslist.csv",3,dvarString("ui_button_highlighted" ),6))
+		HEADWEAPONS(12,"PRIMARY: ^7" + dvarString( "loadout_primary" ))
+		HEADWEAPONS(13,"SECONDARY: ^7" + dvarString( "loadout_secondary" ))
+		HEADWEAPONS(14,"NADE: ^7" + dvarString( "curr_sgrenade" ))*/
+		
+		//WEAPON2_BUTTON(14,"SALVAR","saveasspawn","set ui_button_highlighted CLASS SAVED",1)
+		//WEAPON2_BUTTON(15,"CARREGAR","loadclass","set ui_button_highlighted LOADED SAVED",1)
+		//WEAPON2_BUTTON(17,"LIMPAR","clearsaveasspawn","set ui_button_highlighted CLEARED CLASS",1)
+	}
+}
