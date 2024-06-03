@@ -1230,7 +1230,8 @@ onMenuResponse()
 				case "dropbomb":
 				// Check if this player is still connected and alive
 				player = self getCurrentPlayer( false );
-				if ( isDefined( player ) ) {
+				if ( isDefined( player ) ) 
+				{
 					if ( isDefined( player.carryObject ) && isDefined( player.pers ) && isDefined( player.pers["team"] ) && player.pers["team"] == self.pers["team"] && isAlive( player ) ) 
 {
 						player.carryObject thread maps\mp\gametypes\_gameobjects::setDropped();

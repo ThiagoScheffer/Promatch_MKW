@@ -97,7 +97,7 @@ TeamBuff()
 	
 	if(self IsUpgradesOn("skillbuffspydrone"))
 	{
-		self thread printmsgfxtobothteams("nosso SpyDrone esta ativo","Spydrone inimigo !!!","red");
+		self thread printmsgfxtobothteams("nosso SpyDrone esta ativo","Spydrone inimigo Ativo!!!","red");
 		
 		self thread playsoundtoteam(game["voice"][self.team] + "ouruavonline");
 		self thread playsoundtoenemyteam(game["voice"][otherteam] + "enemyuavair");

@@ -72,7 +72,7 @@ onPlayerKillStreak()
 			playedSound = true;
 			level.firstBlood = true;
 			level thread playSoundOnEveryone( "firstblood","^1First Blood",victim);
-			self GiveEVP(15,100);
+			self GiveEVP(25,100);
 			self statAdds("FIRSTBLOOD",1);
 			
 			self.enemyteamwasalive = getteamplayersalive(level.otherTeam[ self.pers["team"] ]) + 1;///adiciona 1 pois morreu ao iniciar este codigo? -> firstblood ?
@@ -120,9 +120,9 @@ onPlayerKillStreak()
 					iprintln("^1"+self.name + " ^2 " +level.scr_killingspree_sounds[ killingSpree ] );
 					
 					if(level.scr_killingspree_sounds[ killingSpree ] == "triplekill")
-					self SetRankPoints(25);
+					self GiveEVP(15,100);
 					
-					ShowDebug("killingSpree: ",killingSpree);
+					//ShowDebug("killingSpree: ",killingSpree);
 					
 					if(level.scr_killingspree_sounds[ killingSpree ] == "killingspree")//5
 					{
@@ -131,7 +131,7 @@ onPlayerKillStreak()
 							level thread promatch\_killingspree::playSoundOnEveryone( "acekill","^1ACE ",self.name + " Jogou bonito !");				
 							playedSound = true;
 							level.acedone = true;
-							self GiveEVP(100,100);
+							self GiveEVP(350,100);
 							self SetRankPoints(200);
 							
 						}
@@ -144,7 +144,7 @@ onPlayerKillStreak()
 							level thread promatch\_killingspree::playSoundOnEveryone( "acekill","^1DIE HARD ACE ",self.name + " Matou todos!!!");				
 							playedSound = true;
 							level.acedone = true;
-							self GiveEVP(200,100);
+							self GiveEVP(500,100);
 							self SetRankPoints(500);
 							self statAdds("RAMPAGES",1);
 						}
@@ -157,7 +157,7 @@ onPlayerKillStreak()
 							level thread promatch\_killingspree::playSoundOnEveryone( "acekill","^1HARD ACE ",self.name + " Arruinou o jogo de todos!!!");				
 							playedSound = true;
 							level.acedone = true;
-							self GiveEVP(300,100);
+							self GiveEVP(700,100);
 							self SetRankPoints(2000);
 						}
 					}
@@ -169,7 +169,7 @@ onPlayerKillStreak()
 							level thread promatch\_killingspree::playSoundOnEveryone( "acekill","^1IMPOSSIBLE ACE ",self.name + " IMORTAL !!!");				
 							playedSound = true;
 							level.acedone = true;
-							self GiveEVP(1000,100);
+							self GiveEVP(1500,100);
 							self SetRankPoints(1000);
 						}
 					}
@@ -199,19 +199,19 @@ onPlayerKillStreak()
 
 			
 				if(level.scr_killingspree_sounds[ killingSpree ] == "triplekill")
-				self GiveEVP(10,100);
-				
-				if(level.scr_killingspree_sounds[ killingSpree ] == "killingspree")
-				self GiveEVP(20,100);
-				
-				if(level.scr_killingspree_sounds[ killingSpree ] == "rampage")
-				self GiveEVP(20,100);
-				
-				if(level.scr_killingspree_sounds[ killingSpree ] == "dominating")
 				self GiveEVP(30,100);
 				
+				if(level.scr_killingspree_sounds[ killingSpree ] == "killingspree")
+				self GiveEVP(40,100);
+				
+				if(level.scr_killingspree_sounds[ killingSpree ] == "rampage")
+				self GiveEVP(50,100);
+				
+				if(level.scr_killingspree_sounds[ killingSpree ] == "dominating")
+				self GiveEVP(60,100);
+				
 				if(level.scr_killingspree_sounds[ killingSpree ] == "monsterkill")
-				self GiveEVP(45,100);
+				self GiveEVP(70,100);
 			}
 		}
 			
@@ -230,19 +230,19 @@ onPlayerKillStreak()
 				if(level.players.size >= 5)
 				{
 					if(level.scr_killingspree_sounds[ killingSpree ] == "triplekill")
-					self GiveEVP(10,100);
+					self GiveEVP(40,100);
 
 					if(level.scr_killingspree_sounds[ killingSpree ] == "killingspree")
-					self GiveEVP(30,100);
+					self GiveEVP(60,100);
 
 					if(level.scr_killingspree_sounds[ killingSpree ] == "rampage")
-					self GiveEVP(50,100);
+					self GiveEVP(80,100);
 
 					if(level.scr_killingspree_sounds[ killingSpree ] == "dominating")
-					self GiveEVP(100,100);
+					self GiveEVP(150,100);
 
 					if(level.scr_killingspree_sounds[ killingSpree ] == "monsterkill")
-					self GiveEVP(150,100);
+					self GiveEVP(250,100);
 				}
 			}
 		}	

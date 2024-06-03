@@ -807,7 +807,7 @@ achievements()
 				self thread proplayerhud( "^1Promatch Master!", "^7You have Killed ^1" + 3500 + " ^7Noobs!" );
 				
 				statAdds("MONEYRANK",15000);
-				statAdds("EVPSCORE", 3500);
+				statAdds("EVPSCORE", 5500);
 			}	
 		}
 		if(statGets("KILLRANK") == 2)

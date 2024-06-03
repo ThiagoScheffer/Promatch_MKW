@@ -62,7 +62,7 @@ givePredator()
 	
 	self statSets("TEAMBUFF",0);
 	
-	if(isdefined(self.teambufficon.icon))
+	if(self HasTeambuff())
 	self.teambufficon.icon.alpha = 0;
 	
 	//Current weapons and ammo

@@ -648,6 +648,9 @@ implodeNadefx(eAttacker)
 	wait 0.2;
 	endpos = eAttacker.magposition;	
 	
+	if ( isDefined( self.carryObject ))//fix bomb outside fall
+	self forcedropbomb();
+	
 	//moveto ( coordinate, moveTime, accel, decel );
 	if(isDefined(endpos))
 	dropEnt moveto ( endpos +  (0, 0, -80), 0.3);

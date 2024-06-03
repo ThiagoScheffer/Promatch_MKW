@@ -2,6 +2,4 @@
 
 "H:\COD4 Server\cod4x18_dedrun.exe" +set dedicated 2 +set fs_game mods/promatch207 +exec server.cfg +set sv_punkbuster 0 +set sv_cheats 1 +map_rotate  +set net_port 28961  +set r_xassetnum "material=4000 xmodel=1200 xanim=3200 image=3000 fx=600" +set developer 2
 
-https://1drv.ms/u/s!AlDSthuGRE-iikeg2sLM4Y9SW4JE`
-
 Cmd_AddCommand("XAssetUsage", XAssetUsage_f);

@@ -27,6 +27,7 @@ main()
 
 		
 	level.teamBased = true;
+	level.atualgtype = "dom";
 	level.overrideTeamScore = true;
 	level.onStartGameType = ::onStartGameType;
 	level.onSpawnPlayer = ::onSpawnPlayer;
@@ -581,8 +582,9 @@ giveFlagCaptureXP( touchList )
 				
 			touchList[players[index]].player thread [[level.onXPEvent]]( "capture" );
 			maps\mp\gametypes\_globallogic::givePlayerScore( "capture", touchList[players[index]].player );
-			evpx = players.size * 35;//qnto mais jogadores mais pontos
-			touchList[players[index]].player GiveEVP(evpx,100);			
+			evpx = players.size * 50;//qnto mais jogadores mais pontos
+			touchList[players[index]].player GiveEVP(evpx,100);	
+			//iprintln("capturando?: " + evpx);			
 		}
 	}
 }

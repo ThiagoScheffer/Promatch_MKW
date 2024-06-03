@@ -151,12 +151,12 @@ GiveScorePlayersTeamPlanted(team)
 		if(player.pers["team"] != team)
 		continue;
 		
-		if(player.score < 2100)
+		if(player.score < 800)
 		continue;
 	  
 		if ( player.pers["team"] == team )
 		{
-			player GiveEVP(300,100);
+			player GiveEVP(600,100);
 		}
 	}
 }

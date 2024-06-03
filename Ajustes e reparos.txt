@@ -409,14 +409,28 @@ medals no votemap
 [adicionados]
 SpyDrone FX, som e explosao
 [reparados]
-desativar uav marks ao explodir o drone
+signal uav marks nao resetando ao explodir o drone
+UAV radar nao resetando com o tempo certo
 altura do drone nao recebendo dano em certos mapas
 hitkill carepackage nao resetando
+granada Imploder nao afetando o Jugger corretamente
 [outros]
 ajustes no pickaxe
 ajustes da 870
 novos codigos para tratar os avisos e sons
+Bots autobalance - teste
 
+
+17/05/2024 - PATCH
+[adicionados]
+[reparados]
+Bug da faca com delay finalmente resolvido
+UAV radar com aviso para o time
+bug da imploder gerando erros de script com os Tombs
+[outros]
+ajustes nas armas com delay na faca
+ajustes nas msg de Teambuff
+mais $$$ nos killsprees e Squad
 
 
 [adicionados]

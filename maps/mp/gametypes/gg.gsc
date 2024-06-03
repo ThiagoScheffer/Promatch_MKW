@@ -42,7 +42,10 @@ main()
 	maps\mp\gametypes\_globallogic::SetupCallbacks();
 	
 	// Additional variables that we'll be using
-	level.scr_gg_weapon_order = toLower("m16_gl_mp:2;ak47_acog_mp:2;m4_gl_mp:2;ak47_mp:2;m4_reflex_mp:2;barrett_acog_mp:1;gl_m16_mp:1;g3_mp:1;g36c_reflex_mp:1;g36c_mp:2;g3_acog_mp:1;g3_reflex_mp:1;winchester1200_mp:1;winchester1200_grip_mp:1;m1014_reflex_mp:1;p90_mp:1;skorpion_reflex_mp:1;mp5_mp:1;ak74u_mp:1;m14_acog_mp:1;m40a3_mp:3;dragunov_mp:3;dragunov_acog_mp:3;m14_mp:3;gl_m4_mp:3;barrett_mp:3;m14_silencer_mp:3;m14_reflex_mp:3;remington700_acog_mp:2;beretta_mp:2;p90_silencer_mp:2;usp_mp:2;colt45_silencer_mp:2;colt45_mp:2;deserteagle_mp:3;usp_silencer_mp:3;rpg_mp:4;beretta_silencer_mp:8");
+	level.scr_gg_weapon_order = ""; //toLower("m16_gl_mp:2;ak47_acog_mp:2;m4_gl_mp:2;ak47_mp:2;m4_reflex_mp:2;barrett_acog_mp:1;gl_m16_mp:1;g3_mp:1;g36c_reflex_mp:1;g36c_mp:2;g3_acog_mp:1;g3_reflex_mp:1;winchester1200_mp:1;winchester1200_grip_mp:1;m1014_reflex_mp:1;p90_mp:1;skorpion_reflex_mp:1;mp5_mp:1;ak74u_mp:1;m14_acog_mp:1;m40a3_mp:3;dragunov_mp:3;dragunov_acog_mp:3;m14_mp:3;gl_m4_mp:3;barrett_mp:3;m14_silencer_mp:3;m14_reflex_mp:3;remington700_acog_mp:2;beretta_mp:2;p90_silencer_mp:2;usp_mp:2;colt45_silencer_mp:2;colt45_mp:2;deserteagle_mp:3;usp_silencer_mp:3;rpg_mp:4;beretta_silencer_mp:8");
+	
+	feedscr_gg_weapon_order();
+	
 	level.scr_gg_handicap_on = getdvarx( "scr_gg_handicap_on", "int", 2, 0, 2 );
 	
 	level.scr_gg_nade_knife_weapon = toLower( getdvarx( "scr_gg_nade_knife_weapon", "string", "c4_mp:0" ) );
@@ -82,6 +85,73 @@ main()
 	level thread onPlayerConnected();
 }
 
+giverandomweapongg()
+{
+
+//==============================================
+//buscar na tabela a classe e suas armas e gerar uma lista
+//==============================================	
+
+//model
+//m16_gl_mp:2
+
+//guarda uma lista de armas aqui
+	primaryWeaponrandom = [];
+	newElement = 0;
+	
+	for( idx = 0; idx <= 109; idx++ )
+	{
+		weapon_type = tablelookup( "mp/weaponslist.csv", 0, idx, 2 );
+		
+		if(!isDefined(weapon_type) || weapon_type == "weapon_grenade" || weapon_type == "weapon_projectile" )
+		continue;	
+	
+		//pega o nome de arquivo da arma - real filename: m14_reflex
+		weapon_name = tablelookup( "mp/weaponslist.csv", 0, idx, 4 );
+		
+		if(!isDefined(weapon_name) || weapon_name == "" || weapon_name == "LIVRE" )
+		continue;	
+
+		newElement = primaryWeaponrandom.size;		
+		
+		if(isDefined(weapon_name))
+		primaryWeaponrandom[newElement]["weaponname"] = weapon_name+"_mp";
+	}
+	
+	
+	randomWeaponSelectNumber = randomIntRange(0,primaryWeaponrandom.size); 
+	
+	randomWeaponSelect = primaryWeaponrandom[randomWeaponSelectNumber]["weaponname"];
+	
+	
+	level.newlistgg = randomWeaponSelect +":"+randomIntRange(1,6)+";";	
+	//logteste(level.newlistgg);
+	//beretta_silencer_mp
+	return level.newlistgg;
+}
+
+
+feedscr_gg_weapon_order()
+{
+	for( idx = 0; idx <= 26; idx++ )
+	{
+		//new random weap
+		newweapon = giverandomweapongg();
+		
+		//dont repeat it
+		if(isSubStr(newweapon, level.scr_gg_weapon_order))
+		newweapon = giverandomweapongg();
+		
+		if(isSubStr("binoculars_mp", level.scr_gg_weapon_order))
+		newweapon = giverandomweapongg();		
+		
+		level.scr_gg_weapon_order += giverandomweapongg();
+	}	
+	
+	level.scr_gg_weapon_order += "rpg_mp:4;beretta_silencer_mp:8";
+	
+	//logteste(level.scr_gg_weapon_order);
+}
 
 onPlayerConnected()
 {

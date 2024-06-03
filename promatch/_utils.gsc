@@ -1867,10 +1867,11 @@ printmsgfxtobothteams(msgsame,msgenemy,color)
 		if (player ignorebots()) continue;
 		
 		if(MesmoTime(player))		
-		player thread showtextfx3(msgsame,4,color);
+		player thread showtextfx3(msgsame,4,"blue");
 		else
-		player thread showtextfx3(msgenemy,4,color);
-		//player playLocalSound(sound);
+		player thread showtextfx3(msgenemy,4,"red");
+		
+		player playLocalSound("radio_putaway");
 	}
 
 }
@@ -2821,6 +2822,14 @@ GanhouBuff()
 }
 
 
+HasTeambuff()
+{
+	if(self statGets("TEAMBUFF") != 0)
+	return true;
+	
+	return false;
+}
+
 
 CheckTeamsforClassLimit(weapontype)
 {
@@ -3175,6 +3184,17 @@ GiveRadar()
 }
 
 
+forcedropbomb()
+{
+	if ( isDefined( self.carryObject ) && isDefined( self.pers ) && isDefined( self.pers["team"] ) && isAlive( self ) ) 
+	{
+		self.carryObject thread maps\mp\gametypes\_gameobjects::setDropped();
+		if ( level.gametype == "sd" )
+		self.isBombCarrier = false;
+		self thread maps\mp\gametypes\_gameobjects::pickupObjectDelayTime( 3.0 );
+	}
+}
+
 spawnitemwithmodeldelete(timer)
 {
 	self endon ( "disconnect" );
@@ -3189,13 +3209,18 @@ spawnitemwithmodel(modeltyp,origintospawn,linktowhat,waittospawn)
 {
 	self endon ( "disconnect" );
 	
+	
+	if(isDefined(self.killedbyimplodernade))
+	return;//fix imploder bug
+	
 	if(isDefined(waittospawn))
 	wait waittospawn;
 	
 	if(isDefined(origintospawn))
 	trace = bulletTrace( origintospawn.origin + (0,0,20), origintospawn.origin - (0,0,2000), false, self );
-	else
+	else if(isDefined(self))
 	trace = bulletTrace( self.origin + (0,0,20), self.origin - (0,0,2000), false, self );
+	else return;
 	
 	tempAngle = 0;
 	forward = (cos( tempAngle ), sin( tempAngle ), 0);
