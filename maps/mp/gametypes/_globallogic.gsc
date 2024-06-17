@@ -252,7 +252,7 @@ init()
 	level.spill_bloodfx = loadfx( "impacts/sniper_escape_blood" );//bleeding spill = leg blow mancha ok
 	level.gibsfx = loadfx( "props/gibs" );//blow gibs 
 	
-	level.poisongasfx = loadfx( "smoke/poisonsmoke" );//eletric shock exp	
+	level.poisongasfx = loadfx( "smoke/poisonsmoke" );//smoke gas	
 	level.fx_Sparks = loadfx( "props/securityCamera_explosion" );//eletric shock exp	
 	level.arrowignite_fx = loadfx ("props/barrel_ignite");//gettinf on fire
 	level.barrel_fire_fx = loadfx ("props/barrel_fire");//barrelfire 6s
@@ -4771,10 +4771,10 @@ Callback_PlayerDamage( eInflictor, eAttacker, iDamage, iDFlags, sMeansOfDeath, s
 			iDamage = 40;
 			
 			if(eAttacker.poisonarrow)
-			iDamage = 30;
+			iDamage = 33;
 			
 			if(eAttacker.shockarrow)
-			iDamage = 20;
+			iDamage = 24;
 		
 			self thread bloodonarrow();
 		
@@ -4807,6 +4807,13 @@ Callback_PlayerDamage( eInflictor, eAttacker, iDamage, iDFlags, sMeansOfDeath, s
 			
 			 if(sMeansOfDeath == "MOD_GRENADE_SPLASH" )
 			iDamage = 30;
+		}
+		
+		//ice pick
+		if(sWeapon == "binoculars_mp" && sMeansOfDeath == "MOD_MELEE")
+		{
+			PlayFX( level.fx_Sparks, self.origin);
+			self thread Doshockarrow(eAttacker);
 		}
 		//org = self gettagorigin( "j_spinelower" );
 		//angles = self gettagangles( "j_spinelower" );

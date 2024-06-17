@@ -1218,6 +1218,9 @@ beginGrenadeTracking()
 		
 		grenade thread magdetonate(self);
 	
+		if(isDefined(self.implodernade))
+		grenade thread createfollownade();
+		
 		//iprintln("magnade_mp-> " + grenade.origin);
 		//grenade thread createfollownade();
 		
@@ -1763,7 +1766,7 @@ magdetonate(owner)
 		
 		owner.magposition = self.origin;//salva a posi ondem explod
 		//iprintln("magposition-> " + owner.magposition);
-		if(isDefined(owner.implodernade))
+		if(isDefined(self) && isDefined(owner.implodernade))
 		{
 			self playSound( "implodernadefx");
 			PlayFX( level.implodernadefx,self.origin);

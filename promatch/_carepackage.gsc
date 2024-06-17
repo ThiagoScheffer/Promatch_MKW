@@ -87,6 +87,15 @@ CarePackageFunc()
 	wait time;
 	//self Unlink();
 	self.packagecrate thread DeleteBoxOvertime(self);
+	
+	//undefined is not an entity: (file 'promatch/_carepackage.gsc', line 90)
+	//level.chopperpackage setvehgoalpos((6516, 2758, 1714), 1);
+	if(!isDefined(level.chopperpackage))
+	{
+		level.chopperpackage = undefined;
+		return;
+	}
+	
 	level.chopperpackage setvehgoalpos((6516, 2758, 1714), 1);
 	self thread DestroyCareChopper();
 	//level.Point = NewHudElem();

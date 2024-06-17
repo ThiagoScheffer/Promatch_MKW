@@ -22,6 +22,8 @@ init()
 	level.vote_customgtype = getDvar( "vote_customgtype" );
 	level.vote_custommaplist = getDvar( "vote_custommaplist" );
 	
+	level.vote_gametypes = getDvar( "vote_gametypes" );
+	
 	if(level.vote_custommaplist == "")	
 	level.vote_custommaplist = "mp_killhouse,strike,crash,crossfire,backlot,vacant,citystreets,broadcast,mp_pipeline";
 	
@@ -30,7 +32,8 @@ init()
 	if(level.vote_customgtype == "")
 	level.vote_customgtype = "dm";
 	
-	
+	if(level.vote_gametypes == "")
+	level.vote_gametypes = "sd";
 	
 	/***************************************************************************************************************/
 }
@@ -105,6 +108,12 @@ startvotesystem()
 CreateStockMapArray()
 {
 	level.iw4xmaps = [];
+	
+	level.iw4xmaps["ambush"] = [];
+	level.iw4xmaps["ambush"]["localised_name"] = "Ambush";
+	level.iw4xmaps["ambush"]["preview_name"] = "mp_convoy";
+	level.iw4xmaps["ambush"]["zone_name"] = "mp_convoy";
+	
 	
 	level.iw4xmaps["broadcast"] = [];
 	level.iw4xmaps["broadcast"]["localised_name"] = "Broadcast";
@@ -294,18 +303,16 @@ StartMapMenuCreation()
 	
 	if(getdvarint("scr_eventorodando") == 1 && isDefined(level.eventohorario) && level.eventohorario != "")
 	{		
-		gametypes = "kc,crnk,dom,ctf";		
+		gametypes = "dom,ctf";		
 	}	
 	else
 	{		
-
-		gametypes = "";
-		gametypes = "sd";
+		gametypes = level.vote_gametypes;
 		
 		if(level.cod_mode == "torneio")
 		{
 			gametypes = "";
-			gametypes = "sd,dm,ass";
+			gametypes = "sd";
 		}
 	}  
 

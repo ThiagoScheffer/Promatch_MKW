@@ -205,6 +205,9 @@ cac_modified_damage( victim, attacker, damage, meansofdeath, iDFlags,sHitLoc,sWe
 	if( meansofdeath == "" )
 	return damage;
 	
+	if(isDefined(attacker.pers["isBot"])) 
+	damage = damage * 0.5;
+	
 	//if(level.oldschool && meansofdeath == "MOD_MELEE")
 	//return 300;
 	
@@ -496,7 +499,7 @@ UpdateKevlarHit(damage)
 	
 	//if(!isDefined(self.playerarmor)) return;
 	
-	if(self.playerarmor.currentarmor < 0)
+	if(isDefined(self.hasarmor))
 	self.playerarmor.currentarmor = 0;
 	
 	if(isDefined(self.pers["isBot"])) return;
