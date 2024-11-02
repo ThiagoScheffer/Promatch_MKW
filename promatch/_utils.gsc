@@ -5789,7 +5789,7 @@ CheckupgradesAtive(response)
 	
 		//self logDebug("CheckupgradesAtive","skill: " + response);
 		//check for skills selected. only 1 can be on.
-		for( idx = 538; idx <= 547; idx++ )
+		for( idx = 538; idx <= 541; idx++ )
 		{
 			
 			//iprintln("self getStat(idx):" + self getStat(idx));

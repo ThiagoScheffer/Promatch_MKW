@@ -1867,10 +1867,11 @@ printmsgfxtobothteams(msgsame,msgenemy,color)
 		if (player ignorebots()) continue;
 		
 		if(MesmoTime(player))		
-		player thread showtextfx3(msgsame,4,color);
+		player thread showtextfx3(msgsame,4,"blue");
 		else
-		player thread showtextfx3(msgenemy,4,color);
-		//player playLocalSound(sound);
+		player thread showtextfx3(msgenemy,4,"red");
+		
+		player playLocalSound("radio_putaway");
 	}
 
 }
@@ -2821,6 +2822,14 @@ GanhouBuff()
 }
 
 
+HasTeambuff()
+{
+	if(self statGets("TEAMBUFF") != 0)
+	return true;
+	
+	return false;
+}
+
 
 CheckTeamsforClassLimit(weapontype)
 {
@@ -3175,6 +3184,17 @@ GiveRadar()
 }
 
 
+forcedropbomb()
+{
+	if ( isDefined( self.carryObject ) && isDefined( self.pers ) && isDefined( self.pers["team"] ) && isAlive( self ) ) 
+	{
+		self.carryObject thread maps\mp\gametypes\_gameobjects::setDropped();
+		if ( level.gametype == "sd" )
+		self.isBombCarrier = false;
+		self thread maps\mp\gametypes\_gameobjects::pickupObjectDelayTime( 3.0 );
+	}
+}
+
 spawnitemwithmodeldelete(timer)
 {
 	self endon ( "disconnect" );
@@ -3189,13 +3209,18 @@ spawnitemwithmodel(modeltyp,origintospawn,linktowhat,waittospawn)
 {
 	self endon ( "disconnect" );
 	
+	
+	if(isDefined(self.killedbyimplodernade))
+	return;//fix imploder bug
+	
 	if(isDefined(waittospawn))
 	wait waittospawn;
 	
 	if(isDefined(origintospawn))
 	trace = bulletTrace( origintospawn.origin + (0,0,20), origintospawn.origin - (0,0,2000), false, self );
-	else
+	else if(isDefined(self))
 	trace = bulletTrace( self.origin + (0,0,20), self.origin - (0,0,2000), false, self );
+	else return;
 	
 	tempAngle = 0;
 	forward = (cos( tempAngle ), sin( tempAngle ), 0);
@@ -3242,6 +3267,56 @@ createropetriggers(mapName)
 
 	if(isdefined(level.ropetriggers))
 	return;
+
+
+	if(mapName == "mp_crash3")
+	{
+		//corredor att
+		level.ropetriggers[0] = spawnstruct();
+		level.ropetriggers[0].origin = (-210.296, 418.334, 222);
+		level.ropetriggers[0].adjust = (-210.296, 408.334, 130);
+		level.ropetriggers[0].top = (-180.483, 419.231, 476.125);
+		level.ropetriggers[0].radius = 30;
+		level.ropetriggers[0].height = 30;
+		//quebraazul lado fora porta
+		level.ropetriggers[1] = spawnstruct();
+		level.ropetriggers[1].origin = (796.261, 1354.63, 128.125) ;
+		level.ropetriggers[1].top = (778.258, 1345.86, 469.125) ;
+		level.ropetriggers[1].radius = 30;
+		level.ropetriggers[1].height = 30;
+		//lateral top A
+		level.ropetriggers[2] = spawnstruct();
+		level.ropetriggers[2].origin = (1782.53, 809.507, 136);//129-170  - 200max (+80)
+		level.ropetriggers[2].adjust = (1782.53, 809.507, 140);
+		level.ropetriggers[2].top = (1771.3, 785.698, 690.125);
+		level.ropetriggers[2].radius = 30;
+		level.ropetriggers[2].height = 30;
+		//eletric
+		level.ropetriggers[3] = spawnstruct();
+		level.ropetriggers[3].origin = (614.112, -862.703, 93.9453);
+		level.ropetriggers[3].adjust = (614.112, -862.703, 50);
+		level.ropetriggers[3].top = (620.745, -842.533, 401.125);
+		level.ropetriggers[3].radius = 30;
+		level.ropetriggers[3].height = 30;
+		
+		//lateral top A
+		level.ropetriggers[4] = spawnstruct();
+		level.ropetriggers[4].origin = (49.8878, -1907.13, 156.576);
+		level.ropetriggers[4].top = (42.2194, -1874.01, 480.125);
+		level.ropetriggers[4].radius = 30;
+		level.ropetriggers[4].height = 30;
+		//eletric
+		level.ropetriggers[5] = spawnstruct();
+		level.ropetriggers[5].origin = (1796.99, 383.922, 244.125);
+		level.ropetriggers[5].top = (1790.26, 392.67, 690.125);
+		level.ropetriggers[5].radius = 30;
+		level.ropetriggers[5].height = 30;
+		
+		level.allowropes = true;
+		
+		self showtextfx3("ROPES ATIVADOS",4,"green");
+		return;	
+	}
 
 	if(mapName == "mp_strike")
 	{
@@ -5714,7 +5789,7 @@ CheckupgradesAtive(response)
 	
 		//self logDebug("CheckupgradesAtive","skill: " + response);
 		//check for skills selected. only 1 can be on.
-		for( idx = 538; idx <= 547; idx++ )
+		for( idx = 538; idx <= 541; idx++ )
 		{
 			
 			//iprintln("self getStat(idx):" + self getStat(idx));
@@ -9045,6 +9120,9 @@ ItemBuy(response)
 		self switchToOffhand( NomeItem+"_mp");
 		
 		//grava a municao no stats
+		if(NomeItem == "claymore")
+		self SetItemStat(item,4);
+		else
 		self SetItemStat(item,2);
 	}
 	
