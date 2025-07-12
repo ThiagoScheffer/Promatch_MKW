@@ -177,20 +177,20 @@ The mod **Promatch** is offered for free. Any use of the original game's intelle
 ### 2024
 
 - **Menu2024-a.png**
-  ![Menu2020-a](Media/Menu2024-a.png)
+  ![Menu2020-a](Media/Menu2024-a.jpg)
   
 
 
 - **Menu2024-b.png**
-  ![Menu2020-a](Media/Menu2024-b.png)
+  ![Menu2020-a](Media/Menu2024-b.jpg)
 
 
 - **Menu2024-c.png**
-  ![Menu2020-a](Media/Menu2024-c.png)
+  ![Menu2020-a](Media/Menu2024-c.jpg)
   
   
 - **Menu2024-d.png**
-  ![Menu2020-a](Media/Menu2024-d.png)
+  ![Menu2020-a](Media/Menu2024-d.jpg)
   
   
 - **Menu2024-e.png**
