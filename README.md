@@ -116,8 +116,6 @@ The mod **Promatch** is offered for free. Any use of the original game's intelle
 
 ---
 
-This version of the **README.md** includes the licensing information that clarifies **Promatch**'s status as a mod for **Call of Duty 4: Modern Warfare** and protects you legally by indicating that **Promatch** is not affiliated with or endorsed by the official game developers.
-
 
 ## Images
 
