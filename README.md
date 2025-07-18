@@ -15,6 +15,8 @@ Also I used Photoshop with some dx and dds plugins to create and convert the tex
 Audacity and Audition to create and edit audio files.
 The crazy part is that I used notepad++ for the code all the time, never tried using the Visual studio or other code IDE.
 Just was simple and really fast to memorize all the tabs and where the functions were. ;)
+
+
 ---
 
 ## Features
