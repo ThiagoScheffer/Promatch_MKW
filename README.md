@@ -10,8 +10,11 @@ The mod became incredibly popular on my own server, where players enjoyed it for
 
 Promatch is a deeply customizable **Call of Duty 4: Modern Warfare** mod, offering a vast range of features such as custom **weapons**, **damage systems**, **player abilities**, **game modes**, **bots**, and more. Initially developed for competitive play, **Promatch** is now enjoyed for fun and casual gaming, with added bots, unique weapon effects, and a variety of new game modes that bring fresh enjoyment to the game.
 
-The mod was created using **GSC (Game Script Code)**, based on **C++**, allowing for deep customization of the game’s core systems.
-
+The mod was created using GSC (Game Script Code), based on C++, allowing for deep customization of the game’s core systems.
+Also I used Photoshop with some dx and dds plugins to create and convert the textures.
+Audacity and Audition to create and edit audio files.
+The crazy part is that I used notepad++ for the code all the time, never tried using the Visual studio or other code IDE.
+Just was simple and really fast to memorize all the tabs and where the functions were. ;)
 ---
 
 ## Features
